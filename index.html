@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="typography.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Olympia Residence</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbarBg" class="navbar navbar-expand-lg fixed-top p-0">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Olympia Residence</a> -->
+          <div class="navLogo p-2 ps-4">
+            <img src="./images/siteLogo-white.png" alt="" />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Начало</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Апартаменти</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Галерия</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Наличност</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="./images/header.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./images/header2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./images/header3.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="aboutBuilding container">
+        <div class="row aboutBuilding-inner">
+          <div class="aboutBuildingBox1 d-grid">
+            <div class="col d-grid">
+              <div class="buildingContent d-grid justify-content-space-between">
+                <h3 class="ps-3 pb-3">Olympia Residence</h3>
+                <div
+                  class="aboutBuildingContent1 d-grid justify-content-center"
+                >
+                  <p>
+                    “Олимпия Ресидънс” е луксозен морски комплекс , ситуиран на
+                    първа морска линия пред един от най-красивите и чисти
+                    плажове на българското Черноморие – плаж Олимпийски надежди
+                    в Равда, само на 2 км от стария град на един от
+                    най-предпочитаните ни курортни градове - Несебър и на 1 км
+                    от Несебър Aquapark.
+                  </p>
+                </div>
+                <div class="aboutBuildingContent2 d-grid">
+                  <p>
+                    Комплексът е проектиран в модернистичен и елегантен
+                    архитектурен стил и впечатлява със своята изтънченост и
+                    фронтална гледка с уникална морска панорама, прекрасно
+                    съчетаващ в себе си лукс, удобства и комфорт на самият
+                    морски бряг, които са предпоставка за пълноценен отдих и
+                    незабравими емоции.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col d-grid justify-content-start p-5">
+              <div class="aboutBuildingImg">
+                <img src="./images/AbtBld.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="row buildingInfo pt-5">
+            <div class="col d-grid justify-content-center buildingInfo-inner1">
+              <h4 style="text-align: center; margin: 0" class="count-digit">
+                5500
+              </h4>
+              <div class="buildingInfoContent">
+                <p>Обща площ</p>
+              </div>
+            </div>
+            <div class="col d-grid justify-content-center buildingInfo-inner2">
+              <h4 style="text-align: center; margin: 0" class="count-digit">
+                79
+              </h4>
+              <div class="buildingInfoContent">
+                <p>Парко места</p>
+              </div>
+            </div>
+            <div class="col d-grid justify-content-center buildingInfo-inner3">
+              <h4 style="text-align: center; margin: 0" class="count-digit">
+                79
+              </h4>
+              <div class="buildingInfoContent">
+                <p>Апартамента</p>
+              </div>
+            </div>
+            <div class="col d-grid justify-content-center buildingInfo-inner4">
+              <h4 style="text-align: center; margin: 0" class="count-digit">
+                180
+              </h4>
+              <div class="buildingInfoContent">
+                <p>Стаи</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Our Services/ Нашите услуги -->
+      <div class="services container-fluid">
+        <div class="servicesHeading">
+          <h3>Нашите услуги</h3>
+        </div>
+        <div class="row services-inner1">
+          <div class="col">
+            <div class="servicesContent-box d-grid">
+              <h3>Some text</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam, eligendi. Officia dolorum incidunt provident
+                reprehenderit eos optio saepe, inventore temporibus excepturi
+                architecto quo consequuntur esse nostrum voluptas aut ut iste.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="servicesContent-box d-grid">
+              <h3>Some text</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam, eligendi. Officia dolorum incidunt provident
+                reprehenderit eos optio saepe, inventore temporibus excepturi
+                architecto quo consequuntur esse nostrum voluptas aut ut iste.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="servicesContent-box d-grid">
+              <h3>Some text</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam, eligendi. Officia dolorum incidunt provident
+                reprehenderit eos optio saepe, inventore temporibus excepturi
+                architecto quo consequuntur esse nostrum voluptas aut ut iste.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="servicesContent-box d-grid">
+              <h3>Some text</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam, eligendi. Officia dolorum incidunt provident
+                reprehenderit eos optio saepe, inventore temporibus excepturi
+                architecto quo consequuntur esse nostrum voluptas aut ut iste.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="servicesContent-box d-grid">
+              <h3>Some text</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam, eligendi. Officia dolorum incidunt provident
+                reprehenderit eos optio saepe, inventore temporibus excepturi
+                architecto quo consequuntur esse nostrum voluptas aut ut iste.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="servicesContent-box d-grid">
+              <h3>Some text</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam, eligendi. Officia dolorum incidunt provident
+                reprehenderit eos optio saepe, inventore temporibus excepturi
+                architecto quo consequuntur esse nostrum voluptas aut ut iste.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Premises size -->
+      <div class="premisesSize d-grid justify-content-center">
+        <h3 style="padding-bottom: 3.5rem">Апартаментни планове</h3>
+        <div class="premisesTabs-outer">
+          <ul class="premisesTabs">
+            <li data-tab-target="#studio" class="active premisesTab">СТУДИО</li>
+            <li data-tab-target="#doubleRoom" class="premisesTab">
+              ДВУСТАЕН АПАРТАМЕНТ
+            </li>
+            <li data-tab-target="#threeRoom" class="premisesTab">
+              ТРИСТЕАН АПАРТАМЕНТ
+            </li>
+            <li data-tab-target="#penthouse" class="premisesTab">ПЕНТХАУС</li>
+          </ul>
+        </div>
+
+        <div class="premisesTab d-grid">
+          <div id="studio" data-tab-content class="active">
+            <div class="premisesBox-inner">
+              <div class="premisesBox1">
+                <p style="color: #3f4448">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto quis ratione unde ea. Ratione eius placeat nesciunt
+                  omnis blanditiis ipsum deleniti facere, earum expedita fuga
+                  labore libero obcaecati officia voluptas.
+                </p>
+                <div class="premisesRooms">
+                  <p style="color: #9ea0a6">Брой стаи</p>
+                  <p>1</p>
+                </div>
+                <div class="premisesTotalArea">
+                  <p style="color: #9ea0a6">Квадратура</p>
+                  <p>46-62/m2</p>
+                </div>
+                <div class="premisesParking">
+                  <p style="color: #9ea0a6">Парко място</p>
+                  <a class="premisesParkingLink" href="#">Виж тук</a>
+                </div>
+                <div class="premisesPrices">
+                  <p style="color: #9ea0a6">Цена от</p>
+                  <p>50 864 €</p>
+                </div>
+              </div>
+              <div class="premisesBox2">
+                <img src="./images/apartmentPlans/01-Studio.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div id="doubleRoom" data-tab-content>
+            <div class="premisesBox-inner">
+              <div class="premisesBox1">
+                <p style="color: #3f4448">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto quis ratione unde ea. Ratione eius placeat nesciunt
+                  omnis blanditiis ipsum deleniti facere, earum expedita fuga
+                  labore libero obcaecati officia voluptas.
+                </p>
+                <div class="premisesRooms">
+                  <p style="color: #9ea0a6">Брой стаи</p>
+                  <p>2</p>
+                </div>
+                <div class="premisesTotalArea">
+                  <p style="color: #9ea0a6">Квадратура</p>
+                  <p>60-91/m2</p>
+                </div>
+                <div class="premisesParking">
+                  <p style="color: #9ea0a6">Парко място</p>
+                  <a class="premisesParkingLink" href="#">Виж тук</a>
+                </div>
+                <div class="premisesPrices">
+                  <p style="color: #9ea0a6">Цена от</p>
+                  <p>69 300 €</p>
+                </div>
+              </div>
+              <div class="premisesBox2">
+                <img src="./images/apartmentPlans/02-dvustaen.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div id="threeRoom" data-tab-content>
+            <div class="premisesBox-inner">
+              <div class="premisesBox1">
+                <p style="color: #3f4448">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto quis ratione unde ea. Ratione eius placeat nesciunt
+                  omnis blanditiis ipsum deleniti facere, earum expedita fuga
+                  labore libero obcaecati officia voluptas.
+                </p>
+                <div class="premisesRooms">
+                  <p style="color: #9ea0a6">Брой стаи</p>
+                  <p>3</p>
+                </div>
+                <div class="premisesTotalArea">
+                  <p style="color: #9ea0a6">Квадратура</p>
+                  <p>99-212/m2</p>
+                </div>
+                <div class="premisesParking">
+                  <p style="color: #9ea0a6">Парко място</p>
+                  <a class="premisesParkingLink" href="#">Виж тук</a>
+                </div>
+                <div class="premisesPrices">
+                  <p style="color: #9ea0a6">Цена от</p>
+                  <p>123 837 €</p>
+                </div>
+              </div>
+              <div class="premisesBox2">
+                <img
+                  src="https://previews.123rf.com/images/mousemd/mousemd1505/mousemd150500012/39920268-vector-illustration-architect-plan-of-building-with-a-furniture-flat-design.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div id="penthouse" data-tab-content>
+            <div class="premisesBox-inner">
+              <div class="premisesBox1">
+                <p style="color: #3f4448">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto quis ratione unde ea. Ratione eius placeat nesciunt
+                  omnis blanditiis ipsum deleniti facere, earum expedita fuga
+                  labore libero obcaecati officia voluptas.
+                </p>
+                <div class="premisesRooms">
+                  <p style="color: #9ea0a6">Брой стаи</p>
+                  <p>4</p>
+                </div>
+                <div class="premisesTotalArea">
+                  <p style="color: #9ea0a6">Квадратура</p>
+                  <p>112-173/m2</p>
+                </div>
+                <div class="premisesParking">
+                  <p style="color: #9ea0a6">Парко място</p>
+                  <a class="premisesParkingLink" href="#">Виж тук</a>
+                </div>
+                <div class="premisesPrices">
+                  <p style="color: #9ea0a6">Цена</p>
+                  <p>202 950 €</p>
+                </div>
+              </div>
+              <div class="premisesBox2">
+                <img
+                  src="https://media.istockphoto.com/vectors/vector-flat-projection-apartmentsmall-house-plan-with-furniture-vector-id616099370"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+    </main>
+    <footer></footer>
+    <script src="counter.js"></script>
+    <script src="premises.js"></script>
+    <script src="navi.js"></script>
+  </body>
+</html>

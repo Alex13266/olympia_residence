@@ -1,0 +1,273 @@
+body {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #f2f2f2;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+}
+
+.carousel {
+  height: 100vh;
+  width: 100%;
+}
+
+.carousel-item {
+  height: 100vh;
+  width: 100%;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.6);
+}
+
+.navbar {
+  background-color: transparent;
+  z-index: 1000;
+}
+
+.navLogo img {
+  width: auto;
+  height: 60px;
+}
+
+.navbar-nav li {
+  margin: 0 2.5rem;
+}
+
+.nav-item a {
+  color: #eeeeee !important;
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.nav-item a:hover {
+  color: #cabe9f !important;
+}
+
+.navBgColor {
+  background-color: #2a2d30;
+  color: #eeeeee;
+  opacity: 0.9;
+  transition: 0.4s ease-in-out;
+}
+
+/* About The Builiding */
+.aboutBuildingBox1 {
+  display: grid;
+  grid-template-columns: 600px 700px;
+}
+
+.aboutBuilding {
+  padding: 5rem 0;
+}
+
+.aboutBuildingImg {
+  width: 97%;
+  height: 100%;
+}
+
+.aboutBuildingImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.buildingContent {
+  padding: 5rem 3.5rem;
+}
+
+.buildingInfoContent {
+  position: relative;
+  cursor: pointer;
+}
+
+.buildingInfoContent p::after {
+  content: "";
+  position: absolute;
+  /* left: 0; */
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background-color: #cabe9f;
+  transition: width 0.25s ease-out;
+}
+
+.buildingInfoContent p:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+/* Our services */
+.services {
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/background1.png");
+  padding: 3.5rem 0;
+}
+
+.services-inner1 {
+  /* grid-template-columns: repeat(auto-fit, minmax(450px, 2fr)); */
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  justify-content: center;
+  grid-gap: 30px;
+  padding: 0 10rem;
+  padding-bottom: 7rem;
+}
+
+.servicesHeading {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.servicesHeading h3 {
+  padding: 0 22rem;
+}
+
+.services-inner1 .col {
+  display: grid;
+  justify-content: center;
+}
+
+.servicesContent-box {
+  width: 350px;
+  /* border: 1px solid red; */
+  display: grid;
+  padding: 1.2rem;
+  background-color: #f1f1f1;
+  transition: 0.3s ease-in-out;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.servicesContent-box h3 {
+  font-size: 18px;
+}
+
+.servicesContent-box p {
+  font-size: 14px;
+}
+
+.servicesContent-box:hover {
+  color: white;
+  background-color: #3f4448;
+  transform: translate(0, -5%);
+}
+
+/* Premises Sizes Tabs */
+.premisesSize {
+  padding: 5rem 0;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.premisesTabs {
+  list-style: none;
+}
+
+.premisesTabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.premisesTab {
+  padding: 4rem 0;
+}
+
+.premisesBox-inner {
+  display: grid;
+  grid-template-columns: 470px 600px;
+  gap: 2.5rem;
+}
+
+.premisesBox1 {
+  display: grid;
+}
+
+.premisesBox2 {
+  width: 100%;
+  height: 100%;
+}
+
+.premisesBox2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.premisesTabs li {
+  font-size: 20px;
+  padding: 1.2rem 2.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.premisesTabs li:hover {
+  background-color: #cabe9f;
+  transition: 0.2s ease-out;
+}
+
+.premisesRooms,
+.premisesTotalArea,
+.premisesParking,
+.premisesPrices {
+  display: flex;
+  width: auto;
+  height: 60%;
+  justify-content: space-between;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.premisesRooms p,
+.premisesTotalArea p,
+.premisesParking p,
+.premisesPrices p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@media only screen and (max-width: 950px) {
+  .services-inner1 {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 0 2rem;
+  }
+
+  .servicesHeading h3 {
+    padding: 0 !important;
+    text-align: center;
+  }
+
+  .premisesBox-inner {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  }
+
+  .aboutBuildingBox1 {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+  }
+
+  .buildingContent {
+    padding: 3rem 3.5rem;
+  }
+
+  .aboutBuildingImg {
+    width: 100%;
+    height: 400px;
+  }
+}
