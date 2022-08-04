@@ -5,6 +5,13 @@ h3 {
   font-family: "Lora", serif;
 }
 
+.nav-item a {
+  color: #eeeeee !important;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 19px;
+}
+
 .buildingInfo-inner1 h4,
 .buildingInfo-inner2 h4,
 .buildingInfo-inner3 h4,
