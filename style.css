@@ -197,8 +197,9 @@ header {
   gap: 2.5rem;
 }
 
-.premisesBox1 {
-  display: grid;
+.premisesBox1 p {
+  color: #3f4448;
+  padding-bottom: 2.5rem;
 }
 
 .premisesBox2 {
@@ -222,15 +223,19 @@ header {
   background-color: #cabe9f;
   position: relative;
 }
-/* .premisesTab.active::after {
+
+.premisesTab.active::after {
   content: "";
   position: absolute;
   width: 0;
   height: 0;
+  left: 50%;
+  bottom: -12px;
+  transform: translate(-50%, -50%);
   border-left: 13px solid transparent;
   border-right: 13px solid transparent;
-  border-top: 10px solid #cabe9f;
-} */
+  border-top: 8px solid #cabe9f;
+}
 
 .premisesTabs li:hover {
   background-color: #cabe9f;
