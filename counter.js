@@ -23,7 +23,7 @@ $(window).scroll(function () {
       jQuery({ Counter: 0 }).animate(
         { Counter: $this.text() },
         {
-          duration: 5500,
+          duration: 4000,
           easing: "swing",
           step: function () {
             $this.text(Math.ceil(this.Counter));

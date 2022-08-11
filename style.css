@@ -126,12 +126,10 @@ header {
 }
 
 .servicesHeading {
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-}
-
-.servicesHeading h3 {
-  padding: 0 22rem;
+  display: grid;
+  grid-template-columns: 555px 555px;
+  justify-content: center;
+  padding-bottom: 4rem;
 }
 
 .services-inner1 .col {
@@ -165,7 +163,14 @@ header {
 
 /* Premises Sizes Tabs */
 .premisesSize {
-  padding: 5rem 0;
+  padding-bottom: 5rem;
+}
+
+.premisesHeading {
+  display: grid;
+  grid-template-columns: 555px 555px;
+  justify-content: center;
+  padding: 3.5rem 0;
 }
 
 [data-tab-content] {
@@ -203,8 +208,10 @@ header {
 }
 
 .premisesBox2 {
+  display: grid;
+  align-content: center;
   width: 100%;
-  height: 100%;
+  height: 520px;
 }
 
 .premisesBox2 img {
@@ -251,7 +258,6 @@ header {
   /* height: 60%; */
   margin-bottom: 1.5rem;
   justify-content: space-between;
-  /* border-bottom: 1px solid #ebebeb; */
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -262,11 +268,117 @@ header {
   padding: 0 !important;
   margin: 0.5rem !important;
 }
+/* End */
+/* Complex Enterteinment */
+.complexEntertainment {
+  width: 100%;
+  height: 100%;
+  background-color: #3f4448;
+}
 
+.complexEntertainmentAccordion .accordionContent {
+  position: relative;
+  margin: 1rem;
+}
+
+.accordionContent .accordionHeading {
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid black;
+}
+
+.accordionContent .accordionHeading::before {
+  content: "\f107";
+  font: var(--fa-font-solid);
+  color: black;
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+.accordionContent.active .accordionHeading::before {
+  content: "\f106";
+  font: var(--fa-font-solid);
+  font-size: 16px;
+}
+
+.complexEntertainmentAccordion .accordionContent .accordionText {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+  /* overflow-y: auto; */
+}
+
+.complexEntertainmentAccordion .accordionContent.active .accordionText {
+  height: 150px;
+}
+
+.complexEntertaimentHeading {
+  display: grid;
+  grid-template-columns: 555px 555px;
+  justify-content: center;
+  padding: 3.5rem 0;
+}
+
+.complexEntertainment-inner {
+  display: grid;
+  grid-template-columns: 390px 820px;
+  width: 100%;
+  height: 65vh;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.complexEntertainmentAccordion {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 1.2rem;
+}
+
+.complexEntertainmentAccordion::-webkit-scrollbar {
+  width: 7px;
+}
+
+.complexEntertainmentAccordion::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #e0e0e0;
+}
+
+.complexEntertainmentAccordion::-webkit-scrollbar-thumb {
+  background-color: #cabe9f;
+  border-radius: 5px;
+}
+
+.complexEntertainmentImg {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.7);
+  display: grid;
+  align-items: center;
+}
+
+.complexEntertainmentImg img {
+  width: 100%;
+  height: 100%;
+}
+
+/* End */
 @media only screen and (max-width: 950px) {
   .services-inner1 {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     padding: 0 2rem;
+  }
+
+  .servicesHeading {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    margin: 0 1rem;
   }
 
   .servicesHeading h3 {
@@ -278,8 +390,13 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   }
 
+  .premisesHeading {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    margin: 0 1rem;
+  }
+
   .aboutBuildingBox1 {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
   }
 
   .buildingContent {
@@ -292,7 +409,16 @@ header {
   }
 
   .buildingInfo {
-    grid-template-columns: repeat(auto-fit, minmax(190px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
     gap: 1.5rem;
+  }
+
+  .complexEntertaimentHeading {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    margin: 0 1rem;
+  }
+
+  .complexEntertainment-inner {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
   }
 }
