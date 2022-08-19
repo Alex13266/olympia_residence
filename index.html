@@ -24,6 +24,10 @@
       src="https://kit.fontawesome.com/f3465016f9.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="module" src="loadTranslations.js"></script>
     <link rel="stylesheet" href="typography.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Olympia Residence</title>
@@ -53,24 +57,43 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  data-i18n="Menu.Home"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
                   >Начало</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Апартаменти</a>
+                <a data-i18n="Menu.Apartments" class="nav-link" href="#"
+                  >Апартаменти</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Галерия</a>
+                <a data-i18n="Menu.Gallery" class="nav-link" href="#"
+                  >Галерия</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Наличност</a>
+                <a data-i18n="Menu.Availability" class="nav-link" href="#"
+                  >Наличност</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Контакти</a>
+                <a data-i18n="Menu.Contacts" class="nav-link" href="#"
+                  >Контакти</a
+                >
               </li>
             </ul>
           </div>
+          <dir class="MultilanguageMenu">
+            <select
+              class="MultilanguageBtn"
+              name="language"
+              id="languageSwitcher"
+            ></select>
+          </dir>
         </div>
       </nav>
       <div
@@ -97,12 +120,14 @@
           <div class="aboutBuildingBox1 d-grid">
             <div class="col d-grid">
               <div class="buildingContent d-grid justify-content-space-between">
-                <h3 class="ps-3 pb-3">Olympia Residence</h3>
+                <h3 data-i18n="AboutBuilding.Heading" class="ps-3 pb-3">
+                  Olympia Residence
+                </h3>
                 <div
                   class="aboutBuildingContent1 d-grid justify-content-center"
                 >
-                  <p>
-                    “Олимпия Ресидънс” е луксозен морски комплекс , ситуиран на
+                  <p data-i18n="AboutBuilding.Content1">
+                    Олимпия Ресидънс е луксозен морски комплекс , ситуиран на
                     първа морска линия пред един от най-красивите и чисти
                     плажове на българското Черноморие – плаж Олимпийски надежди
                     в Равда, само на 2 км от стария град на един от
@@ -111,7 +136,7 @@
                   </p>
                 </div>
                 <div class="aboutBuildingContent2 d-grid">
-                  <p>
+                  <p data-i18n="AboutBuilding.Content2">
                     Комплексът е проектиран в модернистичен и елегантен
                     архитектурен стил и впечатлява със своята изтънченост и
                     фронтална гледка с уникална морска панорама, прекрасно
@@ -134,7 +159,7 @@
                 5500
               </h4>
               <div class="buildingInfoContent">
-                <p>Обща площ</p>
+                <p data-i18n="Building.Area">Обща площ</p>
               </div>
             </div>
             <div class="col d-grid justify-content-center buildingInfo-inner2">
@@ -142,7 +167,7 @@
                 79
               </h4>
               <div class="buildingInfoContent">
-                <p>Парко места</p>
+                <p data-i18n="Building.Parking">Парко места</p>
               </div>
             </div>
             <div class="col d-grid justify-content-center buildingInfo-inner3">
@@ -150,7 +175,7 @@
                 79
               </h4>
               <div class="buildingInfoContent">
-                <p>Апартамента</p>
+                <p data-i18n="Building.Apartments">Апартамента</p>
               </div>
             </div>
             <div class="col d-grid justify-content-center buildingInfo-inner4">
@@ -158,7 +183,7 @@
                 180
               </h4>
               <div class="buildingInfoContent">
-                <p>Стаи</p>
+                <p data-i18n="Building.Rooms">Стаи</p>
               </div>
             </div>
           </div>
@@ -397,11 +422,11 @@
       <!-- About Complex Entertaiment -->
       <div class="complexEntertainment container-fluid">
         <div class="complexEntertaimentHeading">
-          <h3>Зони в комплекса</h3>
+          <h3>Услуги в комплекса</h3>
         </div>
         <div class="complexEntertainment-inner">
           <div class="complexEntertainmentAccordion">
-            <div class="accordionContent">
+            <div id="recepcion" data-dote-content class="accordionContent">
               <div class="accordionHeading">
                 <h5>Рецепция</h5>
               </div>
@@ -414,7 +439,7 @@
                 </p>
               </div>
             </div>
-            <div class="accordionContent">
+            <div id="bbq" data-dote-content class="accordionContent">
               <div class="accordionHeading">
                 <h5>Барбекю</h5>
               </div>
@@ -427,7 +452,7 @@
                 </p>
               </div>
             </div>
-            <div class="accordionContent">
+            <div id="restaurant" data-dote-content class="accordionContent">
               <div class="accordionHeading">
                 <h5>Ресторант</h5>
               </div>
@@ -440,7 +465,7 @@
                 </p>
               </div>
             </div>
-            <div class="accordionContent">
+            <div id="spa" data-dote-content class="accordionContent">
               <div class="accordionHeading">
                 <h5>Спа център</h5>
               </div>
@@ -453,7 +478,7 @@
                 </p>
               </div>
             </div>
-            <div class="accordionContent">
+            <div id="insideGames" data-dote-content class="accordionContent">
               <div class="accordionHeading">
                 <h5>Тихи игри</h5>
               </div>
@@ -466,7 +491,7 @@
                 </p>
               </div>
             </div>
-            <div class="accordionContent">
+            <div id="playground" data-dote-content class="accordionContent">
               <div class="accordionHeading">
                 <h5>Детска площадка</h5>
               </div>
@@ -479,7 +504,7 @@
                 </p>
               </div>
             </div>
-            <div class="accordionContent">
+            <div id="relaxzone" data-dote-content class="accordionContent">
               <div class="accordionHeading">
                 <h5>Релакс зона</h5>
               </div>
@@ -492,7 +517,7 @@
                 </p>
               </div>
             </div>
-            <div class="accordionContent">
+            <div id="fitness" data-dote-content class="accordionContent">
               <div class="accordionHeading">
                 <h5>Фитнес</h5>
               </div>
@@ -508,13 +533,81 @@
           </div>
           <div class="complexEntertainmentImg">
             <img src="./images/aboutComplex2.jpg" alt="" />
+            <div class="complexEntertainmentParts">
+              <div data-dote-target="#recepcion" class="partsDote1 dote-outer">
+                <i class="fa-solid fa-circle-dot dote1"></i>
+              </div>
+              <div data-dote-target="#bbq" class="partsDote2 dote-outer">
+                <i class="fa-solid fa-circle-dot dote2"></i>
+              </div>
+              <div data-dote-target="#restaurant" class="partsDote3 dote-outer">
+                <i class="fa-solid fa-circle-dot dote3"></i>
+              </div>
+              <div data-dote-target="#spa" class="partsDote4 dote-outer">
+                <i class="fa-solid fa-circle-dot dote4"></i>
+              </div>
+              <div
+                data-dote-target="#insideGames"
+                class="partsDote5 dote-outer"
+              >
+                <i class="fa-solid fa-circle-dot dote5"></i>
+              </div>
+              <div data-dote-target="#playground" class="partsDote6 dote-outer">
+                <i class="fa-solid fa-circle-dot dote6"></i>
+              </div>
+              <div data-dote-target="#relaxzone" class="partsDote7 dote-outer">
+                <i class="fa-solid fa-circle-dot dote7"></i>
+              </div>
+              <div data-dote-target="#fitness" class="partsDote8 dote-outer">
+                <i class="fa-solid fa-circle-dot dote8"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
+      <!-- News -->
+      <div class="news container-fluid">
+        <div class="row news-outerBox d-grid">
+          <div class="col news-innerBox">
+            <div class="news-content">
+              <h5>Some text</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                totam ex exercitationem doloribus accusamus, mollitia delectus,
+                id cum sequi optio animi deserunt ipsam blanditiis temporibus
+                voluptatum quasi sunt harum libero.
+              </p>
+            </div>
+          </div>
+          <div class="col news-innerBox">
+            <div class="news-content">
+              <h5>Some text</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                totam ex exercitationem doloribus accusamus, mollitia delectus,
+                id cum sequi optio animi deserunt ipsam blanditiis temporibus
+                voluptatum quasi sunt harum libero.
+              </p>
+            </div>
+          </div>
+          <div class="col news-innerBox">
+            <div class="news-content">
+              <h5>Some text</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                totam ex exercitationem doloribus accusamus, mollitia delectus,
+                id cum sequi optio animi deserunt ipsam blanditiis temporibus
+                voluptatum quasi sunt harum libero.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- News End -->
       <!-- End -->
     </main>
     <footer></footer>
+    <script src="accordionButtons.js"></script>
     <script src="accordionEntertainment.js"></script>
     <script src="counter.js"></script>
     <script src="premises.js"></script>
