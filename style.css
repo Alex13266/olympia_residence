@@ -515,7 +515,7 @@ header {
 
 /* News */
 .news {
-  padding: 5rem 0;
+  padding: 0 0 6rem 0;
   width: 100%;
   height: 100%;
   background-color: #f2f2f2;
@@ -526,6 +526,7 @@ header {
   color: black;
   backface-visibility: hidden;
   transform: perspective(1px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .news-content p {
@@ -536,10 +537,8 @@ header {
 
 .news-content:hover {
   color: white;
-  background-color: yellowgreen;
+  background-color: #3f4448;
   transform: scale(1.05);
-  -webkit-font-smoothing: subpixel-antialiased;
-  backface-visibility: hidden;
 }
 
 .news-content {
@@ -549,8 +548,15 @@ header {
 }
 
 .news-outerBox {
-  grid-template-columns: 360px 360px 360px;
+  grid-template-columns: 340px 340px 340px;
   justify-content: center;
+}
+
+.newsHeading {
+  display: grid;
+  grid-template-columns: 555px 555px;
+  justify-content: center;
+  padding: 3.5rem 1rem;
 }
 
 /* News End */
