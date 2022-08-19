@@ -182,7 +182,7 @@ header {
 
 /* Premises Sizes Tabs */
 .premisesSize {
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .premisesHeading {
@@ -515,7 +515,7 @@ header {
 
 /* News */
 .news {
-  padding: 0 0 6rem 0;
+  padding: 2rem 0 10rem 0;
   width: 100%;
   height: 100%;
   background-color: #f2f2f2;
@@ -555,10 +555,41 @@ header {
   display: grid;
   grid-template-columns: 555px 555px;
   justify-content: center;
-  padding: 3.5rem 1rem;
+  padding: 3.5rem 1.2rem;
 }
 
 /* News End */
+/* Footer */
+#footer {
+  background-color: #3f4448;
+  color: white;
+}
+
+.footer-inner {
+  grid-template-columns: 430px 430px 430px;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 5rem 0 7rem 0;
+}
+
+.footer-address,
+.footer-phone,
+.footer-email {
+  grid-template-columns: 100px auto;
+}
+
+.footer-agentInfo,
+.footer-agentPContacts,
+.footer-agentEContacts {
+  grid-template-columns: 100px auto;
+}
+
+.footer-socialMediaFB,
+.footer-socialMediaIG,
+.footer-socialMediaOB {
+  grid-template-columns: 100px auto;
+}
+/* Footer End */
 /* End */
 @media only screen and (max-width: 950px) {
   .services-inner1 {
@@ -610,5 +641,14 @@ header {
 
   .complexEntertainment-inner {
     grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+  }
+
+  .news-outerBox {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  }
+
+  .newsHeading {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    margin: 0 1rem;
   }
 }
