@@ -63,11 +63,13 @@ header {
 }
 
 .MultilanguageBtn {
-  border: none;
-  background-color: #d4d4d4;
+  border-color: none;
+  outline: none;
+  background-color: #cabe9f;
   font-family: "Lora", serif;
   font-size: 15px;
   color: #fefefe;
+  border-radius: 3px;
 }
 
 .MultilanguageBtn:focus-visible {
@@ -572,22 +574,62 @@ header {
   padding: 5rem 0 7rem 0;
 }
 
+.footer-headers {
+  color: #cabe9f;
+}
+
 .footer-address,
 .footer-phone,
 .footer-email {
   grid-template-columns: 100px auto;
 }
 
-.footer-agentInfo,
+.footer-agentInfo {
+  grid-template-columns: 100px auto;
+  position: relative;
+}
+
+.footer-agentInfo::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  border-bottom: 1px solid white;
+  width: 70%;
+}
+
 .footer-agentPContacts,
 .footer-agentEContacts {
-  grid-template-columns: 100px auto;
+  grid-template-columns: 50px auto;
 }
 
 .footer-socialMediaFB,
 .footer-socialMediaIG,
 .footer-socialMediaOB {
-  grid-template-columns: 100px auto;
+  grid-template-columns: 50px auto;
+}
+
+.footer-imageBox {
+  width: 250px;
+  height: 75px;
+  transition: 0.2s ease-in;
+}
+
+.footer-imageBox:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-out;
+}
+
+.footer-imageBox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.footer-socialMediaFB a,
+.footer-socialMediaIG a,
+.footer-socialMediaOB a {
+  text-decoration: none;
+  color: #fefefe;
 }
 /* Footer End */
 /* End */
