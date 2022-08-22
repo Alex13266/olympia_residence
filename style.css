@@ -40,6 +40,7 @@ header {
 .navbar {
   background-color: transparent;
   z-index: 1000;
+  /* display: grid; */
 }
 
 .navLogo img {
@@ -65,7 +66,7 @@ header {
 .MultilanguageBtn {
   border-color: none;
   outline: none;
-  background-color: #cabe9f;
+  background-color: rgba(59, 59, 59, 0.212);
   font-family: "Lora", serif;
   font-size: 15px;
   color: #fefefe;
@@ -88,7 +89,21 @@ header {
 
 .aboutBuildingImg {
   width: 97%;
-  height: 100%;
+  height: 97%;
+  display: grid;
+  align-self: end;
+  position: relative;
+}
+
+.aboutBuildingImg::before {
+  position: absolute;
+  content: "";
+  top: -11px;
+  left: 398px;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  background-color: #cabe9f;
 }
 
 .aboutBuildingImg img {
@@ -530,12 +545,6 @@ header {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.news-content p {
-  font-family: serif;
-  text-decoration: none;
-  font-weight: lighter;
-}
-
 .news-content:hover {
   color: white;
   background-color: #3f4448;
@@ -568,14 +577,10 @@ header {
 }
 
 .footer-inner {
-  grid-template-columns: 430px 430px 430px;
+  grid-template-columns: 400px 400px 400px;
   justify-content: center;
   gap: 1.5rem;
   padding: 5rem 0 7rem 0;
-}
-
-.footer-headers {
-  color: #cabe9f;
 }
 
 .footer-address,
@@ -586,15 +591,15 @@ header {
 
 .footer-agentInfo {
   grid-template-columns: 100px auto;
-  position: relative;
+  margin-bottom: 1rem;
 }
 
-.footer-agentInfo::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
+.footer-line {
   border-bottom: 1px solid white;
-  width: 70%;
+  width: 90%;
+  height: 2px;
+  display: flex;
+  margin: 0 auto;
 }
 
 .footer-agentPContacts,
@@ -631,9 +636,24 @@ header {
   text-decoration: none;
   color: #fefefe;
 }
+
+.socialMedia-icons a {
+  transition: 0.2s ease-in;
+}
+
+.socialMedia-icons a:hover {
+  transition: 0.2s ease-out;
+  color: #cabe9f;
+}
+
 /* Footer End */
 /* End */
 @media only screen and (max-width: 950px) {
+  .navbar-inner {
+    /* display: grid; */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
   .services-inner1 {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     padding: 0 2rem;
