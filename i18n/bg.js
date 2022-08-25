@@ -1,10 +1,10 @@
 const bg = {
   bg: {
     translation: {
-      "Menu.Home": "Начало",
-      "Menu.Apartments": "Апартаменти",
+      // "Menu.Home": "Начало",
+      "Menu.Apartments": "Продажби",
       "Menu.Gallery": "Галерия",
-      "Menu.Availability": "Наличност",
+      "Menu.Invesitor": "За инвеститора",
       "Menu.Contacts": "Контакти",
       "Building.Area": "Обща площ",
       "Building.Parking": "Парко места",

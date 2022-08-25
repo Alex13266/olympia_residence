@@ -54,7 +54,27 @@ header {
 }
 
 .nav-item a:hover {
-  color: #cabe9f !important;
+  color: #ffcc99 !important;
+}
+
+.nav-item a {
+  position: relative;
+}
+
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  top: 5;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  background-color: #cabe9f;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-item a:hover::before {
+  width: 30%;
 }
 
 .navBgColor {
@@ -656,6 +676,15 @@ header {
     height: 100%;
     margin: 0;
     padding: 0;
+  }
+
+  .navLogo img {
+    width: auto;
+    height: 52px;
+  }
+
+  .navbar-nav li {
+    align-self: center;
   }
 
   .MultilanguageMenu {
