@@ -115,4 +115,44 @@ h3 {
 
 .footer-infoContent {
   font-family: "Lora", serif;
+  font-size: 15px;
+}
+
+.footer-infoContent {
+  position: relative;
+  padding: 0.2rem 0;
+}
+
+.footer-infoContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #cabe9f;
+  width: 0%;
+  height: 2px;
+  transition: 0.35s ease-in;
+}
+
+.footer-infoContent:hover:before {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+
+.footer-infoContent::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  background-color: #cabe9f;
+  width: 0;
+  height: 2px;
+  transition: 0.35s ease-in;
+}
+
+.footer-infoContent:hover:after {
+  width: 100%;
+  left: 0;
+  right: auto;
 }
