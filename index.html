@@ -40,7 +40,13 @@
     <title>Olympia Residence</title>
   </head>
   <body>
+    <a href="#" class="to-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
     <header>
+      <a class="landingBtn" href="#land"
+        ><i class="fa-solid fa-chevron-down"></i
+      ></a>
       <nav id="navbarBg" class="navbar navbar-expand-lg fixed-top p-0">
         <div class="container-fluid navbar-inner">
           <!-- <a class="navbar-brand" href="#">Olympia Residence</a> -->
@@ -73,24 +79,20 @@
                 >
               </li> -->
               <li class="nav-item">
-                <a data-i18n="Menu.Apartments" class="nav-link" href="#"
-                  >Продажби</a
-                >
+                <a data-i18n="Menu.Sales" class="nav-link" href="#"></a>
               </li>
               <li class="nav-item">
-                <a data-i18n="Menu.Invesitor" class="nav-link" href="#"
-                  >За инвеститора</a
-                >
+                <a data-i18n="Menu.Aboutproject" class="nav-link" href="#"></a>
               </li>
               <li class="nav-item">
-                <a data-i18n="Menu.Gallery" class="nav-link" href="#"
-                  >Галерия</a
-                >
+                <a data-i18n="Menu.Gallery" class="nav-link" href="#"></a>
               </li>
               <li class="nav-item">
-                <a data-i18n="Menu.Contacts" class="nav-link" href="#"
-                  >Контакти</a
-                >
+                <a
+                  data-i18n="Menu.Contacts"
+                  class="nav-link"
+                  href="./contacts.html"
+                ></a>
               </li>
             </ul>
           </div>
@@ -122,7 +124,7 @@
       </div>
     </header>
     <main>
-      <div class="aboutBuilding container">
+      <div class="aboutBuilding container" id="land">
         <div class="row aboutBuilding-inner">
           <div class="aboutBuildingBox1 d-grid">
             <div class="col d-grid">
@@ -717,5 +719,6 @@
     <script src="counter.js"></script>
     <script src="premises.js"></script>
     <script src="navi.js"></script>
+    <script src="toTopPointer.js"></script>
   </body>
 </html>

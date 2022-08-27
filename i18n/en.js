@@ -1,10 +1,9 @@
 const en = {
   en: {
     translation: {
-      "Menu.Home": "Home",
-      "Menu.Apartments": "Apartments",
+      "Menu.Sales": "Sales",
+      "Menu.Aboutproject": "About project",
       "Menu.Gallery": "Gallery",
-      "Menu.Availability": "Availability",
       "Menu.Contacts": "Contacts",
       "Building.Area": "Total Area",
       "Building.Parking": "Parking spots",
