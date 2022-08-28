@@ -13,10 +13,20 @@ body {
   background-color: white;
 }
 
-header {
-  background-image: url("./images/header2.jpg");
+.header-image {
   width: 100%;
-  height: 35%;
-  background-position: center;
-  margin-top: 5rem;
+  height: 33%;
+  filter: brightness(0.7);
+  display: block;
+  margin: 5rem 0;
+}
+
+.header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#navBlack {
+  color: #3f4448 !important;
 }
