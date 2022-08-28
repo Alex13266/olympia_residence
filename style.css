@@ -769,6 +769,12 @@ header {
     display: none;
   }
 
+  .to-top {
+    width: 35px;
+    height: 35px;
+    right: 18px;
+  }
+
   .carousel-item img {
     object-fit: cover;
   }
