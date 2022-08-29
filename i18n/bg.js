@@ -1,7 +1,6 @@
 const bg = {
   bg: {
     translation: {
-      // "Menu.Home": "Начало",
       "Menu.Sales": "Продажби",
       "Menu.Aboutproject": "За проекта",
       "Menu.Gallery": "Галерия",

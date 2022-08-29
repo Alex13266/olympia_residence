@@ -30,3 +30,40 @@ body {
 #navBlack {
   color: #3f4448 !important;
 }
+
+.maps-inner {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  justify-content: center;
+}
+
+.maps-box {
+  width: 100%;
+  text-align: center;
+}
+
+.maps-box i {
+  font-size: 40px;
+}
+
+.maps-box i:hover {
+  animation: rotation 0.2s infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

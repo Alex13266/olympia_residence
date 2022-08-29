@@ -672,6 +672,7 @@ header {
 #footer {
   background-color: #3f4448;
   color: white;
+  width: 100%;
 }
 
 .footer-inner {
@@ -679,6 +680,8 @@ header {
   justify-content: center;
   gap: 1.5rem;
   padding: 5rem 0 7rem 0;
+  margin: 0;
+  max-width: 100vw;
 }
 
 .footer-address,
