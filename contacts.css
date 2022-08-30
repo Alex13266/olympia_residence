@@ -13,12 +13,21 @@ body {
   background-color: white;
 }
 
+.navbar-contacts {
+  background-color: #3f4448a8;
+}
+
+.contacts-navbar {
+  width: 100%;
+  height: 50%;
+}
+
 .header-image {
   width: 100%;
-  height: 33%;
+  height: 55%;
   filter: brightness(0.7);
   display: block;
-  margin: 5rem 0;
+  margin: 6rem 0;
 }
 
 .header-image img {
@@ -27,14 +36,23 @@ body {
   object-fit: cover;
 }
 
-#navBlack {
+/* #navBlack {
   color: #3f4448 !important;
+} */
+
+/* Contacts Info */
+.contacts-info {
+  width: 100%;
+  height: 100%;
 }
 
 .maps-inner {
   display: grid;
   grid-template-columns: 350px 350px 350px;
   justify-content: center;
+  width: 100%;
+  margin: 0;
+  gap: 1rem;
 }
 
 .maps-box {
@@ -42,8 +60,18 @@ body {
   text-align: center;
 }
 
+.maps-box:nth-child(2) {
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+}
+
 .maps-box i {
   font-size: 40px;
+  color: #cabe9f;
+}
+
+.maps-box h5 {
+  color: #c0c0c0;
 }
 
 .maps-box i:hover {
@@ -65,5 +93,16 @@ body {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+/* Phone version */
+
+@media only screen and (max-width: 950px) {
+  .maps-inner {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0;
+    max-width: 100vw;
+    gap: 2rem;
   }
 }
