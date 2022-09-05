@@ -156,3 +156,34 @@ h3 {
   left: 0;
   right: auto;
 }
+
+/* Contact form */
+.contacts-heading {
+  text-align: center;
+  color: #b8a87f;
+  padding-bottom: 3rem;
+  font-family: "Lili", serif;
+}
+
+.contact-submit {
+  font-family: "Lili", serif;
+  font-size: 23px;
+  letter-spacing: 0.3px;
+}
+
+#success_message h3,
+#error_message h3 {
+  width: 100%;
+  height: auto;
+  color: #948768d5;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-family: "Lily", serif;
+  font-size: 23px;
+  font-style: italic;
+}
+
+.socialMedia-icons a {
+  font-family: "Lora", serif;
+  font-size: 15px;
+}

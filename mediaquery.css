@@ -1,0 +1,161 @@
+@media only screen and (max-width: 950px) {
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navLogo img {
+        width: auto;
+        height: 52px;
+    }
+
+    .navbar-nav li {
+        align-self: center;
+    }
+
+    .MultilanguageMenu {
+        display: none;
+    }
+
+    .to-top {
+        width: 35px;
+        height: 35px;
+        right: 18px;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+    }
+
+    .services-inner1 {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding: 0 2rem;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .servicesHeading {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        margin: 0 1rem;
+    }
+
+    .servicesHeading h3 {
+        padding: 0 !important;
+        text-align: center;
+    }
+
+    .premisesBox-inner {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        gap: 0;
+    }
+
+    .premisesHeading {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        margin: 0 1rem;
+    }
+
+    .premisesTab {
+        padding: 4rem 1rem;
+    }
+
+    .premisesTab.active::after {
+        bottom: -11px;
+    }
+
+    .premisesSize {
+        padding: 0;
+    }
+
+    .aboutBuilding-inner {
+        max-width: 100vw;
+        margin: 0;
+    }
+
+    .aboutBuildingBox1 {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+        padding: 0;
+        max-width: 100vw;
+    }
+
+    .aboutBuildingBox1 .col {
+        max-width: 100vw;
+    }
+
+    .buildingContent {
+        padding: 3rem 3.5rem;
+    }
+
+    .aboutBuilding {
+        max-width: 100vw;
+    }
+
+    .aboutBuildingImg {
+        width: 100%;
+        height: 400px;
+    }
+
+    .aboutBuildingImg img {
+        width: 90%;
+        height: 80%;
+        justify-self: center;
+    }
+
+    .aboutBuildingImg::before {
+        display: none;
+    }
+
+    .services {
+        width: 100vw;
+    }
+
+    .buildingInfo {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
+        gap: 1.5rem;
+        margin: 0;
+    }
+
+    .complexEntertainment {
+        padding: 0;
+    }
+
+    .complexEntertaimentHeading {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        margin: 0 1rem;
+    }
+
+    .complexEntertainment-inner {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+        max-width: 100vw;
+    }
+
+    .complexEntertainmentAccordion,
+    .complexEntertainmentImg {
+        max-width: 100vw;
+        justify-self: center;
+    }
+
+    .news {
+        padding: 2rem 0 3rem 0;
+    }
+
+    .news-outerBox {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        margin: 0;
+        padding: 0.5rem;
+        gap: 1.3rem;
+    }
+
+    .newsHeading {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        margin: 0 1rem;
+    }
+
+    .footer-inner {
+        grid-template-columns: repeat(auto-fit, minmax(210px, 2fr));
+        max-width: 100vw;
+        margin: 0;
+    }
+}

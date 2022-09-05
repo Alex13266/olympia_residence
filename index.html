@@ -37,6 +37,7 @@
     <script type="module" src="loadTranslations.js"></script>
     <link rel="stylesheet" href="typography.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
     <title>Olympia Residence</title>
   </head>
   <body>
@@ -69,15 +70,6 @@
             id="navbarNav"
           >
             <ul class="navbar-nav">
-              <!-- <li class="nav-item">
-                <a
-                  data-i18n="Menu.Home"
-                  class="nav-link active"
-                  aria-current="page"
-                  href="#"
-                  >Начало</a
-                >
-              </li> -->
               <li class="nav-item">
                 <a data-i18n="Menu.Sales" class="nav-link" href="#"></a>
               </li>
@@ -91,7 +83,7 @@
                 <a
                   data-i18n="Menu.Contacts"
                   class="nav-link"
-                  href="./contacts.html"
+                  href="./contacts.php"
                 ></a>
               </li>
             </ul>
@@ -204,73 +196,69 @@
       <!-- Our Services/ Нашите услуги -->
       <div class="services container-fluid">
         <div class="servicesHeading">
-          <h3>Нашите услуги</h3>
+          <h3>Предимства</h3>
         </div>
         <div class="row services-inner1">
           <div class="col">
             <div class="servicesContent-box d-grid">
-              <h3>Some text</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam, eligendi. Officia dolorum incidunt provident
-                reprehenderit eos optio saepe, inventore temporibus excepturi
-                architecto quo consequuntur esse nostrum voluptas aut ut iste.
-              </p>
+              <div class="services-icon d-grid justify-content-center">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="services-text justify-content-center d-grid">
+                <p>Топ локация – на самия морски бряг</p>
+              </div>
             </div>
           </div>
           <div class="col">
             <div class="servicesContent-box d-grid">
-              <h3>Some text</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam, eligendi. Officia dolorum incidunt provident
-                reprehenderit eos optio saepe, inventore temporibus excepturi
-                architecto quo consequuntur esse nostrum voluptas aut ut iste.
-              </p>
+              <div class="services-icon d-grid justify-content-center">
+                <i class="fa-sharp fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <div class="services-text justify-content-center d-grid">
+                <p>Целогодишно управление и поддръжка на комплекса</p>
+              </div>
             </div>
           </div>
           <div class="col">
             <div class="servicesContent-box d-grid">
-              <h3>Some text</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam, eligendi. Officia dolorum incidunt provident
-                reprehenderit eos optio saepe, inventore temporibus excepturi
-                architecto quo consequuntur esse nostrum voluptas aut ut iste.
-              </p>
+              <div class="services-icon d-grid justify-content-center">
+                <i class="fa-sharp fa-solid fa-square-parking"></i>
+              </div>
+              <div class="services-text justify-content-center d-grid">
+                <p>Подземен гараж с 43 бр.паркоместа</p>
+              </div>
             </div>
           </div>
           <div class="col">
             <div class="servicesContent-box d-grid">
-              <h3>Some text</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam, eligendi. Officia dolorum incidunt provident
-                reprehenderit eos optio saepe, inventore temporibus excepturi
-                architecto quo consequuntur esse nostrum voluptas aut ut iste.
-              </p>
+              <div class="services-icon d-grid justify-content-center">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="services-text justify-content-center d-grid">
+                <p>Охраняема територия с контролиран достъп</p>
+              </div>
             </div>
           </div>
           <div class="col">
             <div class="servicesContent-box d-grid">
-              <h3>Some text</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam, eligendi. Officia dolorum incidunt provident
-                reprehenderit eos optio saepe, inventore temporibus excepturi
-                architecto quo consequuntur esse nostrum voluptas aut ut iste.
-              </p>
+              <div class="services-icon d-grid justify-content-center">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <div class="services-text justify-content-center d-grid">
+                <p>
+                  Висок клас строителство с безкомпромисно качествени материали
+                </p>
+              </div>
             </div>
           </div>
           <div class="col">
             <div class="servicesContent-box d-grid">
-              <h3>Some text</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam, eligendi. Officia dolorum incidunt provident
-                reprehenderit eos optio saepe, inventore temporibus excepturi
-                architecto quo consequuntur esse nostrum voluptas aut ut iste.
-              </p>
+              <div class="services-icon d-grid justify-content-center">
+                <i class="fa-solid fa-list-check"></i>
+              </div>
+              <div class="services-text justify-content-center d-grid">
+                <p>Богат избор от апартаменти с уникална морска гледка</p>
+              </div>
             </div>
           </div>
         </div>
@@ -635,7 +623,7 @@
               <p class="footer-infoHeader">Адрес:</p>
             </div>
             <div class="col">
-              <p class="footer-infoContent">
+              <p class="footer-infoContent" style="width: 90%">
                 ул. „Морски Звуци“ 20, 8238 Равда
               </p>
             </div>
@@ -655,7 +643,9 @@
               <p class="footer-infoHeader">Имейл:</p>
             </div>
             <div class="col">
-              <p class="footer-infoContent">olympia_residence@abv.bg</p>
+              <p class="footer-infoContent" style="width: 70%">
+                olympia_residence@abv.bg
+              </p>
             </div>
           </div>
         </div>
@@ -675,32 +665,42 @@
               <i class="fa-solid fa-phone"></i>
             </div>
             <div class="col">
-              <p class="footer-infoContent">089 991 0435</p>
+              <p class="footer-infoContent" style="width: 28%">089 991 0435</p>
             </div>
           </div>
           <div class="row footer-agentEContacts d-grid mb-3">
-            <div class="col"><i class="fa-solid fa-envelope"></i></div>
             <div class="col">
-              <p class="footer-infoContent">olympia_beach@abv.bg</p>
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="col">
+              <p class="footer-infoContent" style="width: 51%">
+                olympia_beach@abv.bg
+              </p>
             </div>
           </div>
         </div>
         <div class="col footerBox">
           <h6 class="pb-5 footer-headers">Социални мрежи</h6>
           <div class="row footer-socialMediaFB d-grid pb-3">
-            <div class="col"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="col">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
             <div class="col socialMedia-icons">
               <a href="#">facebook.com</a>
             </div>
           </div>
           <div class="row footer-socialMediaIG d-grid pb-3">
-            <div class="col"><i class="fa-brands fa-instagram"></i></div>
+            <div class="col">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
             <div class="col socialMedia-icons">
               <a href="#">instagram.com</a>
             </div>
           </div>
           <div class="row footer-socialMediaOB d-grid pb-3">
-            <div class="col"><i class="fa-solid fa-earth-europe"></i></div>
+            <div class="col">
+              <i class="fa-solid fa-earth-europe"></i>
+            </div>
             <div class="col socialMedia-icons">
               <a href="https://olympia-beach.com/">olympia_beach.com</a>
             </div>
@@ -708,10 +708,7 @@
         </div>
       </div>
       <div class="footer-copyrights d-grid justify-content-center">
-        <p>
-          © OLYMPIA_RESIDENCE. ALL RIGHTS RESERVED. TERMS OF USE AND PRIVACY
-          POLICY
-        </p>
+        <p>© 2022 OLYMPIA RESIDENCE. Всички правила запазени | Общи правила</p>
       </div>
     </footer>
     <script src="accordionButtons.js"></script>

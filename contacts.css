@@ -19,12 +19,12 @@ body {
 
 .contacts-navbar {
   width: 100%;
-  height: 50%;
+  height: 35%;
 }
 
 .header-image {
   width: 100%;
-  height: 55%;
+  height: 75%;
   filter: brightness(0.7);
   display: block;
   margin: 6rem 0;
@@ -66,7 +66,7 @@ body {
 }
 
 .maps-box i {
-  font-size: 40px;
+  font-size: 45px;
   color: #cabe9f;
 }
 
@@ -76,6 +76,61 @@ body {
 
 .maps-box i:hover {
   animation: rotation 0.2s infinite;
+}
+
+/* Contact form */
+.form-top {
+  padding: 6rem 0;
+}
+
+.contact-name input,
+.contact-email input,
+.contact-message textarea {
+  border-radius: 0;
+}
+
+.contact-message textarea {
+  resize: none;
+  height: 150px;
+}
+
+.contact-box1 {
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  border: 2px solid #cabe9f;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: none;
+  border: 2px solid #b8a87f;
+  transition: 0.2s ease-in;
+}
+
+.contact-submit {
+  background-color: #cabe9f;
+  border-color: #cabe9f;
+  border-radius: 0;
+  width: 100%;
+  color: #fefefe;
+}
+
+.contact-submit:hover {
+  background-color: #b8a87f;
+  border-color: #b8a87f;
+  color: #fefefe;
+}
+
+.contact-submit:focus {
+  background-color: #b8a87f;
+  border-color: #b8a87f;
+  color: #fefefe;
+  box-shadow: none;
+  --bs-btn-focus-shadow-rgb: none;
 }
 
 @keyframes rotation {
