@@ -50,7 +50,6 @@
       ></a>
       <nav id="navbarBg" class="navbar navbar-expand-lg fixed-top p-0">
         <div class="container-fluid navbar-inner">
-          <!-- <a class="navbar-brand" href="#">Olympia Residence</a> -->
           <div class="navLogo p-2 ps-4">
             <a href="#"><img src="./images/siteLogo-white.png" alt="" /></a>
           </div>
@@ -70,8 +69,18 @@
             id="navbarNav"
           >
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a data-i18n="Menu.Sales" class="nav-link" href="#"></a>
+              <li class="nav-item dropdownMenu-sales">
+                <a
+                  data-i18n="Menu.Sales"
+                  class="nav-link dropdownMenu-salesLink"
+                  href="sales.html"
+                ></a>
+                <ul class="dropdownMenu" id="dropdown-Color">
+                  <li><a href="#">Сутерен</a></li>
+                  <li><a href="#">Блок1</a></li>
+                  <li><a href="#">Блок2</a></li>
+                  <li><a href="#">Блок3</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a data-i18n="Menu.Aboutproject" class="nav-link" href="#"></a>
@@ -123,7 +132,7 @@
               <div class="buildingContent d-grid justify-content-space-between">
                 <h3
                   data-i18n="AboutBuilding.Heading"
-                  class="ps-3 pb-3 aboutbuilding-heading"
+                  class="ps-3 mb-3 aboutbuilding-heading"
                 >
                   Olympia Residence
                 </h3>
@@ -225,7 +234,7 @@
                 <i class="fa-sharp fa-solid fa-square-parking"></i>
               </div>
               <div class="services-text justify-content-center d-grid">
-                <p>Подземен гараж с 43 бр.паркоместа</p>
+                <p>Подземен гараж с 43 броя паркоместа</p>
               </div>
             </div>
           </div>
@@ -254,7 +263,8 @@
           <div class="col">
             <div class="servicesContent-box d-grid">
               <div class="services-icon d-grid justify-content-center">
-                <i class="fa-solid fa-list-check"></i>
+                <!-- <i class="fa-solid fa-list-check"></i> -->
+                <i class="fa-solid fa-eye"></i>
               </div>
               <div class="services-text justify-content-center d-grid">
                 <p>Богат избор от апартаменти с уникална морска гледка</p>
@@ -432,10 +442,8 @@
               </div>
               <div class="accordionText">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Autem unde optio ipsam dignissimos quos, vero minima ipsa et
-                  vel nobis dolorum architecto ratione ea quasi neque aut quod
-                  debitis voluptatibus.
+                  Общо представително фоайе, предвидено на обслужва целия
+                  комплекс. Обособени зона за релакс, място за тихи игри.
                 </p>
               </div>
             </div>
@@ -445,10 +453,11 @@
               </div>
               <div class="accordionText">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Autem unde optio ipsam dignissimos quos, vero minima ipsa et
-                  vel nobis dolorum architecto ratione ea quasi neque aut quod
-                  debitis voluptatibus.
+                  На територията на комплекса ще има обособена зона с предвиден
+                  външен кухненски бокс и стилно градинско обзавеждане, където
+                  собственици и гости на комплекса ще могат да се насладят на
+                  спокойствие на открито с чаша вино в ръка, наслаждавайки се на
+                  богатото озеленение на комплекса.
                 </p>
               </div>
             </div>
@@ -458,10 +467,10 @@
               </div>
               <div class="accordionText">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Autem unde optio ipsam dignissimos quos, vero minima ipsa et
-                  vel nobis dolorum architecto ratione ea quasi neque aut quod
-                  debitis voluptatibus.
+                  Комплексът ще разполага със собствен ресторант за собственици
+                  и гости, с открита тераса и панорамна гледка към морето. В
+                  него всички ще могат да се насладят на вкусна храна под
+                  звуците на вълните.
                 </p>
               </div>
             </div>
@@ -471,23 +480,23 @@
               </div>
               <div class="accordionText">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Autem unde optio ipsam dignissimos quos, vero minima ipsa et
-                  vel nobis dolorum architecto ratione ea quasi neque aut quod
-                  debitis voluptatibus.
+                  Комплексът ще разполага със свой собствен мини спа-център –
+                  парна баня, сауна и масажно студио. В него всеки един от
+                  собствениците и гостите на комплекса, ще може да се наслади на
+                  истинска почивка и да забрави за ежедневните си занимания.
                 </p>
               </div>
             </div>
             <div id="insideGames" data-dote-content class="accordionContent">
               <div class="accordionHeading">
-                <h5>Тихи игри</h5>
+                <h5>Басейн</h5>
               </div>
               <div class="accordionText">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Autem unde optio ipsam dignissimos quos, vero minima ipsa et
-                  vel nobis dolorum architecto ratione ea quasi neque aut quod
-                  debitis voluptatibus.
+                  На територията на комплекса ще има открит басейн с размери
+                  23/10м, с обособена детска секция. С луксозни шезлонги и
+                  чадъри, прилежащи външни съблекални с душове и санитарни
+                  възли.
                 </p>
               </div>
             </div>
@@ -497,10 +506,9 @@
               </div>
               <div class="accordionText">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Autem unde optio ipsam dignissimos quos, vero minima ipsa et
-                  vel nobis dolorum architecto ratione ea quasi neque aut quod
-                  debitis voluptatibus.
+                  За най-малките, на територията на комплекса е предвидена
+                  детска площадка със съоръжения, със специална ударо-поглъщаща
+                  настилка, за спокойни родители и щастливи деца.
                 </p>
               </div>
             </div>
@@ -510,10 +518,15 @@
               </div>
               <div class="accordionText">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Autem unde optio ipsam dignissimos quos, vero minima ipsa et
-                  vel nobis dolorum architecto ratione ea quasi neque aut quod
-                  debitis voluptatibus.
+                  В междусградните пространства ще бъдат оформени красиви тревни
+                  площи. Общата територия ще бъде богато озеленена, с
+                  изключително впечатляващ ландшафтен дизайн, с богато
+                  разнообразие от растителни видове. Всички дворни пространства
+                  ще бъдат пешеходно обвързани с декоративни настилки и ще
+                  разполагат с модернистично градинско обзавеждане – пейки,
+                  перголи, красиво декоративно улично осветление и художествени
+                  елементи. Всичко необходимо за една спокойна почивка в
+                  прекрасна атмосфера!
                 </p>
               </div>
             </div>
@@ -523,10 +536,10 @@
               </div>
               <div class="accordionText">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Autem unde optio ipsam dignissimos quos, vero minima ipsa et
-                  vel nobis dolorum architecto ratione ea quasi neque aut quod
-                  debitis voluptatibus.
+                  Собствениците и гости на комплекса ще могат да се погрижат за
+                  фигурите си като се възползват от изграден фитнес на открито,
+                  на територията на комплекса. Фитнесът ще е с безплатен достъп
+                  и всеки любител на спорта, ще може да го посети.
                 </p>
               </div>
             </div>
@@ -655,8 +668,9 @@
             <div class="col footer-imageBox">
               <img src="./images/istockphoto-1186979596-612x612.jpg" alt="" />
             </div>
-            <div class="col d-grid align-items-center">
+            <div class="col d-grid align-items-center footer-agentName">
               <h5>Камелия Цифундарева</h5>
+              <p>Мениджър продажби</p>
             </div>
           </div>
           <span class="footer-line mb-3"></span>
@@ -717,5 +731,6 @@
     <script src="premises.js"></script>
     <script src="navi.js"></script>
     <script src="toTopPointer.js"></script>
+    <script src="dropdownColor.js"></script>
   </body>
 </html>

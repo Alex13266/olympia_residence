@@ -13,10 +13,6 @@ body {
   background-color: white;
 }
 
-.navbar-contacts {
-  background-color: #3f4448a8;
-}
-
 .contacts-navbar {
   width: 100%;
   height: 35%;
@@ -36,9 +32,9 @@ body {
   object-fit: cover;
 }
 
-/* #navBlack {
-  color: #3f4448 !important;
-} */
+.header-image {
+  position: relative;
+}
 
 /* Contacts Info */
 .contacts-info {

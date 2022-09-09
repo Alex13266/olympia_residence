@@ -7,10 +7,10 @@ dotes.forEach((dote) => {
     dotesContent.forEach((dotesContent) => {
       if (dotesContent != target) {
         dotesContent.classList.remove("active");
-        // dotesContent.style.height = "20px";
       }
     });
     target.classList.toggle("active");
+    target.scrollIntoView(scrollIntoViewOptions);
     // dotesContent.style.height = dotesContent.scrollHeight + "px";
   });
 });

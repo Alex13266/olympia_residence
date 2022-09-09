@@ -36,8 +36,7 @@
     <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
     <script type="module" src="loadTranslations.js"></script>
     <link rel="stylesheet" href="typography.css" />
-    <link rel="stylesheet" href="contacts.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sales.css" />
     <link rel="stylesheet" href="mediaquery.css" />
     <title>Olympia Residence | Продажби |</title>
   </head>
@@ -45,11 +44,11 @@
     <a href="#" class="to-top">
       <i class="fa-solid fa-angle-up"></i>
     </a>
-    <header class="contacts-navbar">
-      <nav id="navbarBg" class="navbar navbar-contacts navbar-expand-lg fixed-top p-0">
-        <div class="container-fluid navbar-inner">
-          <div class="navLogo p-2 ps-4">
-            <a href="./index.html"
+    <header class="sales-header">
+      <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+          <div class="navLogo ps-4">
+            <a href="index.html"
               ><img src="./images/siteLogo-white.png" alt=""
             /></a>
           </div>
@@ -57,8 +56,8 @@
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -66,45 +65,36 @@
           </button>
           <div
             class="collapse navbar-collapse justify-content-center"
-            id="navbarNav"
+            id="navbarNavDropdown"
           >
             <ul class="navbar-nav">
-            <li class="nav-item dropdownMenu-sales">
+              <li class="nav-item dropdown">
                 <a
-                  data-i18n="Menu.Sales"
-                  class="nav-link dropdownMenu-salesLink"
+                  class="nav-link dropdown-toggle"
                   href="#"
-                ></a>
-                <ul class="dropdownMenu" id="dropdown-Color">
-                  <li><a href="#">Сутерен</a></li>
-                  <li><a href="#">Блок1</a></li>
-                  <li><a href="#">Блок2</a></li>
-                  <li><a href="#">Блок3</a></li>
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Продажби
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Сутерен</a></li>
+                  <li><a class="dropdown-item" href="#">Блок I</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Блок II</a>
+                    <a class="dropdown-item" href="#">Блок III</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a
-                  data-i18n="Menu.Aboutproject"
-                  id="navBlack"
-                  class="nav-link"
-                  href="#"
-                ></a>
+                <a class="nav-link" href="#">За проекта</a>
               </li>
               <li class="nav-item">
-                <a
-                  data-i18n="Menu.Gallery"
-                  id="navBlack"
-                  class="nav-link"
-                  href="#"
-                ></a>
+                <a class="nav-link" href="#">Галерия</a>
               </li>
               <li class="nav-item">
-                <a
-                  data-i18n="Menu.Contacts"
-                  id="navBlack"
-                  class="nav-link activeBar"
-                  href="#"
-                ></a>
+                <a class="nav-link" href="contacts.php">Контакти</a>
               </li>
             </ul>
           </div>
@@ -117,133 +107,105 @@
           </div>
         </div>
       </nav>
-      <div class="header-image">
-        <img src="./images/header2.jpg" alt="" />
-      </div>
     </header>
-
     <main>
-      <div class="contacts-info container=fluid my-5">
-        <div class="row maps-inner">
-          <div class="col maps-box d-grid">
-            <i class="fa-solid fa-phone"></i>
-            <h5>Телефон:</h5>
-            <p>089 991 0435</p>
-            <p>089 796 3030</p>
+      <div class="container-fluid sales-content d-grid">
+        <div class="sales-heading">
+          <h3 style="text-align: center; font-size: 40px">Продажби</h3>
+        </div>
+        <div class="row sales-content-inner">
+          <div class="col-12">
+            <div class="sales-text">
+              <p style="text-align: center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                nam itaque unde consectetur distinctio consequatur laboriosam
+                ullam hic vitae labore quae saepe libero natus nesciunt
+                voluptatum ipsam deserunt, dicta quo. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Similique voluptatum nam aut eum
+                totam odit nobis omnis perferendis! Non, dolor nemo quos ipsum
+                molestias error corrupti rerum est velit quis? Lorem ipsum,
+                dolor sit amet consectetur adipisicing elit. Impedit, molestias.
+                Harum sed totam, ea non provident asperiores magnam animi
+                corporis iste nostrum, soluta assumenda ad illum modi quasi
+                nobis quos?
+              </p>
+            </div>
           </div>
-          <div class="col maps-box d-grid">
-            <i class="fa-solid fa-location-dot"></i>
-            <h5>Адрес:</h5>
-            <p>ул. „Морски Звуци“ 20, 8238 Равда</p>
-          </div>
-          <div class="col maps-box d-grid">
-            <i class="fa-solid fa-envelope"></i>
-            <h5>Емайл:</h5>
-            <p>olympia_residence@abv.bg</p>
-            <p>olympia_residence@gmail.com</p>
+          <div
+            class="col-12 d-grid"
+            style="align-items: center; justify-items: center"
+          >
+            <div class="sales-image">
+              <img src="./images/header.jpg" alt="" />
+              <a href="#"><path class="blok1-1"></path></a>
+              <a href="#"><path class="blok1-2"></path></a>
+              <a href="#"><path class="blok1-3"></path></a>
+              <a href="#"><path class="blok1-4"></path></a>
+              <a href="#"><path class="blok1-5"></path></a>
+              <a href="#"><path class="blok1-6"></path></a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container form-top">
-        <h2 class="contacts-heading">СВЪРЖЕТЕ СЕ СЕГА!</h2>
-        <div class="row justify-content-center">
-          <div
-            class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12"
-            style="width: 55%"
-          >
-            <div class="panel panel-danger">
-              <div class="panel-body">
-                <form
-                  method="post"
-                  id="reused_form"
-                  action="form.php"
-                  class="d-grid gap-3"
-                >
-                  <div class="form-group d-grid contact-box1">
-                    <div class="contact-name">
-                      <!-- <label>Вашето име *</label> -->
-                      <input
-                        type="text"
-                        name="name"
-                        required
-                        class="form-control"
-                        placeholder="Вашето име *"
-                      />
-                    </div>
-                    <!-- <div class="contact-phone">
-                      <label>Вашия телефон *</label>
-                      <input
-                        type="text"
-                        name="number"
-                        required
-                        class="form-control"
-                        placeholder="Вашия телефон *"
-                      />
-                    </div> -->
-                    <div class="form-group contact-email">
-                      <!-- <label>Вашия Email *</label> -->
-                      <input
-                        type="email"
-                        name="email"
-                        required
-                        class="form-control"
-                        placeholder="Вашия Email *"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group contact-message">
-                    <!-- <label>Съобщение</label> -->
-                    <textarea
-                      rows="3"
-                      name="message"
-                      class="form-control"
-                      placeholder="Съобщение"
-                    ></textarea>
-                  </div>
-                  <div class="form-group">
-                    <button
-                      class="btn btn-raised btn-lg btn-warning contact-submit"
-                      type="submit"
-                    >
-                      Изпрати
-                    </button>
-                    <?php if(isset($_GET['isEmailSent']) && $_GET['isEmailSent'] == 'true') : ?>
-                    <div
-                      id="success_message"
-                      
-                    >
-                      <h3>Съобщението беше изпратено успешно!</h3>
-                    </div>
-                    <?php endif; ?>
-                    <?php if(isset($_GET['isEmailSent']) && $_GET['isEmailSent'] == 'false') : ?>
-                    <div
-                      id="error_message"
-                     
-                    >
-                      <h3>Съобщението не успя да се изпрати!</h3>
-                    </div>
-                    <?php endif; ?>
-                  </div>
-                </form>
+      <div class="container-fluid sales-info">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="sales-suteren">
+              <div class="sales-info-headings">
+                <h5>Сутерен</h5>
+              </div>
+              <div class="sales-info-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  nostrum eveniet odio praesentium provident inventore dolorum,
+                  quisquam optio quaerat labore dignissimos at similique
+                  sapiente culpa deleniti ea deserunt facilis dolore?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="sales-blok1">
+              <div class="sales-info-headings"><h5>Блок I</h5></div>
+              <div class="sales-info-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  nostrum eveniet odio praesentium provident inventore dolorum,
+                  quisquam optio quaerat labore dignissimos at similique
+                  sapiente culpa deleniti ea deserunt facilis dolore?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="sales-blok2">
+              <div class="sales-info-headings"><h5>Блок II</h5></div>
+              <div class="sales-info-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  nostrum eveniet odio praesentium provident inventore dolorum,
+                  quisquam optio quaerat labore dignissimos at similique
+                  sapiente culpa deleniti ea deserunt facilis dolore?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="sales-blok3">
+              <div class="sales-info-headings"><h5>Блок III</h5></div>
+              <div class="sales-info-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  nostrum eveniet odio praesentium provident inventore dolorum,
+                  quisquam optio quaerat labore dignissimos at similique
+                  sapiente culpa deleniti ea deserunt facilis dolore?
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="mapsInfo">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d925.6346647198488!2d27.68862982925537!3d42.650338985083415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a4595313e11d8d6!2zNDLCsDM5JzAxLjIiTiAyN8KwNDEnMjEuMCJF!5e1!3m2!1sbg!2sbg!4v1661777989241!5m2!1sbg!2sbg"
-          width="100%"
-          height="360px"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
     </main>
-    <!-- Footer -->
     <footer id="footer">
       <div class="row footer-inner d-grid">
         <div class="col footerBox">
@@ -344,9 +306,7 @@
         </div>
       </div>
       <div class="footer-copyrights d-grid justify-content-center">
-        <p>
-          © 2022 OLYMPIA RESIDENCE. Всички правила запазени | Общи правила
-        </p>
+        <p>© 2022 OLYMPIA RESIDENCE. Всички правила запазени | Общи правила</p>
       </div>
     </footer>
     <script src="navi.js"></script>
