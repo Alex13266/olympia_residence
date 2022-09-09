@@ -345,7 +345,7 @@
       </div>
       <div class="footer-copyrights d-grid justify-content-center">
         <p>
-          © 2022 OLYMPIA RESIDENCE. Всички правила запазени | Общи правила
+          © 2022 OLYMPIA RESIDENCE. Всички права запазени | Общи правила
         </p>
       </div>
     </footer>
