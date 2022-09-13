@@ -47,7 +47,7 @@
       <i class="fa-solid fa-angle-up"></i>
     </a>
     <header>
-      <a class="landingBtn animate__animated animate__bounce" href="#land"
+      <a class="landingBtn slide-bottom-reverse" href="#land"
         ><i class="fa-solid fa-chevron-down"></i
       ></a>
       <nav id="navbarBg" class="navbar navbar-expand-lg fixed-top p-0">
@@ -78,7 +78,7 @@
                   href="sales.html"
                 ></a>
                 <ul
-                  class="dropdownMenu dropdown-menu slide-bottom"
+                  class="dropdownMenu dropdown-menu slide-top"
                   id="dropdown-Color"
                 >
                   <li><a href="#">Сутерен</a></li>
@@ -111,74 +111,6 @@
           </div>
         </div>
       </nav>
-      <!-- <nav id="navbarBg" class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-          <div class="navLogo ps-4">
-            <a href="index.html"
-              ><img src="./images/siteLogo-white.png" alt=""
-            /></a>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarNavDropdown"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="/sales.html"
-                  data-bs-toggle="dropdown"
-                  role="button"
-                  aria-expanded="true"
-                >
-                  Продажби
-                </a>
-                <ul
-                  class="dropdown-menu dropdown-customize slide-bottom"
-                  id="dropdown-Color"
-                >
-                  <li><a class="dropdown-item" href="#">Сутерен</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Блок I</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Блок II</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Блок III</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">За проекта</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Галерия</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacts.php">Контакти</a>
-              </li>
-            </ul>
-          </div>
-          <div class="MultilanguageMenu">
-            <select
-              class="MultilanguageBtn"
-              name="language"
-              id="languageSwitcher"
-              style="appearance: none"
-            ></select>
-          </div>
-        </div>
-      </nav> -->
       <div
         id="carouselExampleInterval"
         class="carousel slide"
@@ -201,14 +133,16 @@
       <div class="aboutBuilding container" id="land">
         <div class="row aboutBuilding-inner">
           <div class="aboutBuildingBox1 d-grid">
-            <div class="col d-grid">
+            <div
+              class="col d-grid"
+              data-aos="fade-right"
+              data-aos-delay="160"
+              data-aos-duration="1000"
+            >
               <div class="buildingContent d-grid justify-content-space-between">
                 <h3
                   data-i18n="AboutBuilding.Heading"
                   class="ps-3 mb-3 aboutbuilding-heading"
-                  data-aos="fade-right"
-                  data-aos-delay="100"
-                  data-aos-duration="1000"
                 >
                   Olympia Residence
                 </h3>
@@ -236,7 +170,12 @@
                 </div>
               </div>
             </div>
-            <div class="col d-grid">
+            <div
+              class="col d-grid"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+              data-aos-duration="1200"
+            >
               <div class="aboutBuildingImg">
                 <img src="./images/AbtBld.jpg" alt="" />
               </div>
@@ -303,7 +242,7 @@
         <div
           class="servicesHeading"
           data-aos="fade-right"
-          data-aos-delay="100"
+          data-aos-delay="160"
           data-aos-duration="1000"
         >
           <h3>Предимства</h3>
@@ -379,13 +318,18 @@
       <div
         class="premisesHeading"
         data-aos="fade-right"
-        data-aos-delay="100"
+        data-aos-delay="160"
         data-aos-duration="1000"
       >
         <h3>Апартаментни планове</h3>
       </div>
       <div class="premisesSize d-grid justify-content-center">
-        <div class="premisesTabs-outer">
+        <div
+          class="premisesTabs-outer"
+          data-aos="fade-up"
+          data-aos-delay="220"
+          data-aos-duration="1000"
+        >
           <ul class="premisesTabs">
             <li data-tab-target="#studio" class="active premisesTab">СТУДИО</li>
             <li data-tab-target="#doubleRoom" class="premisesTab">
@@ -398,7 +342,12 @@
           </ul>
         </div>
 
-        <div class="premisesTab d-grid">
+        <div
+          class="premisesTab d-grid"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+        >
           <div id="studio" data-tab-content class="active">
             <div class="premisesBox-inner">
               <div class="premisesBox1">
@@ -539,12 +488,17 @@
         <div
           class="complexEntertaimentHeading"
           data-aos="fade-right"
-          data-aos-delay="100"
+          data-aos-delay="160"
           data-aos-duration="1000"
         >
           <h3>Услуги в комплекса</h3>
         </div>
-        <div class="complexEntertainment-inner">
+        <div
+          class="complexEntertainment-inner"
+          data-aos="fade-up"
+          data-aos-delay="220"
+          data-aos-duration="1000"
+        >
           <div class="complexEntertainmentAccordion">
             <div id="recepcion" data-dote-content class="accordionContent">
               <div class="accordionHeading">
@@ -693,13 +647,18 @@
         <div
           class="investitorHeading"
           data-aos="fade-right"
-          data-aos-delay="100"
+          data-aos-delay="160"
           data-aos-duration="1000"
         >
           <h3>За инвеститора</h3>
         </div>
         <div class="row investitor-innerBox d-grid">
-          <div class="col-12 d-grid justify-content-center investitor-text">
+          <div
+            class="col-12 d-grid justify-content-center investitor-text"
+            data-aos="fade-up"
+            data-aos-delay="220"
+            data-aos-duration="1000"
+          >
             <p style="padding: 0 17rem; text-align: center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequatur, tempora dolor quasi sequi debitis voluptatibus ab
@@ -734,7 +693,7 @@
                   class="investitor-images1 investitor-images-settings"
                 ></div
               ></a>
-              <p style="text-align: center; margin: 0.5rem 0 0 0">
+              <p style="text-align: center; margin: 1rem 0 0 0">
                 Комплекс Aurelia Beach
               </p>
             </div>
@@ -748,7 +707,7 @@
                   class="investitor-images2 investitor-images-settings"
                 ></div
               ></a>
-              <p style="text-align: center; margin: 0.5rem 0 0 0">
+              <p style="text-align: center; margin: 1rem 0 0 0">
                 Комплекс Olympia Beach
               </p>
             </div>
@@ -762,7 +721,7 @@
                   class="investitor-images3 investitor-images-settings"
                 ></div
               ></a>
-              <p style="text-align: center; margin: 0.5rem 0 0 0">
+              <p style="text-align: center; margin: 1rem 0 0 0">
                 Комплекс Olympia Residence
               </p>
             </div>

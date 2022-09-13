@@ -106,80 +106,6 @@ header {
   filter: brightness(0.8);
 }
 
-/* Navbar */
-
-/* .navBgColor {
-  background-color: #2a2d30;
-  color: #eeeeee;
-  opacity: 0.9;
-  transition: 0.4s ease-in-out;
-}
-
-.navbar-nav li {
-  margin: 0 2.5rem;
-}
-
-.dropdown:hover > ul {
-  display: block;
-}
-
-.nav-item a {
-  position: relative;
-}
-
-.nav-item a::before {
-  content: "";
-  position: absolute;
-  width: 0%;
-  top: 5;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 2px;
-  background-color: #cabe9f;
-  transition: 0.3s ease-in-out;
-}
-
-.nav-item a:hover::before {
-  width: 30%;
-}
-
-.navLogo img {
-  width: auto;
-  height: 60px;
-} */
-
-/* Navbar Dropdown */
-/* .dropdown-item:hover {
-  background-color: transparent;
-}
-
-.dropdown-toggle::after {
-  display: none;
-}
-
-.dropdown-menu {
-  border: none;
-  border-radius: 0%;
-  background-color: rgba(63, 68, 72, 0.8);
-  border: 16px solid transparent;
-}
-
-.dropdown-menu[data-bs-popper] {
-  top: 95%;
-  left: 0;
-  margin-top: var(--bs-dropdown-spacer);
-}
-
-.dropdownMenu-colorchange {
-  background-color: #2a2d30;
-  color: #eeeeee;
-  transition: 0.4s ease-in-out;
-}
-
-.dropdown-customize li {
-  margin: 0 1rem;
-} */
-
 /* Navbar Language Button */
 .MultilanguageBtn {
   border: none;
@@ -245,22 +171,6 @@ header {
   opacity: 0.9;
   transition: 0.4s ease-in-out;
 }
-
-/* .activeBar {
-  position: relative;
-}
-
-.activeBar::after {
-  content: "";
-  position: absolute;
-  width: 30%;
-  top: 5;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 2px;
-  background-color: #cabe9f;
-  transition: 0.3s ease-in-out;
-} */
 
 /* Navbar dropdown */
 .navbar-collapse ul ul {
@@ -833,6 +743,7 @@ header {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   box-shadow: 8px 8px 16px #b5b5b5, -8px -8px 16px #ffffff;
+  transition: 0.3s ease-in;
 }
 
 .investitor-images1 {
@@ -855,6 +766,10 @@ header {
   grid-template-columns: 200px 200px 200px;
   justify-content: center;
   gap: 10rem;
+}
+
+.investitor-images-settings:hover {
+  transform: translate(0, -5%);
 }
 
 /* Investitor End */
