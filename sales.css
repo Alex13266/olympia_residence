@@ -48,11 +48,11 @@ body {
 /* Header and navbar */
 .sales-header {
   width: 100%;
-  height: 20%;
+  height: 33%;
 }
 
 .navbar {
-  background-color: #3f4448d2;
+  background-color: rgba(63, 68, 72, 0.8);
 }
 
 .navBgColor {
@@ -66,11 +66,43 @@ body {
   margin: 0 2.5rem;
 }
 
+.dropdown:hover > ul {
+  display: block;
+}
+
+.nav-item a {
+  position: relative;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  top: 5;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  background-color: #cabe9f;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-item a:hover::before {
+  width: 30%;
+}
+
 .navLogo img {
   width: auto;
   height: 60px;
 }
 
+/* Active navbar */
+
+/* End */
+/* Navbar Dropdown */
 .dropdown-toggle::after {
   display: none;
 }
@@ -78,11 +110,12 @@ body {
 .dropdown-menu {
   border: none;
   border-radius: 0%;
-  background-color: #3f4448d2;
+  background-color: rgba(63, 68, 72, 0.8);
+  border: 16px solid transparent;
 }
 
 .dropdown-menu[data-bs-popper] {
-  top: 130%;
+  top: 95%;
   left: 0;
   margin-top: var(--bs-dropdown-spacer);
 }
@@ -91,6 +124,10 @@ body {
   background-color: #2a2d30;
   color: #eeeeee;
   transition: 0.4s ease-in-out;
+}
+
+.dropdown-customize li {
+  margin: 0 1rem;
 }
 
 /* Navbar Language Button */
@@ -108,7 +145,25 @@ body {
   outline: none;
 }
 
+.MultilanguageBtn option {
+  background-color: #2a2d30;
+}
+
 /* Main Settings */
+.header-image {
+  width: 100%;
+  height: 75%;
+  filter: brightness(0.7);
+  display: block;
+  margin: 6rem 0;
+}
+
+.header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .sales-content-inner {
   max-width: 100vw;
 }
@@ -140,15 +195,27 @@ body {
 .sales-info {
   margin: 5rem 0;
 }
-/* Blok image settings */
+/* Blok settings */
 .sales-image {
   position: relative;
   overflow: hidden;
 }
 
+.blok-settings {
+  position: absolute;
+  background-color: transparent;
+  opacity: 0.7;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in;
+}
+
 /* Blok 1 */
 .blok1-1 {
-  position: absolute;
   clip-path: polygon(
     46% 54.6%,
     46% 58.5%,
@@ -160,19 +227,9 @@ body {
     31% 58%,
     39% 58%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 .blok1-2 {
-  position: absolute;
   clip-path: polygon(
     46% 55%,
     46% 52%,
@@ -184,19 +241,9 @@ body {
     32% 58.5%,
     39% 58.7%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 .blok1-3 {
-  position: absolute;
   clip-path: polygon(
     46% 47.8%,
     46% 50%,
@@ -208,19 +255,9 @@ body {
     30% 50.5%,
     38.6% 50.6%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 .blok1-4 {
-  position: absolute;
   clip-path: polygon(
     46% 48.4%,
     46% 46%,
@@ -232,19 +269,9 @@ body {
     32% 51.3%,
     38.6% 51.5%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 .blok1-5 {
-  position: absolute;
   clip-path: polygon(
     46% 41%,
     46% 43%,
@@ -257,19 +284,9 @@ body {
     30% 43%,
     38% 43%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 .blok1-6 {
-  position: absolute;
   clip-path: polygon(
     42% 38%,
     43.4% 37.8%,
@@ -282,20 +299,10 @@ body {
     33% 38.9%,
     37.4% 39%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 /* Blok 2 */
 .blok2-1 {
-  position: absolute;
   clip-path: polygon(
     51% 49.9%,
     59% 50%,
@@ -307,19 +314,9 @@ body {
     49% 51%,
     47.9% 50%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 .blok2-2 {
-  position: absolute;
   clip-path: polygon(
     49.1% 46.7%,
     56% 46.7%,
@@ -328,19 +325,9 @@ body {
     56% 50.7%,
     49% 50.6%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 .blok2-3 {
-  position: absolute;
   clip-path: polygon(
     49.1% 47.4%,
     56% 47.5%,
@@ -349,19 +336,9 @@ body {
     56% 43.9%,
     49% 43.8%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 .blok2-4 {
-  position: absolute;
   clip-path: polygon(
     49.1% 44.4%,
     56% 44.5%,
@@ -370,19 +347,9 @@ body {
     56% 40.9%,
     49% 40.7%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 .blok2-5 {
-  position: absolute;
   clip-path: polygon(
     49.8% 41.4%,
     56% 41.5%,
@@ -391,20 +358,10 @@ body {
     57% 37.6%,
     49.8% 37.5%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 /* Blok 3 */
 .blok3-1 {
-  position: absolute;
   clip-path: polygon(
     77.6% 56.5%,
     79.5% 54.1%,
@@ -413,18 +370,8 @@ body {
     75.8% 60%,
     75.8% 56.6%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 .blok3-2 {
-  position: absolute;
   clip-path: polygon(
     79.3% 53%,
     79.3% 54.7%,
@@ -434,19 +381,9 @@ body {
     77.5% 53.1%,
     79.3% 51%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 .blok3-3 {
-  position: absolute;
   clip-path: polygon(
     79.3% 48%,
     79.3% 49%,
@@ -458,18 +395,8 @@ body {
     64.8% 49.4%,
     77.6% 49.5%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 .blok3-4 {
-  position: absolute;
   clip-path: polygon(
     79.3% 44.5%,
     79.3% 46%,
@@ -481,19 +408,9 @@ body {
     71% 46%,
     77.6% 46%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 .blok3-5 {
-  position: absolute;
   clip-path: polygon(
     79.3% 41.1%,
     79.3% 46%,
@@ -505,19 +422,9 @@ body {
     71% 42.4%,
     77.6% 42.4%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 .blok3-6 {
-  position: absolute;
   clip-path: polygon(
     78% 37%,
     78% 40%,
@@ -528,20 +435,10 @@ body {
     71% 38.3%,
     75% 38.3%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 /* Blok 4 */
 .blok4-1 {
-  position: absolute;
   clip-path: polygon(
     63% 51.5%,
     67% 51.5%,
@@ -554,98 +451,32 @@ body {
     60% 60%,
     60% 55%
   );
-  background-color: transparent;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in;
 }
 
 /* Bloks effects */
-.blok1-1:hover,
-.blok1-2:hover,
-.blok1-3:hover,
-.blok1-4:hover,
-.blok1-5:hover,
-.blok1-6:hover,
-.blok2-1:hover,
-.blok2-2:hover,
-.blok2-3:hover,
-.blok2-4:hover,
-.blok2-5:hover,
-.blok3-1:hover,
-.blok3-2:hover,
-.blok3-3:hover,
-.blok3-4:hover,
-.blok3-5:hover,
-.blok3-6:hover {
+.blok-available:hover {
   background-color: #78af4a;
   opacity: 0.6;
 }
 
-.blok4-1:hover {
+.blok-sold:hover {
   background-color: #dc143c;
   opacity: 0.6;
 }
 
-/* .blok1::after {
-  content: "";
-  position: absolute;
-  clip-path: polygon(
-     28% 42%,
-    27.8% 42%,
-    27.8% 38.9%,
-    36% 39%,
-    43% 38%,
-    46% 40%,
-    46% 58%,
-    39.4% 62%,
-    25% 61%,
-    25% 43%
-  );
-  background-color: transparent;
-  top: 50%;
-  right: -501px;
-  transform: translate(-50%, -50%);
-  width: 1250px;
-  height: 723px;
-  transition: 0.3s ease-in;
+/* Bloks info */
+.info-middle1 {
+  border-left: 1px solid rgb(25 26 67 / 20%);
+  border-right: 1px solid rgb(25 26 67 / 20%);
 }
 
-.blok1:hover::after,
-.blok2:hover::after {
-  background-color: #76aa4c;
-  opacity: 0.5;
-  transition: 0.3s ease-out;
+.info-middle2 {
+  border-right: 1px solid rgb(25 26 67 / 20%);
 }
 
-.blok2::after {
-  content: "";
-  position: absolute;
-  clip-path: polygon(
-    49% 39%,
-    50% 37%,
-    65% 37%,
-    65% 52%,
-    60% 52%,
-    54% 52%,
-    49% 52%,
-    49% 51%,
-    49% 48%,
-    49% 41%
-  );
-  background-color: transparent;
-  top: 50%;
-  right: -752px;
-  transform: translate(-50%, -50%);
-  width: 1500px;
-  height: 723px;
-  transition: 0.3s ease-in;
-} */
+.sales-outer-box {
+  padding: 0 1rem;
+}
 /* Footer */
 #footer {
   background-color: #3f4448;

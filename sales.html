@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="mediaquery.css" />
     <title>Olympia Residence | Продажби |</title>
   </head>
-  <body>
+  <body onload="init()">
     <a href="#" class="to-top">
       <i class="fa-solid fa-angle-up"></i>
     </a>
@@ -70,21 +70,26 @@
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle activeBar"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  aria-expanded="true"
                 >
                   Продажби
                 </a>
-                <ul class="dropdown-menu" id="dropdown-Color">
+                <ul
+                  class="dropdown-menu dropdown-customize"
+                  id="dropdown-Color"
+                >
                   <li><a class="dropdown-item" href="#">Сутерен</a></li>
-                  <li><a class="dropdown-item" href="#">Блок I</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Блок I</a>
+                  </li>
                   <li>
                     <a class="dropdown-item" href="#">Блок II</a>
-                    <a class="dropdown-item" href="#">Блок III</a>
                   </li>
+                  <li><a class="dropdown-item" href="#">Блок III</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -103,31 +108,47 @@
               class="MultilanguageBtn"
               name="language"
               id="languageSwitcher"
+              style="appearance: none"
             ></select>
           </div>
         </div>
       </nav>
+      <div class="header-image">
+        <img src="./images/header2.jpg" alt="" />
+      </div>
     </header>
+
     <main>
       <div class="container-fluid sales-content d-grid">
-        <div class="sales-heading">
-          <h3 style="text-align: center; font-size: 40px">Продажби</h3>
+        <div class="sales-heading" style="margin: 0 0 2rem 0">
+          <h3 style="text-align: center; font-size: 43px">Продажби</h3>
+          <span class="sales-heading-underline"></span>
         </div>
         <div class="row sales-content-inner">
           <div class="col-12">
             <div class="sales-text">
-              <p style="text-align: center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                nam itaque unde consectetur distinctio consequatur laboriosam
-                ullam hic vitae labore quae saepe libero natus nesciunt
-                voluptatum ipsam deserunt, dicta quo. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Similique voluptatum nam aut eum
-                totam odit nobis omnis perferendis! Non, dolor nemo quos ipsum
-                molestias error corrupti rerum est velit quis? Lorem ipsum,
-                dolor sit amet consectetur adipisicing elit. Impedit, molestias.
-                Harum sed totam, ea non provident asperiores magnam animi
-                corporis iste nostrum, soluta assumenda ad illum modi quasi
-                nobis quos?
+              <p class="mb-4" style="text-align: center">
+                “Олимпия Ресидънс” ще бъде изграден на обща площ от 5500м2 с
+                богат и изключително впечатляващ ландшафтен дизайн, отличаващ се
+                с множество живописно оформени цветни алеи, зони за релакс в
+                паркова среда, красиви зелени пространста за отдих. Комлексът ще
+                се състои от 79 апартамента, находящи се в четири сгради и ще
+                предлага богат избор от студиа и апартаменти (с една, две , три
+                спални и пентхауси) с фунционални разпределения и съвременна
+                визия, елегантни общи части и 24/7 контролиран достъп за хора и
+                автомобили. В комплекса е предвидено да бъде изграден открит
+                басейн и детски такъв с луксозни шезлонги и чадъри по
+                периферията им. За удобство на всички собственици на територията
+                на комплекса ще има фитнес площадка, детска площадка,
+                барбекю-зона, ресторант с широка тераса с гледка към морето,
+                СПА-център с парна баня, сауна и масажно помещение, рецепция с
+                просторно съвременно фоайе и офис-помещения. За комфорта на
+                всички бъдещи собственици е предвиден подземен паркинг с общо 43
+                броя паркоместа за автомобили.
+              </p>
+              <p class="sales-text-info" style="text-align: center">
+                Разпределението на апартаментите във всяка от сградите е както
+                следва:
               </p>
             </div>
           </div>
@@ -137,32 +158,68 @@
           >
             <div class="sales-image">
               <img src="./images/header.jpg" alt="" />
-              <a href="#"><path class="blok1-1"></path></a>
-              <a href="#"><path class="blok1-2"></path></a>
-              <a href="#"><path class="blok1-3"></path></a>
-              <a href="#"><path class="blok1-4"></path></a>
-              <a href="#"><path class="blok1-5"></path></a>
-              <a href="#"><path class="blok1-6"></path></a>
-              <a href="#"><path class="blok2-1"></path></a>
-              <a href="#"><path class="blok2-2"></path></a>
-              <a href="#"><path class="blok2-3"></path></a>
-              <a href="#"><path class="blok2-4"></path></a>
-              <a href="#"><path class="blok2-5"></path></a>
-              <a href="#"><path class="blok3-1"></path></a>
-              <a href="#"><path class="blok3-2"></path></a>
-              <a href="#"><path class="blok3-3"></path></a>
-              <a href="#"><path class="blok3-4"></path></a>
-              <a href="#"><path class="blok3-5"></path></a>
-              <a href="#"><path class="blok3-6"></path></a>
-              <a href="#"><path class="blok4-1"></path></a>
+              <a href="#"
+                ><path class="blok1-1 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok1-2 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok1-3 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok1-4 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok1-5 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok1-6 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok2-1 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok2-2 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok2-3 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok2-4 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok2-5 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok3-1 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok3-2 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok3-3 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok3-4 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok3-5 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok3-6 blok-settings blok-available"></path
+              ></a>
+              <a href="#"
+                ><path class="blok4-1 blok-settings blok-sold"></path
+              ></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="container-fluid sales-info">
-        <div class="row">
-          <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="sales-suteren">
+      <div class="container-fluid sales-info info-left">
+        <div class="row" style="justify-content: center; margin: 0 11rem">
+          <div class="col-lg-3 col-md-4 col-sm-12 sales-outer-box">
+            <div class="sales-info-box">
               <div class="sales-info-headings">
                 <h5>Сутерен</h5>
               </div>
@@ -176,8 +233,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="sales-blok1">
+          <div class="col-lg-3 col-md-4 col-sm-12 info-middle1 sales-outer-box">
+            <div class="sales-info-box">
               <div class="sales-info-headings"><h5>Блок I</h5></div>
               <div class="sales-info-text">
                 <p>
@@ -189,8 +246,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="sales-blok2">
+          <div class="col-lg-3 col-md-4 col-sm-12 info-middle2 sales-outer-box">
+            <div class="sales-info-box">
               <div class="sales-info-headings"><h5>Блок II</h5></div>
               <div class="sales-info-text">
                 <p>
@@ -202,8 +259,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="sales-blok3">
+          <div class="col-lg-3 col-md-4 col-sm-12 info-right sales-outer-box">
+            <div class="sales-info-box">
               <div class="sales-info-headings"><h5>Блок III</h5></div>
               <div class="sales-info-text">
                 <p>
@@ -221,7 +278,7 @@
     <footer id="footer">
       <div class="row footer-inner d-grid">
         <div class="col footerBox">
-          <h6 class="pb-4 footer-headers">Нашата локация</h6>
+          <h6 class="mb-4 footer-headers">Нашата локация</h6>
           <p class="footer-content">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
             architecto accusamus facere, delectus, veritatis voluptates quia
@@ -259,7 +316,7 @@
           </div>
         </div>
         <div class="col footerBox">
-          <h6 class="pb-4 footer-headers">Контакти на брокера</h6>
+          <h6 class="mb-4 footer-headers">Контакти на брокера</h6>
           <div class="row footer-agentInfo d-grid">
             <div class="col footer-imageBox">
               <img src="./images/istockphoto-1186979596-612x612.jpg" alt="" />
@@ -290,7 +347,7 @@
           </div>
         </div>
         <div class="col footerBox">
-          <h6 class="pb-5 footer-headers">Социални мрежи</h6>
+          <h6 class="mb-5 footer-headers">Социални мрежи</h6>
           <div class="row footer-socialMediaFB d-grid pb-3">
             <div class="col">
               <i class="fa-brands fa-facebook-f"></i>

@@ -20,7 +20,6 @@ body {
   right: 32px;
   width: 50px;
   height: 50px;
-  /* border-radius: 50%;  */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,10 +106,103 @@ header {
   filter: brightness(0.8);
 }
 
+/* Navbar */
+
+/* .navBgColor {
+  background-color: #2a2d30;
+  color: #eeeeee;
+  opacity: 0.9;
+  transition: 0.4s ease-in-out;
+}
+
+.navbar-nav li {
+  margin: 0 2.5rem;
+}
+
+.dropdown:hover > ul {
+  display: block;
+}
+
+.nav-item a {
+  position: relative;
+}
+
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  top: 5;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  background-color: #cabe9f;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-item a:hover::before {
+  width: 30%;
+}
+
+.navLogo img {
+  width: auto;
+  height: 60px;
+} */
+
+/* Navbar Dropdown */
+/* .dropdown-item:hover {
+  background-color: transparent;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  border: none;
+  border-radius: 0%;
+  background-color: rgba(63, 68, 72, 0.8);
+  border: 16px solid transparent;
+}
+
+.dropdown-menu[data-bs-popper] {
+  top: 95%;
+  left: 0;
+  margin-top: var(--bs-dropdown-spacer);
+}
+
+.dropdownMenu-colorchange {
+  background-color: #2a2d30;
+  color: #eeeeee;
+  transition: 0.4s ease-in-out;
+}
+
+.dropdown-customize li {
+  margin: 0 1rem;
+} */
+
+/* Navbar Language Button */
+.MultilanguageBtn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: "Lora", serif;
+  font-size: 15px;
+  color: #fefefe;
+  border-radius: 3px;
+  appearance: none;
+}
+
+.MultilanguageBtn:focus-visible {
+  outline: none;
+}
+
+.MultilanguageBtn option {
+  background-color: #2a2d30;
+}
+
 .navbar {
   background-color: transparent;
   z-index: 1000;
-  /* display: grid; */
   width: 100%;
 }
 
@@ -154,7 +246,7 @@ header {
   transition: 0.4s ease-in-out;
 }
 
-.activeBar {
+/* .activeBar {
   position: relative;
 }
 
@@ -168,7 +260,7 @@ header {
   height: 2px;
   background-color: #cabe9f;
   transition: 0.3s ease-in-out;
-}
+} */
 
 /* Navbar dropdown */
 .navbar-collapse ul ul {
@@ -206,15 +298,25 @@ header {
   transform: translate(-10px, -25%);
 }
 
+/* Dropdown new */
+.dropdown-menu {
+  border: none;
+  border-radius: 0%;
+  background-color: rgba(63, 68, 72, 0.5);
+  border: 16px solid transparent;
+}
+
 .dropdownMenu-colorchange {
-  background-color: #2a2d30;
+  background-color: #2a2d30 !important;
   color: #eeeeee;
-  /* opacity: 0.9; */
   transition: 0.4s ease-in-out;
 }
 
+.dropdown-customize li {
+  margin: 0 1rem;
+}
 /* Navbar Language Button */
-.MultilanguageBtn {
+/* .MultilanguageBtn {
   border-color: none;
   outline: none;
   background-color: rgba(59, 59, 59, 0.212);
@@ -226,7 +328,7 @@ header {
 
 .MultilanguageBtn:focus-visible {
   outline: none;
-}
+} */
 
 /* About The Builiding */
 .aboutBuildingBox1 {
@@ -696,46 +798,66 @@ header {
 /* Zone dotes end */
 /* complexEntertainmentParts End */
 
-/* News */
-.news {
+/* Investitor Info */
+.investitor {
   padding: 2rem 0 10rem 0;
   width: 100%;
   height: 100%;
   background-color: #f2f2f2;
 }
 
-.news-content {
-  transition: 0.2s ease-in;
-  color: black;
-  backface-visibility: hidden;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.news-content:hover {
-  color: white;
-  background-color: #3f4448;
-  transform: scale(1.05);
-}
-
-.news-content {
-  width: 100%;
-  height: 100%;
-  padding: 3rem 2.5rem;
-}
-
-.news-outerBox {
-  grid-template-columns: 340px 340px 340px;
-  justify-content: center;
-}
-
-.newsHeading {
+.investitorHeading {
   display: grid;
   grid-template-columns: 555px 555px;
   justify-content: center;
   padding: 3.5rem 1.2rem;
 }
 
-/* News End */
+/* .investitor-images {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.investitor-images {
+  width: 100%;
+  height: 100%;
+} */
+
+.investitor-images-settings {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  box-shadow: 8px 8px 16px #b5b5b5, -8px -8px 16px #ffffff;
+}
+
+.investitor-images1 {
+  background-image: url(./images/investitor-aurelia.jpeg);
+  position: relative;
+}
+
+.investitor-images2 {
+  background-image: url(./images/investitor-beach.jpg);
+  position: relative;
+}
+
+.investitor-images3 {
+  background-image: url(./images/header.jpg);
+  position: relative;
+}
+
+.investitor-box-images {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  justify-content: center;
+  gap: 10rem;
+}
+
+/* Investitor End */
 /* Footer */
 #footer {
   background-color: #3f4448;
@@ -817,4 +939,3 @@ header {
 }
 
 /* Footer End */
-/* End */

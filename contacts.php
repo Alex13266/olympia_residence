@@ -37,7 +37,7 @@
     <script type="module" src="loadTranslations.js"></script>
     <link rel="stylesheet" href="typography.css" />
     <link rel="stylesheet" href="contacts.css" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <link rel="stylesheet" href="mediaquery.css" />
     <title>Olympia Residence | Продажби |</title>
   </head>
@@ -45,11 +45,11 @@
     <a href="#" class="to-top">
       <i class="fa-solid fa-angle-up"></i>
     </a>
-    <header class="contacts-navbar">
-      <nav id="navbarBg" class="navbar navbar-contacts navbar-expand-lg fixed-top p-0">
-        <div class="container-fluid navbar-inner">
-          <div class="navLogo p-2 ps-4">
-            <a href="./index.html"
+    <header class="sales-header">
+      <nav id="navbarBg" class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <div class="navLogo ps-4">
+            <a href="index.html"
               ><img src="./images/siteLogo-white.png" alt=""
             /></a>
           </div>
@@ -57,8 +57,8 @@
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -66,45 +66,41 @@
           </button>
           <div
             class="collapse navbar-collapse justify-content-center"
-            id="navbarNav"
+            id="navbarNavDropdown"
           >
             <ul class="navbar-nav">
-            <li class="nav-item dropdownMenu-sales">
+              <li class="nav-item dropdown">
                 <a
-                  data-i18n="Menu.Sales"
-                  class="nav-link dropdownMenu-salesLink"
-                  href="#"
-                ></a>
-                <ul class="dropdownMenu" id="dropdown-Color">
-                  <li><a href="#">Сутерен</a></li>
-                  <li><a href="#">Блок1</a></li>
-                  <li><a href="#">Блок2</a></li>
-                  <li><a href="#">Блок3</a></li>
+                  class="nav-link dropdown-toggle"
+                  href="sales.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Продажби
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-customize"
+                  id="dropdown-Color"
+                >
+                  <li><a class="dropdown-item" href="#">Сутерен</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Блок I</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Блок II</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Блок III</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a
-                  data-i18n="Menu.Aboutproject"
-                  id="navBlack"
-                  class="nav-link"
-                  href="#"
-                ></a>
+                <a class="nav-link" href="#">За проекта</a>
               </li>
               <li class="nav-item">
-                <a
-                  data-i18n="Menu.Gallery"
-                  id="navBlack"
-                  class="nav-link"
-                  href="#"
-                ></a>
+                <a class="nav-link" href="#">Галерия</a>
               </li>
               <li class="nav-item">
-                <a
-                  data-i18n="Menu.Contacts"
-                  id="navBlack"
-                  class="nav-link activeBar"
-                  href="#"
-                ></a>
+                <a class="nav-link" href="contacts.php">Контакти</a>
               </li>
             </ul>
           </div>
@@ -113,6 +109,7 @@
               class="MultilanguageBtn"
               name="language"
               id="languageSwitcher"
+              style="appearance: none"
             ></select>
           </div>
         </div>

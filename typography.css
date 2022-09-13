@@ -109,21 +109,14 @@ h3 {
   font-size: 16px;
 } */
 
-.news-content p {
-  font-family: "Lora", serif;
-  font-size: 14px;
-}
-
-.news-content h5 {
-  font-family: "Lora", serif;
-  font-size: 18px;
-}
+/* Investitor info */
 
 .footer-headers {
   color: #cabe9f;
   font-family: "Lora", serif;
   letter-spacing: 0.2px;
   font-weight: 500;
+  font-size: 17px;
 }
 
 .footer-content {
@@ -192,11 +185,11 @@ h3 {
   text-align: center;
   color: #b8a87f;
   padding-bottom: 3rem;
-  font-family: "Lili", serif;
+  font-family: "Lora", serif;
 }
 
 .contact-submit {
-  font-family: "Lili", serif;
+  font-family: "Lora", serif;
   font-size: 23px;
   letter-spacing: 0.3px;
 }
@@ -236,14 +229,14 @@ h3 {
 .servicesHeading h3,
 .premisesHeading h3,
 .complexEntertaimentHeading h3,
-.newsHeading h3 {
+.investitorHeading h3 {
   position: relative;
 }
 
 .servicesHeading h3:before,
 .premisesHeading h3:before,
 .complexEntertaimentHeading h3:before,
-.newsHeading h3:before {
+.investitorHeading h3:before {
   position: absolute;
   content: "\f141";
   font: var(--fa-font-solid);
@@ -251,4 +244,46 @@ h3 {
   left: -4%;
   transform: translate(-50%, -50%);
   font-size: 23px;
+}
+
+/* SALES */
+.sales-heading-underline {
+  display: block;
+  width: 6%;
+  margin: auto;
+  border-bottom: 1px solid #cabe9f;
+}
+
+.sales-text-info {
+  font-size: 18px;
+  font-family: "Merriweather", serif;
+}
+
+.sales-info-headings h5 {
+  font-size: 23px;
+  font-family: "Lora", serif;
+  color: #b8a87f;
+  letter-spacing: 0.2px;
+}
+
+.sales-info-text p {
+  font-family: "Lora", serif;
+  letter-spacing: 0.3px;
+  font-size: 16px;
+}
+
+.sales-text p:nth-child(1) {
+  font-family: "Lora", serif;
+  font-size: 16px;
+}
+
+/* Investitor info */
+.investitor-text p {
+  font-family: "Lora", serif;
+  font-size: 15px;
+}
+
+.investitor-box-images p {
+  font-family: "Lora", serif;
+  font-weight: 500;
 }
