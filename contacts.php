@@ -133,7 +133,7 @@
       </div>
       <div class="container form-top">
         <h2 class="contacts-heading">СВЪРЖЕТЕ СЕ СЕГА!</h2>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center contactForm-inner">
           <div
             class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12"
             style="width: 55%"
