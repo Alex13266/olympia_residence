@@ -1,849 +1,1137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/f3465016f9.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
-      integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script type="module" src="loadTranslations.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaquery.css" />
-    <link rel="stylesheet" href="typography.css" />
-    <link rel="stylesheet" href="./custom-css/animista.css" />
-    <title>Olympia Residence</title>
-  </head>
-  <body>
-    <a href="#" class="to-top">
-      <i class="fa-solid fa-angle-up"></i>
-    </a>
-    <header>
-      <a class="landingBtn slide-bottom-reverse" href="#land"
-        ><i class="fa-solid fa-chevron-down"></i
-      ></a>
-      <nav id="navbarBg" class="navbar navbar-expand-lg fixed-top p-0">
-        <div class="container-fluid navbar-inner">
-          <div class="navLogo p-2 ps-4">
-            <a href="#"><img src="./images/siteLogo-white.png" alt="" /></a>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item dropdownMenu-sales">
-                <a
-                  data-i18n="Menu.Sales"
-                  class="nav-link dropdownMenu-salesLink"
-                  href="sales.html"
-                ></a>
-                <ul
-                  class="dropdownMenu dropdown-menu slide-top"
-                  id="dropdown-Color"
-                >
-                  <li><a href="#">Сутерен</a></li>
-                  <li><a href="#">Блок1</a></li>
-                  <li><a href="#">Блок2</a></li>
-                  <li><a href="#">Блок3</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a data-i18n="Menu.Aboutproject" class="nav-link" href="#"></a>
-              </li>
-              <li class="nav-item">
-                <a data-i18n="Menu.Gallery" class="nav-link" href="#"></a>
-              </li>
-              <li class="nav-item">
-                <a
-                  data-i18n="Menu.Contacts"
-                  class="nav-link"
-                  href="./contacts.php"
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="MultilanguageMenu">
-            <select
-              class="MultilanguageBtn"
-              name="language"
-              id="languageSwitcher"
-            ></select>
-          </div>
-        </div>
-      </nav>
-      <div
-        id="carouselExampleInterval"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img src="./images/header2.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="./images/header.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="./images/header3.jpg" class="d-block w-100" alt="..." />
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="aboutBuilding container" id="land">
-        <div class="row aboutBuilding-inner">
-          <div class="aboutBuildingBox1 d-grid">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://kit.fontawesome.com/f3465016f9.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+            integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script type="module" src="loadTranslations.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mediaquery.css" />
+        <link rel="stylesheet" href="typography.css" />
+        <link rel="stylesheet" href="./custom-css/animista.css" />
+        <title>Olympia Residence</title>
+    </head>
+    <body>
+        <a href="#" class="to-top">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+        <header>
+            <a class="landingBtn slide-bottom-reverse" href="#land"
+                ><i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <nav id="navbarBg" class="navbar navbar-expand-lg fixed-top p-0">
+                <div class="container-fluid navbar-inner">
+                    <div class="navLogo p-2 ps-4">
+                        <a href="#"
+                            ><img src="./images/siteLogo-white.png" alt=""
+                        /></a>
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse justify-content-center"
+                        id="navbarNav"
+                    >
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdownMenu-sales">
+                                <a
+                                    data-i18n="Menu.Sales"
+                                    class="nav-link dropdownMenu-salesLink"
+                                    href="sales.html"
+                                ></a>
+                                <ul
+                                    class="dropdownMenu dropdown-menu slide-top"
+                                    id="dropdown-Color"
+                                >
+                                    <li><a href="#">Сутерен</a></li>
+                                    <li class="dropdownInner-sales">
+                                        <a
+                                            class="dropdownInner-salesLink"
+                                            href="#"
+                                            >Блок1</a
+                                        >
+                                        <ul
+                                            class="innerDropdown-Color dropdownInner-customize slide-right newDropdown-Color"
+                                        >
+                                            <li>
+                                                <a href="#">Апартамент 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 4</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 5</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 6</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 7</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 8</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 9</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 10</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdownInner-sales2">
+                                        <a
+                                            class="dropdownInner-salesLink2"
+                                            href="#"
+                                            >Блок2</a
+                                        >
+                                        <ul
+                                            class="dropdownInner-customize slide-right newDropdown-Color"
+                                        >
+                                            <li>
+                                                <a href="#">Апартамент 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 4</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 5</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 6</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 7</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 8</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 9</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Апартамент 10</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Блок3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    data-i18n="Menu.Aboutproject"
+                                    class="nav-link"
+                                    href="#"
+                                ></a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    data-i18n="Menu.Gallery"
+                                    class="nav-link"
+                                    href="#"
+                                ></a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    data-i18n="Menu.Contacts"
+                                    class="nav-link"
+                                    href="./contacts.php"
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="MultilanguageMenu">
+                        <select
+                            class="MultilanguageBtn"
+                            name="language"
+                            id="languageSwitcher"
+                        ></select>
+                    </div>
+                </div>
+            </nav>
             <div
-              class="col d-grid"
-              data-aos="fade-right"
-              data-aos-delay="160"
-              data-aos-duration="1000"
+                id="carouselExampleInterval"
+                class="carousel slide"
+                data-bs-ride="carousel"
             >
-              <div class="buildingContent d-grid justify-content-space-between">
-                <h3
-                  data-i18n="AboutBuilding.Heading"
-                  class="ps-3 mb-3 aboutbuilding-heading"
-                >
-                  Olympia Residence
-                </h3>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img
+                            src="./images/header2.jpg"
+                            class="d-block w-100"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img
+                            src="./images/header.jpg"
+                            class="d-block w-100"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img
+                            src="./images/header3.jpg"
+                            class="d-block w-100"
+                            alt="..."
+                        />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="aboutBuilding container" id="land">
+                <div class="row aboutBuilding-inner">
+                    <div class="aboutBuildingBox1 d-grid">
+                        <div
+                            class="col d-grid"
+                            data-aos="fade-right"
+                            data-aos-delay="160"
+                            data-aos-duration="1000"
+                        >
+                            <div
+                                class="buildingContent d-grid justify-content-space-between"
+                            >
+                                <h3
+                                    data-i18n="AboutBuilding.Heading"
+                                    class="ps-3 mb-3 aboutbuilding-heading"
+                                >
+                                    Olympia Residence
+                                </h3>
+                                <div
+                                    class="aboutBuildingContent1 d-grid justify-content-center"
+                                >
+                                    <p data-i18n="AboutBuilding.Content1">
+                                        Олимпия Ресидънс е луксозен морски
+                                        комплекс , ситуиран на първа морска
+                                        линия пред един от най-красивите и чисти
+                                        плажове на българското Черноморие – плаж
+                                        Олимпийски надежди в Равда, само на 2 км
+                                        от стария град на един от
+                                        най-предпочитаните ни курортни градове -
+                                        Несебър и на 1 км от Несебър Aquapark.
+                                    </p>
+                                </div>
+                                <div class="aboutBuildingContent2 d-grid">
+                                    <p data-i18n="AboutBuilding.Content2">
+                                        Комплексът е проектиран в модернистичен
+                                        и елегантен архитектурен стил и
+                                        впечатлява със своята изтънченост и
+                                        фронтална гледка с уникална морска
+                                        панорама, прекрасно съчетаващ в себе си
+                                        лукс, удобства и комфорт на самият
+                                        морски бряг, които са предпоставка за
+                                        пълноценен отдих и незабравими емоции.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col d-grid"
+                            data-aos="zoom-in"
+                            data-aos-delay="300"
+                            data-aos-duration="1200"
+                        >
+                            <div class="aboutBuildingImg">
+                                <img src="./images/AbtBld.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row buildingInfo pt-5">
+                        <div
+                            class="col d-grid justify-content-center buildingInfo-inner1"
+                            data-aos="fade-down"
+                            data-aos-delay="200"
+                            data-aos-duration="1000"
+                        >
+                            <h4
+                                style="text-align: center; margin: 0"
+                                class="count-digit"
+                            >
+                                5500
+                            </h4>
+                            <div class="buildingInfoContent">
+                                <p data-i18n="Building.Area">Обща площ</p>
+                            </div>
+                        </div>
+                        <div
+                            class="col d-grid justify-content-center buildingInfo-inner2"
+                            data-aos="fade-down"
+                            data-aos-delay="300"
+                            data-aos-duration="1000"
+                        >
+                            <h4
+                                style="text-align: center; margin: 0"
+                                class="count-digit"
+                            >
+                                79
+                            </h4>
+                            <div class="buildingInfoContent">
+                                <p data-i18n="Building.Parking">Парко места</p>
+                            </div>
+                        </div>
+                        <div
+                            class="col d-grid justify-content-center buildingInfo-inner3"
+                            data-aos="fade-down"
+                            data-aos-delay="400"
+                            data-aos-duration="1000"
+                        >
+                            <h4
+                                style="text-align: center; margin: 0"
+                                class="count-digit"
+                            >
+                                79
+                            </h4>
+                            <div class="buildingInfoContent">
+                                <p data-i18n="Building.Apartments">
+                                    Апартамента
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="col d-grid justify-content-center buildingInfo-inner4"
+                            data-aos="fade-down"
+                            data-aos-delay="500"
+                            data-aos-duration="1000"
+                        >
+                            <h4
+                                style="text-align: center; margin: 0"
+                                class="count-digit"
+                            >
+                                185
+                            </h4>
+                            <div class="buildingInfoContent">
+                                <p data-i18n="Building.Rooms">Стаи</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Our Services/ Нашите услуги -->
+            <div class="services container-fluid">
                 <div
-                  class="aboutBuildingContent1 d-grid justify-content-center"
+                    class="servicesHeading"
+                    data-aos="fade-right"
+                    data-aos-delay="160"
+                    data-aos-duration="1000"
                 >
-                  <p data-i18n="AboutBuilding.Content1">
-                    Олимпия Ресидънс е луксозен морски комплекс , ситуиран на
-                    първа морска линия пред един от най-красивите и чисти
-                    плажове на българското Черноморие – плаж Олимпийски надежди
-                    в Равда, само на 2 км от стария град на един от
-                    най-предпочитаните ни курортни градове - Несебър и на 1 км
-                    от Несебър Aquapark.
-                  </p>
+                    <h3>Предимства</h3>
                 </div>
-                <div class="aboutBuildingContent2 d-grid">
-                  <p data-i18n="AboutBuilding.Content2">
-                    Комплексът е проектиран в модернистичен и елегантен
-                    архитектурен стил и впечатлява със своята изтънченост и
-                    фронтална гледка с уникална морска панорама, прекрасно
-                    съчетаващ в себе си лукс, удобства и комфорт на самият
-                    морски бряг, които са предпоставка за пълноценен отдих и
-                    незабравими емоции.
-                  </p>
+                <div class="row services-inner1">
+                    <div class="col">
+                        <div class="servicesContent-box d-grid">
+                            <div
+                                class="services-icon d-grid justify-content-center"
+                            >
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div
+                                class="services-text justify-content-center d-grid"
+                            >
+                                <p>Топ локация – на самия морски бряг</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="servicesContent-box d-grid">
+                            <div
+                                class="services-icon d-grid justify-content-center"
+                            >
+                                <i
+                                    class="fa-sharp fa-solid fa-screwdriver-wrench"
+                                ></i>
+                            </div>
+                            <div
+                                class="services-text justify-content-center d-grid"
+                            >
+                                <p>
+                                    Целогодишно управление и поддръжка на
+                                    комплекса
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="servicesContent-box d-grid">
+                            <div
+                                class="services-icon d-grid justify-content-center"
+                            >
+                                <i
+                                    class="fa-sharp fa-solid fa-square-parking"
+                                ></i>
+                            </div>
+                            <div
+                                class="services-text justify-content-center d-grid"
+                            >
+                                <p>Подземен гараж с 43 броя паркоместа</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="servicesContent-box d-grid">
+                            <div
+                                class="services-icon d-grid justify-content-center"
+                            >
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div
+                                class="services-text justify-content-center d-grid"
+                            >
+                                <p>Охраняема територия с контролиран достъп</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="servicesContent-box d-grid">
+                            <div
+                                class="services-icon d-grid justify-content-center"
+                            >
+                                <i class="fa-solid fa-compass-drafting"></i>
+                            </div>
+                            <div
+                                class="services-text justify-content-center d-grid"
+                            >
+                                <p>
+                                    Висок клас строителство с безкомпромисно
+                                    качествени материали
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="servicesContent-box d-grid">
+                            <div
+                                class="services-icon d-grid justify-content-center"
+                            >
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <div
+                                class="services-text justify-content-center d-grid"
+                            >
+                                <p>
+                                    Богат избор от апартаменти с уникална морска
+                                    гледка
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div
-              class="col d-grid"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-              data-aos-duration="1200"
-            >
-              <div class="aboutBuildingImg">
-                <img src="./images/AbtBld.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="row buildingInfo pt-5">
-            <div
-              class="col d-grid justify-content-center buildingInfo-inner1"
-              data-aos="fade-down"
-              data-aos-delay="200"
-              data-aos-duration="1000"
-            >
-              <h4 style="text-align: center; margin: 0" class="count-digit">
-                5500
-              </h4>
-              <div class="buildingInfoContent">
-                <p data-i18n="Building.Area">Обща площ</p>
-              </div>
-            </div>
-            <div
-              class="col d-grid justify-content-center buildingInfo-inner2"
-              data-aos="fade-down"
-              data-aos-delay="300"
-              data-aos-duration="1000"
-            >
-              <h4 style="text-align: center; margin: 0" class="count-digit">
-                79
-              </h4>
-              <div class="buildingInfoContent">
-                <p data-i18n="Building.Parking">Парко места</p>
-              </div>
-            </div>
-            <div
-              class="col d-grid justify-content-center buildingInfo-inner3"
-              data-aos="fade-down"
-              data-aos-delay="400"
-              data-aos-duration="1000"
-            >
-              <h4 style="text-align: center; margin: 0" class="count-digit">
-                79
-              </h4>
-              <div class="buildingInfoContent">
-                <p data-i18n="Building.Apartments">Апартамента</p>
-              </div>
-            </div>
-            <div
-              class="col d-grid justify-content-center buildingInfo-inner4"
-              data-aos="fade-down"
-              data-aos-delay="500"
-              data-aos-duration="1000"
-            >
-              <h4 style="text-align: center; margin: 0" class="count-digit">
-                185
-              </h4>
-              <div class="buildingInfoContent">
-                <p data-i18n="Building.Rooms">Стаи</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Our Services/ Нашите услуги -->
-      <div class="services container-fluid">
-        <div
-          class="servicesHeading"
-          data-aos="fade-right"
-          data-aos-delay="160"
-          data-aos-duration="1000"
-        >
-          <h3>Предимства</h3>
-        </div>
-        <div class="row services-inner1">
-          <div class="col">
-            <div class="servicesContent-box d-grid">
-              <div class="services-icon d-grid justify-content-center">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-              <div class="services-text justify-content-center d-grid">
-                <p>Топ локация – на самия морски бряг</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="servicesContent-box d-grid">
-              <div class="services-icon d-grid justify-content-center">
-                <i class="fa-sharp fa-solid fa-screwdriver-wrench"></i>
-              </div>
-              <div class="services-text justify-content-center d-grid">
-                <p>Целогодишно управление и поддръжка на комплекса</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="servicesContent-box d-grid">
-              <div class="services-icon d-grid justify-content-center">
-                <i class="fa-sharp fa-solid fa-square-parking"></i>
-              </div>
-              <div class="services-text justify-content-center d-grid">
-                <p>Подземен гараж с 43 броя паркоместа</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="servicesContent-box d-grid">
-              <div class="services-icon d-grid justify-content-center">
-                <i class="fa-solid fa-shield-halved"></i>
-              </div>
-              <div class="services-text justify-content-center d-grid">
-                <p>Охраняема територия с контролиран достъп</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="servicesContent-box d-grid">
-              <div class="services-icon d-grid justify-content-center">
-                <i class="fa-solid fa-compass-drafting"></i>
-              </div>
-              <div class="services-text justify-content-center d-grid">
-                <p>
-                  Висок клас строителство с безкомпромисно качествени материали
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="servicesContent-box d-grid">
-              <div class="services-icon d-grid justify-content-center">
-                <i class="fa-solid fa-eye"></i>
-              </div>
-              <div class="services-text justify-content-center d-grid">
-                <p>Богат избор от апартаменти с уникална морска гледка</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
+            <!-- End -->
 
-      <!-- Premises size -->
-      <div
-        class="premisesHeading"
-        data-aos="fade-right"
-        data-aos-delay="160"
-        data-aos-duration="1000"
-      >
-        <h3>Апартаментни планове</h3>
-      </div>
-      <div class="premisesSize d-grid justify-content-center">
-        <div
-          class="premisesTabs-outer"
-          data-aos="fade-up"
-          data-aos-delay="220"
-          data-aos-duration="1000"
-        >
-          <ul class="premisesTabs">
-            <li data-tab-target="#studio" class="active premisesTab">СТУДИО</li>
-            <li data-tab-target="#doubleRoom" class="premisesTab">
-              ДВУСТАЕН АПАРТАМЕНТ
-            </li>
-            <li data-tab-target="#threeRoom" class="premisesTab">
-              ТРИСТЕАН АПАРТАМЕНТ
-            </li>
-            <li data-tab-target="#penthouse" class="premisesTab">ПЕНТХАУС</li>
-          </ul>
-        </div>
+            <!-- Premises size -->
+            <div
+                class="premisesHeading"
+                data-aos="fade-right"
+                data-aos-delay="160"
+                data-aos-duration="1000"
+            >
+                <h3>Апартаментни планове</h3>
+            </div>
+            <div class="premisesSize d-grid justify-content-center">
+                <div
+                    class="premisesTabs-outer"
+                    data-aos="fade-up"
+                    data-aos-delay="220"
+                    data-aos-duration="1000"
+                >
+                    <ul class="premisesTabs">
+                        <li
+                            data-tab-target="#studio"
+                            class="active premisesTab"
+                        >
+                            СТУДИО
+                        </li>
+                        <li data-tab-target="#doubleRoom" class="premisesTab">
+                            ДВУСТАЕН АПАРТАМЕНТ
+                        </li>
+                        <li data-tab-target="#threeRoom" class="premisesTab">
+                            ТРИСТЕАН АПАРТАМЕНТ
+                        </li>
+                        <li data-tab-target="#penthouse" class="premisesTab">
+                            ПЕНТХАУС
+                        </li>
+                    </ul>
+                </div>
 
-        <div
-          class="premisesTab d-grid"
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="1000"
-        >
-          <div id="studio" data-tab-content class="active">
-            <div class="premisesBox-inner">
-              <div class="premisesBox1">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Architecto quis ratione unde ea. Ratione eius placeat nesciunt
-                  omnis blanditiis ipsum deleniti facere, earum expedita fuga
-                  labore libero obcaecati officia voluptas.
-                </p>
-                <div class="premisesInfo">
-                  <div class="premisesRooms">
-                    <p style="color: #9ea0a6">Брой стаи</p>
-                    <p>1</p>
-                  </div>
-                  <div class="premisesTotalArea">
-                    <p style="color: #9ea0a6">Квадратура</p>
-                    <p>46-62/m2</p>
-                  </div>
-                  <div class="premisesParking">
-                    <p style="color: #9ea0a6">Парко място</p>
-                    <a class="premisesParkingLink" href="#">Виж тук</a>
-                  </div>
-                  <div class="premisesPrices">
-                    <p style="color: #9ea0a6">Цена от</p>
-                    <p>50 864 €</p>
-                  </div>
+                <div
+                    class="premisesTab d-grid"
+                    data-aos="fade-up"
+                    data-aos-delay="330"
+                    data-aos-duration="1000"
+                >
+                    <div id="studio" data-tab-content class="active">
+                        <div class="premisesBox-inner">
+                            <div class="premisesBox1">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Architecto quis ratione
+                                    unde ea. Ratione eius placeat nesciunt omnis
+                                    blanditiis ipsum deleniti facere, earum
+                                    expedita fuga labore libero obcaecati
+                                    officia voluptas.
+                                </p>
+                                <div class="premisesInfo">
+                                    <div class="premisesRooms">
+                                        <p style="color: #9ea0a6">Брой стаи</p>
+                                        <p>1</p>
+                                    </div>
+                                    <div class="premisesTotalArea">
+                                        <p style="color: #9ea0a6">Квадратура</p>
+                                        <p>46-62/m2</p>
+                                    </div>
+                                    <div class="premisesParking">
+                                        <p style="color: #9ea0a6">
+                                            Парко място
+                                        </p>
+                                        <a class="premisesParkingLink" href="#"
+                                            >Виж тук</a
+                                        >
+                                    </div>
+                                    <div class="premisesPrices">
+                                        <p style="color: #9ea0a6">Цена от</p>
+                                        <p>50 864 €</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="premisesBox2">
+                                <img
+                                    src="./images/apartmentPlans/01-Studio.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="doubleRoom" data-tab-content>
+                        <div class="premisesBox-inner">
+                            <div class="premisesBox1">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Architecto quis ratione
+                                    unde ea. Ratione eius placeat nesciunt omnis
+                                    blanditiis ipsum deleniti facere, earum
+                                    expedita fuga labore libero obcaecati
+                                    officia voluptas.
+                                </p>
+                                <div class="premisesInfo">
+                                    <div class="premisesRooms">
+                                        <p style="color: #9ea0a6">Брой стаи</p>
+                                        <p>2</p>
+                                    </div>
+                                    <div class="premisesTotalArea">
+                                        <p style="color: #9ea0a6">Квадратура</p>
+                                        <p>60-91/m2</p>
+                                    </div>
+                                    <div class="premisesParking">
+                                        <p style="color: #9ea0a6">
+                                            Парко място
+                                        </p>
+                                        <a class="premisesParkingLink" href="#"
+                                            >Виж тук</a
+                                        >
+                                    </div>
+                                    <div class="premisesPrices">
+                                        <p style="color: #9ea0a6">Цена от</p>
+                                        <p>69 300 €</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="premisesBox2">
+                                <img
+                                    src="./images/apartmentPlans/02-dvustaen.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="threeRoom" data-tab-content>
+                        <div class="premisesBox-inner">
+                            <div class="premisesBox1">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Architecto quis ratione
+                                    unde ea. Ratione eius placeat nesciunt omnis
+                                    blanditiis ipsum deleniti facere, earum
+                                    expedita fuga labore libero obcaecati
+                                    officia voluptas.
+                                </p>
+                                <div class="premisesInfo">
+                                    <div class="premisesRooms">
+                                        <p style="color: #9ea0a6">Брой стаи</p>
+                                        <p>3</p>
+                                    </div>
+                                    <div class="premisesTotalArea">
+                                        <p style="color: #9ea0a6">Квадратура</p>
+                                        <p>99-212/m2</p>
+                                    </div>
+                                    <div class="premisesParking">
+                                        <p style="color: #9ea0a6">
+                                            Парко място
+                                        </p>
+                                        <a class="premisesParkingLink" href="#"
+                                            >Виж тук</a
+                                        >
+                                    </div>
+                                    <div class="premisesPrices">
+                                        <p style="color: #9ea0a6">Цена от</p>
+                                        <p>123 837 €</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="premisesBox2">
+                                <img
+                                    src="./images/apartmentPlans/03-tristaen.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="penthouse" data-tab-content>
+                        <div class="premisesBox-inner">
+                            <div class="premisesBox1">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Architecto quis ratione
+                                    unde ea. Ratione eius placeat nesciunt omnis
+                                    blanditiis ipsum deleniti facere, earum
+                                    expedita fuga labore libero obcaecati
+                                    officia voluptas.
+                                </p>
+                                <div class="premisesInfo">
+                                    <div class="premisesRooms">
+                                        <p style="color: #9ea0a6">Брой стаи</p>
+                                        <p>4</p>
+                                    </div>
+                                    <div class="premisesTotalArea">
+                                        <p style="color: #9ea0a6">Квадратура</p>
+                                        <p>112-173/m2</p>
+                                    </div>
+                                    <div class="premisesParking">
+                                        <p style="color: #9ea0a6">
+                                            Парко място
+                                        </p>
+                                        <a class="premisesParkingLink" href="#"
+                                            >Виж тук</a
+                                        >
+                                    </div>
+                                    <div class="premisesPrices">
+                                        <p style="color: #9ea0a6">Цена</p>
+                                        <p>202 950 €</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="premisesBox2">
+                                <img
+                                    src="./images/apartmentPlans/04-penthouse.PNG"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="premisesBox2">
-                <img src="./images/apartmentPlans/01-Studio.png" alt="" />
-              </div>
             </div>
-          </div>
-          <div id="doubleRoom" data-tab-content>
-            <div class="premisesBox-inner">
-              <div class="premisesBox1">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Architecto quis ratione unde ea. Ratione eius placeat nesciunt
-                  omnis blanditiis ipsum deleniti facere, earum expedita fuga
-                  labore libero obcaecati officia voluptas.
-                </p>
-                <div class="premisesInfo">
-                  <div class="premisesRooms">
-                    <p style="color: #9ea0a6">Брой стаи</p>
-                    <p>2</p>
-                  </div>
-                  <div class="premisesTotalArea">
-                    <p style="color: #9ea0a6">Квадратура</p>
-                    <p>60-91/m2</p>
-                  </div>
-                  <div class="premisesParking">
-                    <p style="color: #9ea0a6">Парко място</p>
-                    <a class="premisesParkingLink" href="#">Виж тук</a>
-                  </div>
-                  <div class="premisesPrices">
-                    <p style="color: #9ea0a6">Цена от</p>
-                    <p>69 300 €</p>
-                  </div>
+            <!-- End -->
+            <!-- About Complex Entertaiment -->
+            <div class="complexEntertainment container-fluid">
+                <div
+                    class="complexEntertaimentHeading"
+                    data-aos="fade-right"
+                    data-aos-delay="160"
+                    data-aos-duration="1000"
+                >
+                    <h3>Услуги в комплекса</h3>
                 </div>
-              </div>
-              <div class="premisesBox2">
-                <img src="./images/apartmentPlans/02-dvustaen.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div id="threeRoom" data-tab-content>
-            <div class="premisesBox-inner">
-              <div class="premisesBox1">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Architecto quis ratione unde ea. Ratione eius placeat nesciunt
-                  omnis blanditiis ipsum deleniti facere, earum expedita fuga
-                  labore libero obcaecati officia voluptas.
-                </p>
-                <div class="premisesInfo">
-                  <div class="premisesRooms">
-                    <p style="color: #9ea0a6">Брой стаи</p>
-                    <p>3</p>
-                  </div>
-                  <div class="premisesTotalArea">
-                    <p style="color: #9ea0a6">Квадратура</p>
-                    <p>99-212/m2</p>
-                  </div>
-                  <div class="premisesParking">
-                    <p style="color: #9ea0a6">Парко място</p>
-                    <a class="premisesParkingLink" href="#">Виж тук</a>
-                  </div>
-                  <div class="premisesPrices">
-                    <p style="color: #9ea0a6">Цена от</p>
-                    <p>123 837 €</p>
-                  </div>
+                <div
+                    class="complexEntertainment-inner"
+                    data-aos="fade-up"
+                    data-aos-delay="330"
+                    data-aos-duration="1000"
+                >
+                    <div class="complexEntertainmentAccordion">
+                        <div
+                            id="recepcion"
+                            data-dote-content
+                            class="accordionContent"
+                        >
+                            <div class="accordionHeading">
+                                <h5>Рецепция</h5>
+                            </div>
+                            <div class="accordionText">
+                                <p>
+                                    Общо представително фоайе, предвидено на
+                                    обслужва целия комплекс. Обособени зона за
+                                    релакс, място за тихи игри.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            id="bbq"
+                            data-dote-content
+                            class="accordionContent"
+                        >
+                            <div class="accordionHeading">
+                                <h5>Барбекю</h5>
+                            </div>
+                            <div class="accordionText">
+                                <p>
+                                    На територията на комплекса ще има обособена
+                                    зона с предвиден външен кухненски бокс и
+                                    стилно градинско обзавеждане, където
+                                    собственици и гости на комплекса ще могат да
+                                    се насладят на спокойствие на открито с чаша
+                                    вино в ръка, наслаждавайки се на богатото
+                                    озеленение на комплекса.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            id="restaurant"
+                            data-dote-content
+                            class="accordionContent"
+                        >
+                            <div class="accordionHeading">
+                                <h5>Ресторант</h5>
+                            </div>
+                            <div class="accordionText">
+                                <p>
+                                    Комплексът ще разполага със собствен
+                                    ресторант за собственици и гости, с открита
+                                    тераса и панорамна гледка към морето. В него
+                                    всички ще могат да се насладят на вкусна
+                                    храна под звуците на вълните.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            id="spa"
+                            data-dote-content
+                            class="accordionContent"
+                        >
+                            <div class="accordionHeading">
+                                <h5>Спа център</h5>
+                            </div>
+                            <div class="accordionText">
+                                <p>
+                                    Комплексът ще разполага със свой собствен
+                                    мини спа-център – парна баня, сауна и
+                                    масажно студио. В него всеки един от
+                                    собствениците и гостите на комплекса, ще
+                                    може да се наслади на истинска почивка и да
+                                    забрави за ежедневните си занимания.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            id="insideGames"
+                            data-dote-content
+                            class="accordionContent"
+                        >
+                            <div class="accordionHeading">
+                                <h5>Басейн</h5>
+                            </div>
+                            <div class="accordionText">
+                                <p>
+                                    На територията на комплекса ще има открит
+                                    басейн с размери 23/10м, с обособена детска
+                                    секция. С луксозни шезлонги и чадъри,
+                                    прилежащи външни съблекални с душове и
+                                    санитарни възли.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            id="playground"
+                            data-dote-content
+                            class="accordionContent"
+                        >
+                            <div class="accordionHeading">
+                                <h5>Детска площадка</h5>
+                            </div>
+                            <div class="accordionText">
+                                <p>
+                                    За най-малките, на територията на комплекса
+                                    е предвидена детска площадка със съоръжения,
+                                    със специална ударо-поглъщаща настилка, за
+                                    спокойни родители и щастливи деца.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            id="relaxzone"
+                            data-dote-content
+                            class="accordionContent"
+                        >
+                            <div class="accordionHeading">
+                                <h5>Релакс зона</h5>
+                            </div>
+                            <div class="accordionText">
+                                <p>
+                                    В междусградните пространства ще бъдат
+                                    оформени красиви тревни площи. Общата
+                                    територия ще бъде богато озеленена, с
+                                    изключително впечатляващ ландшафтен дизайн,
+                                    с богато разнообразие от растителни видове.
+                                    Всички дворни пространства ще бъдат
+                                    пешеходно обвързани с декоративни настилки и
+                                    ще разполагат с модернистично градинско
+                                    обзавеждане – пейки, перголи, красиво
+                                    декоративно улично осветление и художествени
+                                    елементи. Всичко необходимо за една спокойна
+                                    почивка в прекрасна атмосфера!
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            id="fitness"
+                            data-dote-content
+                            class="accordionContent"
+                        >
+                            <div class="accordionHeading">
+                                <h5>Фитнес</h5>
+                            </div>
+                            <div class="accordionText">
+                                <p>
+                                    Собствениците и гости на комплекса ще могат
+                                    да се погрижат за фигурите си като се
+                                    възползват от изграден фитнес на открито, на
+                                    територията на комплекса. Фитнесът ще е с
+                                    безплатен достъп и всеки любител на спорта,
+                                    ще може да го посети.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="complexEntertainmentImg">
+                        <img src="./images/aboutComplex2.jpg" alt="" />
+                        <div class="complexEntertainmentParts">
+                            <div
+                                data-dote-target="#recepcion"
+                                class="partsDote1 dote-outer"
+                            >
+                                <i class="fa-solid fa-circle-dot dote1"></i>
+                            </div>
+                            <div
+                                data-dote-target="#bbq"
+                                class="partsDote2 dote-outer"
+                            >
+                                <i class="fa-solid fa-circle-dot dote2"></i>
+                            </div>
+                            <div
+                                data-dote-target="#restaurant"
+                                class="partsDote3 dote-outer"
+                            >
+                                <i class="fa-solid fa-circle-dot dote3"></i>
+                            </div>
+                            <div
+                                data-dote-target="#spa"
+                                class="partsDote4 dote-outer"
+                            >
+                                <i class="fa-solid fa-circle-dot dote4"></i>
+                            </div>
+                            <div
+                                data-dote-target="#insideGames"
+                                class="partsDote5 dote-outer"
+                            >
+                                <i class="fa-solid fa-circle-dot dote5"></i>
+                            </div>
+                            <div
+                                data-dote-target="#playground"
+                                class="partsDote6 dote-outer"
+                            >
+                                <i class="fa-solid fa-circle-dot dote6"></i>
+                            </div>
+                            <div
+                                data-dote-target="#relaxzone"
+                                class="partsDote7 dote-outer"
+                            >
+                                <i class="fa-solid fa-circle-dot dote7"></i>
+                            </div>
+                            <div
+                                data-dote-target="#fitness"
+                                class="partsDote8 dote-outer"
+                            >
+                                <i class="fa-solid fa-circle-dot dote8"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="premisesBox2">
-                <img src="./images/apartmentPlans/03-tristaen.png" alt="" />
-              </div>
             </div>
-          </div>
-          <div id="penthouse" data-tab-content>
-            <div class="premisesBox-inner">
-              <div class="premisesBox1">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Architecto quis ratione unde ea. Ratione eius placeat nesciunt
-                  omnis blanditiis ipsum deleniti facere, earum expedita fuga
-                  labore libero obcaecati officia voluptas.
-                </p>
-                <div class="premisesInfo">
-                  <div class="premisesRooms">
-                    <p style="color: #9ea0a6">Брой стаи</p>
-                    <p>4</p>
-                  </div>
-                  <div class="premisesTotalArea">
-                    <p style="color: #9ea0a6">Квадратура</p>
-                    <p>112-173/m2</p>
-                  </div>
-                  <div class="premisesParking">
-                    <p style="color: #9ea0a6">Парко място</p>
-                    <a class="premisesParkingLink" href="#">Виж тук</a>
-                  </div>
-                  <div class="premisesPrices">
-                    <p style="color: #9ea0a6">Цена</p>
-                    <p>202 950 €</p>
-                  </div>
+            <!-- Investitor info -->
+            <div class="Investitor container-fluid" style="margin: 0 0 5rem 0">
+                <div
+                    class="investitorHeading"
+                    data-aos="fade-right"
+                    data-aos-delay="160"
+                    data-aos-duration="1000"
+                >
+                    <h3>За инвеститора</h3>
                 </div>
-              </div>
-              <div class="premisesBox2">
-                <img src="./images/apartmentPlans/04-penthouse.PNG" alt="" />
-              </div>
+                <div class="row investitor-innerBox d-grid">
+                    <div
+                        class="col-12 d-grid justify-content-center investitor-text"
+                        data-aos="fade-up"
+                        data-aos-delay="220"
+                        data-aos-duration="1000"
+                    >
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Consequatur, tempora dolor quasi sequi debitis
+                            voluptatibus ab quam incidunt, eos consequuntur
+                            beatae veniam iste velit sint ex suscipit illo.
+                            Deleniti, ipsam! Ducimus provident iste voluptatibus
+                            deserunt saepe explicabo obcaecati inventore
+                            suscipit, eveniet dolores, corporis mollitia neque
+                            unde doloremque eos in excepturi iure magni sit
+                            quisquam numquam? Repudiandae doloribus quam illum
+                            perspiciatis. Excepturi quaerat delectus nisi?
+                            Voluptatem, quae laboriosam consequuntur harum
+                            veritatis, sapiente distinctio eveniet voluptates
+                            maiores suscipit, eum culpa hic ipsa numquam
+                            provident perspiciatis recusandae magnam error quas
+                            explicabo nemo deserunt! Minima eum consequuntur,
+                            dignissimos ipsa suscipit sed amet animi deleniti
+                            ratione id saepe necessitatibus nam iste doloremque
+                            eligendi tenetur quis? Ipsam deserunt, voluptatibus
+                            est accusantium blanditiis qui id vitae natus?
+                            Dolore beatae libero vitae molestiae architecto
+                            dicta corrupti modi deleniti nihil iure nostrum
+                            assumenda, similique sed ullam aspernatur pariatur
+                            voluptate. Ullam culpa temporibus tempora facere ex
+                            fuga maiores iure ea.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="row investitor-buildings d-flex justify-content-center"
+                    style="margin: 3rem 0"
+                >
+                    <div class="col investitor-box-images">
+                        <div
+                            data-aos="fade-up"
+                            data-aos-delay="80"
+                            data-aos-duration="800"
+                        >
+                            <a href="https://aurelia-bg.com/"
+                                ><div
+                                    class="investitor-images1 investitor-images-settings"
+                                ></div
+                            ></a>
+                            <p style="text-align: center; margin: 1rem 0 0 0">
+                                Комплекс Aurelia Beach
+                            </p>
+                        </div>
+                        <div
+                            data-aos="fade-up"
+                            data-aos-delay="200"
+                            data-aos-duration="800"
+                        >
+                            <a href="https://olympia-beach.com/"
+                                ><div
+                                    class="investitor-images2 investitor-images-settings"
+                                ></div
+                            ></a>
+                            <p style="text-align: center; margin: 1rem 0 0 0">
+                                Комплекс Olympia Beach
+                            </p>
+                        </div>
+                        <div
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                            data-aos-duration="800"
+                        >
+                            <a href="index.html"
+                                ><div
+                                    class="investitor-images3 investitor-images-settings"
+                                ></div
+                            ></a>
+                            <p style="text-align: center; margin: 1rem 0 0 0">
+                                Комплекс Olympia Residence
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-      <!-- About Complex Entertaiment -->
-      <div class="complexEntertainment container-fluid">
-        <div
-          class="complexEntertaimentHeading"
-          data-aos="fade-right"
-          data-aos-delay="160"
-          data-aos-duration="1000"
-        >
-          <h3>Услуги в комплекса</h3>
-        </div>
-        <div
-          class="complexEntertainment-inner"
-          data-aos="fade-up"
-          data-aos-delay="220"
-          data-aos-duration="1000"
-        >
-          <div class="complexEntertainmentAccordion">
-            <div id="recepcion" data-dote-content class="accordionContent">
-              <div class="accordionHeading">
-                <h5>Рецепция</h5>
-              </div>
-              <div class="accordionText">
+            <!-- News End -->
+            <!-- End -->
+        </main>
+        <footer id="footer">
+            <div class="row footer-inner d-grid">
+                <div class="col footerBox">
+                    <h6 class="pb-4 footer-headers">Нашата локация</h6>
+                    <p class="footer-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quidem architecto accusamus facere, delectus,
+                        veritatis voluptates quia expedita, numquam unde
+                        aspernatur rerum officia ullam sit?
+                    </p>
+                    <div class="row footer-address d-grid pt-3 pb-1">
+                        <div class="col">
+                            <p class="footer-infoHeader">Адрес:</p>
+                        </div>
+                        <div class="col">
+                            <p class="footer-infoContent" style="width: 90%">
+                                ул. „Морски Звуци“ 20, 8238 Равда
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row footer-phone d-grid py-1">
+                        <div class="col">
+                            <p class="footer-infoHeader">Телефон:</p>
+                        </div>
+                        <div class="col d-flex">
+                            <p class="footer-infoContent">089 991 0435</p>
+                            <span>&nbsp;/&nbsp;</span>
+                            <p class="footer-infoContent">089 796 3030</p>
+                        </div>
+                    </div>
+                    <div class="row footer-email d-grid py-1">
+                        <div class="col">
+                            <p class="footer-infoHeader">Имейл:</p>
+                        </div>
+                        <div class="col">
+                            <p class="footer-infoContent" style="width: 70%">
+                                olympia_residence@abv.bg
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col footerBox">
+                    <h6 class="pb-4 footer-headers">Контакти на брокера</h6>
+                    <div class="row footer-agentInfo d-grid">
+                        <div class="col footer-imageBox">
+                            <img
+                                src="./images/istockphoto-1186979596-612x612.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="col d-grid align-items-center footer-agentName"
+                        >
+                            <h5>Камелия Цифундарева</h5>
+                            <p>Мениджър продажби</p>
+                        </div>
+                    </div>
+                    <span class="footer-line mb-3"></span>
+                    <div class="row footer-agentPContacts d-grid mb-2">
+                        <div class="col">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="col">
+                            <p class="footer-infoContent" style="width: 28%">
+                                089 991 0435
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row footer-agentEContacts d-grid mb-3">
+                        <div class="col">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="col">
+                            <p class="footer-infoContent" style="width: 51%">
+                                olympia_beach@abv.bg
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col footerBox">
+                    <h6 class="pb-5 footer-headers">Социални мрежи</h6>
+                    <div class="row footer-socialMediaFB d-grid pb-3">
+                        <div class="col">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="col socialMedia-icons">
+                            <a href="#">facebook.com</a>
+                        </div>
+                    </div>
+                    <div class="row footer-socialMediaIG d-grid pb-3">
+                        <div class="col">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="col socialMedia-icons">
+                            <a href="#">instagram.com</a>
+                        </div>
+                    </div>
+                    <div class="row footer-socialMediaOB d-grid pb-3">
+                        <div class="col">
+                            <i class="fa-solid fa-earth-europe"></i>
+                        </div>
+                        <div class="col socialMedia-icons">
+                            <a href="https://olympia-beach.com/"
+                                >olympia_beach.com</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyrights d-grid justify-content-center">
                 <p>
-                  Общо представително фоайе, предвидено на обслужва целия
-                  комплекс. Обособени зона за релакс, място за тихи игри.
+                    © 2022 OLYMPIA RESIDENCE. Всички права запазени | Общи
+                    правила
                 </p>
-              </div>
             </div>
-            <div id="bbq" data-dote-content class="accordionContent">
-              <div class="accordionHeading">
-                <h5>Барбекю</h5>
-              </div>
-              <div class="accordionText">
-                <p>
-                  На територията на комплекса ще има обособена зона с предвиден
-                  външен кухненски бокс и стилно градинско обзавеждане, където
-                  собственици и гости на комплекса ще могат да се насладят на
-                  спокойствие на открито с чаша вино в ръка, наслаждавайки се на
-                  богатото озеленение на комплекса.
-                </p>
-              </div>
-            </div>
-            <div id="restaurant" data-dote-content class="accordionContent">
-              <div class="accordionHeading">
-                <h5>Ресторант</h5>
-              </div>
-              <div class="accordionText">
-                <p>
-                  Комплексът ще разполага със собствен ресторант за собственици
-                  и гости, с открита тераса и панорамна гледка към морето. В
-                  него всички ще могат да се насладят на вкусна храна под
-                  звуците на вълните.
-                </p>
-              </div>
-            </div>
-            <div id="spa" data-dote-content class="accordionContent">
-              <div class="accordionHeading">
-                <h5>Спа център</h5>
-              </div>
-              <div class="accordionText">
-                <p>
-                  Комплексът ще разполага със свой собствен мини спа-център –
-                  парна баня, сауна и масажно студио. В него всеки един от
-                  собствениците и гостите на комплекса, ще може да се наслади на
-                  истинска почивка и да забрави за ежедневните си занимания.
-                </p>
-              </div>
-            </div>
-            <div id="insideGames" data-dote-content class="accordionContent">
-              <div class="accordionHeading">
-                <h5>Басейн</h5>
-              </div>
-              <div class="accordionText">
-                <p>
-                  На територията на комплекса ще има открит басейн с размери
-                  23/10м, с обособена детска секция. С луксозни шезлонги и
-                  чадъри, прилежащи външни съблекални с душове и санитарни
-                  възли.
-                </p>
-              </div>
-            </div>
-            <div id="playground" data-dote-content class="accordionContent">
-              <div class="accordionHeading">
-                <h5>Детска площадка</h5>
-              </div>
-              <div class="accordionText">
-                <p>
-                  За най-малките, на територията на комплекса е предвидена
-                  детска площадка със съоръжения, със специална ударо-поглъщаща
-                  настилка, за спокойни родители и щастливи деца.
-                </p>
-              </div>
-            </div>
-            <div id="relaxzone" data-dote-content class="accordionContent">
-              <div class="accordionHeading">
-                <h5>Релакс зона</h5>
-              </div>
-              <div class="accordionText">
-                <p>
-                  В междусградните пространства ще бъдат оформени красиви тревни
-                  площи. Общата територия ще бъде богато озеленена, с
-                  изключително впечатляващ ландшафтен дизайн, с богато
-                  разнообразие от растителни видове. Всички дворни пространства
-                  ще бъдат пешеходно обвързани с декоративни настилки и ще
-                  разполагат с модернистично градинско обзавеждане – пейки,
-                  перголи, красиво декоративно улично осветление и художествени
-                  елементи. Всичко необходимо за една спокойна почивка в
-                  прекрасна атмосфера!
-                </p>
-              </div>
-            </div>
-            <div id="fitness" data-dote-content class="accordionContent">
-              <div class="accordionHeading">
-                <h5>Фитнес</h5>
-              </div>
-              <div class="accordionText">
-                <p>
-                  Собствениците и гости на комплекса ще могат да се погрижат за
-                  фигурите си като се възползват от изграден фитнес на открито,
-                  на територията на комплекса. Фитнесът ще е с безплатен достъп
-                  и всеки любител на спорта, ще може да го посети.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="complexEntertainmentImg">
-            <img src="./images/aboutComplex2.jpg" alt="" />
-            <div class="complexEntertainmentParts">
-              <div data-dote-target="#recepcion" class="partsDote1 dote-outer">
-                <i class="fa-solid fa-circle-dot dote1"></i>
-              </div>
-              <div data-dote-target="#bbq" class="partsDote2 dote-outer">
-                <i class="fa-solid fa-circle-dot dote2"></i>
-              </div>
-              <div data-dote-target="#restaurant" class="partsDote3 dote-outer">
-                <i class="fa-solid fa-circle-dot dote3"></i>
-              </div>
-              <div data-dote-target="#spa" class="partsDote4 dote-outer">
-                <i class="fa-solid fa-circle-dot dote4"></i>
-              </div>
-              <div
-                data-dote-target="#insideGames"
-                class="partsDote5 dote-outer"
-              >
-                <i class="fa-solid fa-circle-dot dote5"></i>
-              </div>
-              <div data-dote-target="#playground" class="partsDote6 dote-outer">
-                <i class="fa-solid fa-circle-dot dote6"></i>
-              </div>
-              <div data-dote-target="#relaxzone" class="partsDote7 dote-outer">
-                <i class="fa-solid fa-circle-dot dote7"></i>
-              </div>
-              <div data-dote-target="#fitness" class="partsDote8 dote-outer">
-                <i class="fa-solid fa-circle-dot dote8"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Investitor info -->
-      <div class="Investitor container-fluid" style="margin: 0 0 5rem 0">
-        <div
-          class="investitorHeading"
-          data-aos="fade-right"
-          data-aos-delay="160"
-          data-aos-duration="1000"
-        >
-          <h3>За инвеститора</h3>
-        </div>
-        <div class="row investitor-innerBox d-grid">
-          <div
-            class="col-12 d-grid justify-content-center investitor-text"
-            data-aos="fade-up"
-            data-aos-delay="220"
-            data-aos-duration="1000"
-          >
-            <p style="padding: 0 17rem; text-align: center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur, tempora dolor quasi sequi debitis voluptatibus ab
-              quam incidunt, eos consequuntur beatae veniam iste velit sint ex
-              suscipit illo. Deleniti, ipsam! Ducimus provident iste
-              voluptatibus deserunt saepe explicabo obcaecati inventore
-              suscipit, eveniet dolores, corporis mollitia neque unde doloremque
-              eos in excepturi iure magni sit quisquam numquam? Repudiandae
-              doloribus quam illum perspiciatis. Excepturi quaerat delectus
-              nisi? Voluptatem, quae laboriosam consequuntur harum veritatis,
-              sapiente distinctio eveniet voluptates maiores suscipit, eum culpa
-              hic ipsa numquam provident perspiciatis recusandae magnam error
-              quas explicabo nemo deserunt! Minima eum consequuntur, dignissimos
-              ipsa suscipit sed amet animi deleniti ratione id saepe
-              necessitatibus nam iste doloremque eligendi tenetur quis? Ipsam
-              deserunt, voluptatibus est accusantium blanditiis qui id vitae
-              natus? Dolore beatae libero vitae molestiae architecto dicta
-              corrupti modi deleniti nihil iure nostrum assumenda, similique sed
-              ullam aspernatur pariatur voluptate. Ullam culpa temporibus
-              tempora facere ex fuga maiores iure ea.
-            </p>
-          </div>
-        </div>
-        <div
-          class="row investitor-buildings d-flex justify-content-center"
-          style="margin: 3rem 0"
-        >
-          <div class="col investitor-box-images">
-            <div data-aos="fade-up" data-aos-delay="80" data-aos-duration="800">
-              <a href="https://aurelia-bg.com/"
-                ><div
-                  class="investitor-images1 investitor-images-settings"
-                ></div
-              ></a>
-              <p style="text-align: center; margin: 1rem 0 0 0">
-                Комплекс Aurelia Beach
-              </p>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="800"
-            >
-              <a href="https://olympia-beach.com/"
-                ><div
-                  class="investitor-images2 investitor-images-settings"
-                ></div
-              ></a>
-              <p style="text-align: center; margin: 1rem 0 0 0">
-                Комплекс Olympia Beach
-              </p>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-duration="800"
-            >
-              <a href="index.html"
-                ><div
-                  class="investitor-images3 investitor-images-settings"
-                ></div
-              ></a>
-              <p style="text-align: center; margin: 1rem 0 0 0">
-                Комплекс Olympia Residence
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- News End -->
-      <!-- End -->
-    </main>
-    <footer id="footer">
-      <div class="row footer-inner d-grid">
-        <div class="col footerBox">
-          <h6 class="pb-4 footer-headers">Нашата локация</h6>
-          <p class="footer-content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-            architecto accusamus facere, delectus, veritatis voluptates quia
-            expedita, numquam unde aspernatur rerum officia ullam sit?
-          </p>
-          <div class="row footer-address d-grid pt-3 pb-1">
-            <div class="col">
-              <p class="footer-infoHeader">Адрес:</p>
-            </div>
-            <div class="col">
-              <p class="footer-infoContent" style="width: 90%">
-                ул. „Морски Звуци“ 20, 8238 Равда
-              </p>
-            </div>
-          </div>
-          <div class="row footer-phone d-grid py-1">
-            <div class="col">
-              <p class="footer-infoHeader">Телефон:</p>
-            </div>
-            <div class="col d-flex">
-              <p class="footer-infoContent">089 991 0435</p>
-              <span>&nbsp;/&nbsp;</span>
-              <p class="footer-infoContent">089 796 3030</p>
-            </div>
-          </div>
-          <div class="row footer-email d-grid py-1">
-            <div class="col">
-              <p class="footer-infoHeader">Имейл:</p>
-            </div>
-            <div class="col">
-              <p class="footer-infoContent" style="width: 70%">
-                olympia_residence@abv.bg
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col footerBox">
-          <h6 class="pb-4 footer-headers">Контакти на брокера</h6>
-          <div class="row footer-agentInfo d-grid">
-            <div class="col footer-imageBox">
-              <img src="./images/istockphoto-1186979596-612x612.jpg" alt="" />
-            </div>
-            <div class="col d-grid align-items-center footer-agentName">
-              <h5>Камелия Цифундарева</h5>
-              <p>Мениджър продажби</p>
-            </div>
-          </div>
-          <span class="footer-line mb-3"></span>
-          <div class="row footer-agentPContacts d-grid mb-2">
-            <div class="col">
-              <i class="fa-solid fa-phone"></i>
-            </div>
-            <div class="col">
-              <p class="footer-infoContent" style="width: 28%">089 991 0435</p>
-            </div>
-          </div>
-          <div class="row footer-agentEContacts d-grid mb-3">
-            <div class="col">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="col">
-              <p class="footer-infoContent" style="width: 51%">
-                olympia_beach@abv.bg
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col footerBox">
-          <h6 class="pb-5 footer-headers">Социални мрежи</h6>
-          <div class="row footer-socialMediaFB d-grid pb-3">
-            <div class="col">
-              <i class="fa-brands fa-facebook-f"></i>
-            </div>
-            <div class="col socialMedia-icons">
-              <a href="#">facebook.com</a>
-            </div>
-          </div>
-          <div class="row footer-socialMediaIG d-grid pb-3">
-            <div class="col">
-              <i class="fa-brands fa-instagram"></i>
-            </div>
-            <div class="col socialMedia-icons">
-              <a href="#">instagram.com</a>
-            </div>
-          </div>
-          <div class="row footer-socialMediaOB d-grid pb-3">
-            <div class="col">
-              <i class="fa-solid fa-earth-europe"></i>
-            </div>
-            <div class="col socialMedia-icons">
-              <a href="https://olympia-beach.com/">olympia_beach.com</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyrights d-grid justify-content-center">
-        <p>© 2022 OLYMPIA RESIDENCE. Всички права запазени | Общи правила</p>
-      </div>
-    </footer>
-    <script src="accordionButtons.js"></script>
-    <script src="accordionEntertainment.js"></script>
-    <script src="counter.js"></script>
-    <script src="premises.js"></script>
-    <script src="navi.js"></script>
-    <script src="toTopPointer.js"></script>
-    <script src="dropdownColor.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+        </footer>
+        <script src="accordionButtons.js"></script>
+        <script src="accordionEntertainment.js"></script>
+        <script src="counter.js"></script>
+        <script src="premises.js"></script>
+        <script src="navi.js"></script>
+        <script src="toTopPointer.js"></script>
+        <script src="dropdownColor.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>

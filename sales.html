@@ -1,380 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/f3465016f9.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
-      integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
-    <script type="module" src="loadTranslations.js"></script>
-    <link rel="stylesheet" href="sales.css" />
-    <link rel="stylesheet" href="mediaquery.css" />
-    <link rel="stylesheet" href="typography.css" />
-    <link rel="stylesheet" href="./custom-css/animista.css" />
-    <title>Olympia Residence | Продажби |</title>
-  </head>
-  <body onload="init()">
-    <a href="#" class="to-top">
-      <i class="fa-solid fa-angle-up"></i>
-    </a>
-    <header class="sales-header">
-      <nav id="navbarBg" class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-          <div class="navLogo ps-4">
-            <a href="index.html"
-              ><img src="./images/siteLogo-white.png" alt=""
-            /></a>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarNavDropdown"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item dropdownMenu-sales">
-                <a class="nav-link dropdownMenu-salesLink" href="sales.html"
-                  >Продажби</a
-                >
-                <ul
-                  class="dropdownMenu dropdown-menu slide-top-sales"
-                  id="dropdown-Color"
-                >
-                  <li><a href="#">Сутерен</a></li>
-                  <li><a href="#">Блок1</a></li>
-                  <li><a href="#">Блок2</a></li>
-                  <li><a href="#">Блок3</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">За проекта</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Галерия</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacts.php">Контакти</a>
-              </li>
-            </ul>
-          </div>
-          <div class="MultilanguageMenu">
-            <select
-              class="MultilanguageBtn"
-              name="language"
-              id="languageSwitcher"
-              style="appearance: none"
-            ></select>
-          </div>
-        </div>
-      </nav>
-      <div class="header-image">
-        <img src="./images/header2.jpg" alt="" />
-      </div>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://kit.fontawesome.com/f3465016f9.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+            integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+        <script type="module" src="loadTranslations.js"></script>
+        <link rel="stylesheet" href="sales.css" />
+        <link rel="stylesheet" href="mediaquery.css" />
+        <link rel="stylesheet" href="typography.css" />
+        <link rel="stylesheet" href="./custom-css/animista.css" />
+        <title>Olympia Residence | Продажби |</title>
+    </head>
+    <body onload="init()">
+        <a href="#" class="to-top">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+        <header class="sales-header">
+            <nav id="navbarBg" class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <div class="navLogo ps-4">
+                        <a href="index.html"
+                            ><img src="./images/siteLogo-white.png" alt=""
+                        /></a>
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse justify-content-center"
+                        id="navbarNavDropdown"
+                    >
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdownMenu-sales">
+                                <a
+                                    class="nav-link dropdownMenu-salesLink"
+                                    href="sales.html"
+                                    >Продажби</a
+                                >
+                                <ul
+                                    class="dropdownMenu dropdown-menu slide-top-sales"
+                                    id="dropdown-Color"
+                                >
+                                    <li><a href="#">Сутерен</a></li>
+                                    <li><a href="#">Блок1</a></li>
+                                    <li><a href="#">Блок2</a></li>
+                                    <li><a href="#">Блок3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">За проекта</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Галерия</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacts.php"
+                                    >Контакти</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="MultilanguageMenu">
+                        <select
+                            class="MultilanguageBtn"
+                            name="language"
+                            id="languageSwitcher"
+                            style="appearance: none"
+                        ></select>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-image">
+                <img src="./images/header2.jpg" alt="" />
+            </div>
+        </header>
 
-    <main>
-      <div class="container-fluid sales-content d-grid">
-        <div class="sales-heading" style="margin: 0 0 2rem 0">
-          <h3 style="text-align: center; font-size: 43px">Продажби</h3>
-          <span class="sales-heading-underline"></span>
-        </div>
-        <div class="row sales-content-inner">
-          <div class="col-12">
-            <div class="sales-text">
-              <p class="mb-4" style="text-align: center">
-                “Олимпия Ресидънс” ще бъде изграден на обща площ от 5500м2 с
-                богат и изключително впечатляващ ландшафтен дизайн, отличаващ се
-                с множество живописно оформени цветни алеи, зони за релакс в
-                паркова среда, красиви зелени пространста за отдих. Комлексът ще
-                се състои от 79 апартамента, находящи се в четири сгради и ще
-                предлага богат избор от студиа и апартаменти (с една, две , три
-                спални и пентхауси) с фунционални разпределения и съвременна
-                визия, елегантни общи части и 24/7 контролиран достъп за хора и
-                автомобили. В комплекса е предвидено да бъде изграден открит
-                басейн и детски такъв с луксозни шезлонги и чадъри по
-                периферията им. За удобство на всички собственици на територията
-                на комплекса ще има фитнес площадка, детска площадка,
-                барбекю-зона, ресторант с широка тераса с гледка към морето,
-                СПА-център с парна баня, сауна и масажно помещение, рецепция с
-                просторно съвременно фоайе и офис-помещения. За комфорта на
-                всички бъдещи собственици е предвиден подземен паркинг с общо 43
-                броя паркоместа за автомобили.
-              </p>
-              <p class="sales-text-info" style="text-align: center">
-                Разпределението на апартаментите във всяка от сградите е както
-                следва:
-              </p>
+        <main>
+            <div class="container-fluid sales-content d-grid">
+                <div class="sales-heading" style="margin: 0 0 2rem 0">
+                    <h3 style="text-align: center; font-size: 43px">
+                        Продажби
+                    </h3>
+                    <span class="sales-heading-underline"></span>
+                </div>
+                <div class="row sales-content-inner">
+                    <div class="col-12">
+                        <div class="sales-text">
+                            <p class="mb-4" style="text-align: center">
+                                “Олимпия Ресидънс” ще бъде изграден на обща площ
+                                от 5500м2 с богат и изключително впечатляващ
+                                ландшафтен дизайн, отличаващ се с множество
+                                живописно оформени цветни алеи, зони за релакс в
+                                паркова среда, красиви зелени пространста за
+                                отдих. Комлексът ще се състои от 79 апартамента,
+                                находящи се в четири сгради и ще предлага богат
+                                избор от студиа и апартаменти (с една, две , три
+                                спални и пентхауси) с фунционални разпределения
+                                и съвременна визия, елегантни общи части и 24/7
+                                контролиран достъп за хора и автомобили. В
+                                комплекса е предвидено да бъде изграден открит
+                                басейн и детски такъв с луксозни шезлонги и
+                                чадъри по периферията им. За удобство на всички
+                                собственици на територията на комплекса ще има
+                                фитнес площадка, детска площадка, барбекю-зона,
+                                ресторант с широка тераса с гледка към морето,
+                                СПА-център с парна баня, сауна и масажно
+                                помещение, рецепция с просторно съвременно фоайе
+                                и офис-помещения. За комфорта на всички бъдещи
+                                собственици е предвиден подземен паркинг с общо
+                                43 броя паркоместа за автомобили.
+                            </p>
+                            <p
+                                class="sales-text-info"
+                                style="text-align: center"
+                            >
+                                Разпределението на апартаментите във всяка от
+                                сградите е както следва:
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 d-grid"
+                        style="align-items: center; justify-items: center"
+                    >
+                        <div class="sales-image">
+                            <img src="./images/header.jpg" alt="" />
+                            <a href="#"
+                                ><path
+                                    class="blok1-1 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok1-2 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok1-3 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok1-4 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok1-5 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok1-6 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok2-1 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok2-2 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok2-3 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok2-4 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok2-5 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok3-1 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok3-2 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok3-3 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok3-4 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok3-5 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok3-6 blok-settings blok-available"
+                                ></path
+                            ></a>
+                            <a href="#"
+                                ><path
+                                    class="blok4-1 blok-settings blok-sold"
+                                ></path
+                            ></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div
-            class="col-12 d-grid"
-            style="align-items: center; justify-items: center"
-          >
-            <div class="sales-image">
-              <img src="./images/header.jpg" alt="" />
-              <a href="#"
-                ><path class="blok1-1 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok1-2 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok1-3 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok1-4 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok1-5 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok1-6 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok2-1 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok2-2 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok2-3 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok2-4 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok2-5 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok3-1 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok3-2 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok3-3 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok3-4 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok3-5 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok3-6 blok-settings blok-available"></path
-              ></a>
-              <a href="#"
-                ><path class="blok4-1 blok-settings blok-sold"></path
-              ></a>
+            <div class="container-fluid sales-info info-left">
+                <div class="row sales-rowSetting">
+                    <div class="col-lg-3 col-md-4 col-sm-12 sales-outer-box">
+                        <div class="sales-info-box">
+                            <div class="sales-info-headings">
+                                <h5>Сутерен</h5>
+                            </div>
+                            <div class="sales-info-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quis nostrum eveniet odio
+                                    praesentium provident inventore dolorum,
+                                    quisquam optio quaerat labore dignissimos at
+                                    similique sapiente culpa deleniti ea
+                                    deserunt facilis dolore?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-4 col-sm-12 info-middle1 sales-outer-box"
+                    >
+                        <div class="sales-info-box">
+                            <div class="sales-info-headings">
+                                <h5>Блок I</h5>
+                            </div>
+                            <div class="sales-info-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quis nostrum eveniet odio
+                                    praesentium provident inventore dolorum,
+                                    quisquam optio quaerat labore dignissimos at
+                                    similique sapiente culpa deleniti ea
+                                    deserunt facilis dolore?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-4 col-sm-12 info-middle2 sales-outer-box"
+                    >
+                        <div class="sales-info-box">
+                            <div class="sales-info-headings">
+                                <h5>Блок II</h5>
+                            </div>
+                            <div class="sales-info-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quis nostrum eveniet odio
+                                    praesentium provident inventore dolorum,
+                                    quisquam optio quaerat labore dignissimos at
+                                    similique sapiente culpa deleniti ea
+                                    deserunt facilis dolore?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-4 col-sm-12 info-right sales-outer-box"
+                    >
+                        <div class="sales-info-box">
+                            <div class="sales-info-headings">
+                                <h5>Блок III</h5>
+                            </div>
+                            <div class="sales-info-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quis nostrum eveniet odio
+                                    praesentium provident inventore dolorum,
+                                    quisquam optio quaerat labore dignissimos at
+                                    similique sapiente culpa deleniti ea
+                                    deserunt facilis dolore?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid sales-info info-left">
-        <div class="row" style="justify-content: center; margin: 0 11rem">
-          <div class="col-lg-3 col-md-4 col-sm-12 sales-outer-box">
-            <div class="sales-info-box">
-              <div class="sales-info-headings">
-                <h5>Сутерен</h5>
-              </div>
-              <div class="sales-info-text">
+        </main>
+        <footer id="footer">
+            <div class="row footer-inner d-grid">
+                <div class="col footerBox">
+                    <h6 class="mb-4 footer-headers">Нашата локация</h6>
+                    <p class="footer-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quidem architecto accusamus facere, delectus,
+                        veritatis voluptates quia expedita, numquam unde
+                        aspernatur rerum officia ullam sit?
+                    </p>
+                    <div class="row footer-address d-grid pt-3 pb-1">
+                        <div class="col">
+                            <p class="footer-infoHeader">Адрес:</p>
+                        </div>
+                        <div class="col">
+                            <p class="footer-infoContent" style="width: 90%">
+                                ул. „Морски Звуци“ 20, 8238 Равда
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row footer-phone d-grid py-1">
+                        <div class="col">
+                            <p class="footer-infoHeader">Телефон:</p>
+                        </div>
+                        <div class="col d-flex">
+                            <p class="footer-infoContent">089 991 0435</p>
+                            <span>&nbsp;/&nbsp;</span>
+                            <p class="footer-infoContent">089 796 3030</p>
+                        </div>
+                    </div>
+                    <div class="row footer-email d-grid py-1">
+                        <div class="col">
+                            <p class="footer-infoHeader">Имейл:</p>
+                        </div>
+                        <div class="col">
+                            <p class="footer-infoContent" style="width: 70%">
+                                olympia_residence@abv.bg
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col footerBox">
+                    <h6 class="mb-4 footer-headers">Контакти на брокера</h6>
+                    <div class="row footer-agentInfo d-grid">
+                        <div class="col footer-imageBox">
+                            <img
+                                src="./images/istockphoto-1186979596-612x612.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="col d-grid align-items-center footer-agentName"
+                        >
+                            <h5>Камелия Цифундарева</h5>
+                            <p>Мениджър продажби</p>
+                        </div>
+                    </div>
+                    <span class="footer-line mb-3"></span>
+                    <div class="row footer-agentPContacts d-grid mb-2">
+                        <div class="col">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="col">
+                            <p class="footer-infoContent" style="width: 28%">
+                                089 991 0435
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row footer-agentEContacts d-grid mb-3">
+                        <div class="col">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="col">
+                            <p class="footer-infoContent" style="width: 51%">
+                                olympia_beach@abv.bg
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col footerBox">
+                    <h6 class="mb-5 footer-headers">Социални мрежи</h6>
+                    <div class="row footer-socialMediaFB d-grid pb-3">
+                        <div class="col">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="col socialMedia-icons">
+                            <a href="#">facebook.com</a>
+                        </div>
+                    </div>
+                    <div class="row footer-socialMediaIG d-grid pb-3">
+                        <div class="col">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="col socialMedia-icons">
+                            <a href="#">instagram.com</a>
+                        </div>
+                    </div>
+                    <div class="row footer-socialMediaOB d-grid pb-3">
+                        <div class="col">
+                            <i class="fa-solid fa-earth-europe"></i>
+                        </div>
+                        <div class="col socialMedia-icons">
+                            <a href="https://olympia-beach.com/"
+                                >olympia_beach.com</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyrights d-grid justify-content-center">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                  nostrum eveniet odio praesentium provident inventore dolorum,
-                  quisquam optio quaerat labore dignissimos at similique
-                  sapiente culpa deleniti ea deserunt facilis dolore?
+                    © 2022 OLYMPIA RESIDENCE. Всички права запазени | Общи
+                    правила
                 </p>
-              </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-12 info-middle1 sales-outer-box">
-            <div class="sales-info-box">
-              <div class="sales-info-headings"><h5>Блок I</h5></div>
-              <div class="sales-info-text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                  nostrum eveniet odio praesentium provident inventore dolorum,
-                  quisquam optio quaerat labore dignissimos at similique
-                  sapiente culpa deleniti ea deserunt facilis dolore?
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-12 info-middle2 sales-outer-box">
-            <div class="sales-info-box">
-              <div class="sales-info-headings"><h5>Блок II</h5></div>
-              <div class="sales-info-text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                  nostrum eveniet odio praesentium provident inventore dolorum,
-                  quisquam optio quaerat labore dignissimos at similique
-                  sapiente culpa deleniti ea deserunt facilis dolore?
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-12 info-right sales-outer-box">
-            <div class="sales-info-box">
-              <div class="sales-info-headings"><h5>Блок III</h5></div>
-              <div class="sales-info-text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                  nostrum eveniet odio praesentium provident inventore dolorum,
-                  quisquam optio quaerat labore dignissimos at similique
-                  sapiente culpa deleniti ea deserunt facilis dolore?
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer id="footer">
-      <div class="row footer-inner d-grid">
-        <div class="col footerBox">
-          <h6 class="mb-4 footer-headers">Нашата локация</h6>
-          <p class="footer-content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-            architecto accusamus facere, delectus, veritatis voluptates quia
-            expedita, numquam unde aspernatur rerum officia ullam sit?
-          </p>
-          <div class="row footer-address d-grid pt-3 pb-1">
-            <div class="col">
-              <p class="footer-infoHeader">Адрес:</p>
-            </div>
-            <div class="col">
-              <p class="footer-infoContent" style="width: 90%">
-                ул. „Морски Звуци“ 20, 8238 Равда
-              </p>
-            </div>
-          </div>
-          <div class="row footer-phone d-grid py-1">
-            <div class="col">
-              <p class="footer-infoHeader">Телефон:</p>
-            </div>
-            <div class="col d-flex">
-              <p class="footer-infoContent">089 991 0435</p>
-              <span>&nbsp;/&nbsp;</span>
-              <p class="footer-infoContent">089 796 3030</p>
-            </div>
-          </div>
-          <div class="row footer-email d-grid py-1">
-            <div class="col">
-              <p class="footer-infoHeader">Имейл:</p>
-            </div>
-            <div class="col">
-              <p class="footer-infoContent" style="width: 70%">
-                olympia_residence@abv.bg
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col footerBox">
-          <h6 class="mb-4 footer-headers">Контакти на брокера</h6>
-          <div class="row footer-agentInfo d-grid">
-            <div class="col footer-imageBox">
-              <img src="./images/istockphoto-1186979596-612x612.jpg" alt="" />
-            </div>
-            <div class="col d-grid align-items-center footer-agentName">
-              <h5>Камелия Цифундарева</h5>
-              <p>Мениджър продажби</p>
-            </div>
-          </div>
-          <span class="footer-line mb-3"></span>
-          <div class="row footer-agentPContacts d-grid mb-2">
-            <div class="col">
-              <i class="fa-solid fa-phone"></i>
-            </div>
-            <div class="col">
-              <p class="footer-infoContent" style="width: 28%">089 991 0435</p>
-            </div>
-          </div>
-          <div class="row footer-agentEContacts d-grid mb-3">
-            <div class="col">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="col">
-              <p class="footer-infoContent" style="width: 51%">
-                olympia_beach@abv.bg
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col footerBox">
-          <h6 class="mb-5 footer-headers">Социални мрежи</h6>
-          <div class="row footer-socialMediaFB d-grid pb-3">
-            <div class="col">
-              <i class="fa-brands fa-facebook-f"></i>
-            </div>
-            <div class="col socialMedia-icons">
-              <a href="#">facebook.com</a>
-            </div>
-          </div>
-          <div class="row footer-socialMediaIG d-grid pb-3">
-            <div class="col">
-              <i class="fa-brands fa-instagram"></i>
-            </div>
-            <div class="col socialMedia-icons">
-              <a href="#">instagram.com</a>
-            </div>
-          </div>
-          <div class="row footer-socialMediaOB d-grid pb-3">
-            <div class="col">
-              <i class="fa-solid fa-earth-europe"></i>
-            </div>
-            <div class="col socialMedia-icons">
-              <a href="https://olympia-beach.com/">olympia_beach.com</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyrights d-grid justify-content-center">
-        <p>© 2022 OLYMPIA RESIDENCE. Всички права запазени | Общи правила</p>
-      </div>
-    </footer>
-    <script src="navi.js"></script>
-    <script src="toTopPointer.js"></script>
-    <script src="dropdownColor.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+        </footer>
+        <script src="navi.js"></script>
+        <script src="toTopPointer.js"></script>
+        <script src="dropdownColor.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>

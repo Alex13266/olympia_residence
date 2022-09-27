@@ -1,243 +1,270 @@
 /* Phone size */
 @media only screen and (max-width: 950px) {
-  html,
-  body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
-  .navLogo img {
-    width: auto;
-    height: 52px;
-  }
+    .navLogo img {
+        width: auto;
+        height: 52px;
+    }
 
-  .navbar-nav li {
-    align-self: center;
-  }
+    .navbar-nav li {
+        align-self: center;
+    }
 
-  .MultilanguageMenu {
-    display: none;
-  }
+    .dropdownMenu-sales .dropdownMenu-salesLink::after {
+        right: -25px;
+    }
 
-  .to-top {
-    width: 35px;
-    height: 35px;
-    right: 18px;
-  }
+    .MultilanguageMenu {
+        display: none;
+    }
 
-  .carousel-item img {
-    object-fit: cover;
-  }
+    .to-top {
+        width: 35px;
+        height: 35px;
+        right: 18px;
+    }
 
-  .services-inner1 {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    padding: 0 2rem;
-    max-width: 100%;
-    margin: 0;
-  }
+    .carousel-item img {
+        object-fit: cover;
+    }
 
-  .servicesHeading {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    margin: 0 1rem;
-  }
+    .services-inner1 {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding: 0 2rem;
+        max-width: 100%;
+        margin: 0;
+    }
 
-  .servicesHeading h3 {
-    padding: 0 !important;
-    text-align: center;
-  }
+    .servicesHeading {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        margin: 0 1rem;
+    }
 
-  .premisesBox-inner {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    gap: 0;
-  }
+    .servicesHeading h3 {
+        padding: 0 !important;
+        text-align: center;
+    }
 
-  .premisesHeading {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    margin: 0 1rem;
-  }
+    .premisesBox-inner {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        gap: 0;
+    }
 
-  .premisesTab {
-    padding: 4rem 1rem;
-  }
+    .premisesHeading {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        margin: 0 1rem;
+    }
 
-  .premisesTab.active::after {
-    bottom: -11px;
-  }
+    .premisesTab {
+        padding: 4rem 1rem;
+    }
 
-  .premisesSize {
-    padding: 0;
-  }
+    .premisesTab.active::after {
+        bottom: -11px;
+    }
 
-  .aboutBuilding-inner {
-    max-width: 100vw;
-    margin: 0;
-  }
+    .premisesSize {
+        padding: 0;
+    }
 
-  .aboutBuildingBox1 {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-    padding: 0;
-    max-width: 100vw;
-  }
+    .aboutBuilding-inner {
+        max-width: 100vw;
+        margin: 0;
+    }
 
-  .aboutBuildingBox1 .col {
-    max-width: 100vw;
-  }
+    .aboutBuildingBox1 {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+        padding: 0;
+        max-width: 100vw;
+    }
 
-  .buildingContent {
-    padding: 3rem 3.5rem;
-  }
+    .aboutBuildingBox1 .col {
+        max-width: 100vw;
+    }
 
-  .aboutBuilding {
-    max-width: 100vw;
-  }
+    .buildingContent {
+        padding: 3rem 3.5rem;
+    }
 
-  .aboutBuildingImg {
-    width: 100%;
-    height: 400px;
-  }
+    .aboutBuilding {
+        max-width: 100vw;
+    }
 
-  .aboutBuildingImg img {
-    width: 90%;
-    height: 80%;
-    justify-self: center;
-  }
+    .aboutBuildingImg {
+        width: 100%;
+        height: 400px;
+    }
 
-  .aboutBuildingImg::before {
-    display: none;
-  }
+    .aboutBuildingImg img {
+        width: 90%;
+        height: 80%;
+        justify-self: center;
+    }
 
-  .services {
-    width: 100vw;
-  }
+    .aboutBuildingImg::before {
+        display: none;
+    }
 
-  .buildingInfo {
-    grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
-    gap: 1.5rem;
-    margin: 0;
-  }
+    .services {
+        width: 100vw;
+    }
 
-  .complexEntertainment {
-    padding: 0;
-  }
+    .buildingInfo {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
+        gap: 1.5rem;
+        margin: 0;
+    }
 
-  .complexEntertaimentHeading {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    margin: 0 1rem;
-  }
+    .complexEntertainment {
+        padding: 0;
+    }
 
-  .complexEntertainment-inner {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
-    max-width: 100vw;
-  }
+    .complexEntertaimentHeading {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        margin: 0 1rem;
+    }
 
-  .complexEntertainmentAccordion,
-  .complexEntertainmentImg {
-    max-width: 100vw;
-    justify-self: center;
-  }
+    .complexEntertainment-inner {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+        max-width: 100vw;
+    }
 
-  .news {
-    padding: 2rem 0 3rem 0;
-  }
+    .complexEntertainmentAccordion,
+    .complexEntertainmentImg {
+        max-width: 100vw;
+        justify-self: center;
+    }
 
-  .news-outerBox {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    margin: 0;
-    padding: 0.5rem;
-    gap: 1.3rem;
-  }
+    /* About investitor */
+    .investitor {
+        padding: 0;
+    }
 
-  .newsHeading {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    margin: 0 1rem;
-  }
+    .investitor-innerBox {
+        max-width: 100vw;
+        margin: 0;
+    }
 
-  .footer-inner {
-    grid-template-columns: repeat(auto-fit, minmax(210px, 2fr));
-    max-width: 100vw;
-    margin: 0;
-  }
+    .investitorHeading {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    }
 
-  /* Heading settings */
-  .servicesHeading h3,
-  .premisesHeading h3,
-  .complexEntertaimentHeading h3,
-  .newsHeading h3 {
-    text-align: center;
-    position: relative;
-  }
+    .investitor-text p {
+        padding: 0 3rem;
+    }
 
-  .servicesHeading h3::after,
-  .premisesHeading h3::after,
-  .complexEntertaimentHeading h3::after,
-  .newsHeading h3::after {
-    position: absolute;
-    content: "";
-    width: 30%;
-    height: 2px;
-    background-color: #b8a87f;
-    bottom: -10px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+    .investitor-box-images {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
+        gap: 5rem;
+    }
 
-  .servicesHeading h3::before,
-  .premisesHeading h3::before,
-  .complexEntertaimentHeading h3::before,
-  .newsHeading h3::before {
-    display: none;
-  }
+    .investitor-images1,
+    .investitor-images2,
+    .investitor-images3 {
+        margin: 0 auto;
+    }
+    /* Footer */
+    .footer-inner {
+        grid-template-columns: repeat(auto-fit, minmax(210px, 2fr));
+        max-width: 100vw;
+        margin: 0;
+    }
 
-  /* Sales HTML */
-  .sales-text {
-    margin: 0;
-  }
+    /* Heading settings */
+    .servicesHeading h3,
+    .premisesHeading h3,
+    .complexEntertaimentHeading h3,
+    .investitorHeading h3 {
+        text-align: center;
+        position: relative;
+    }
 
-  .sales-image {
-    width: 100%;
-    height: auto;
-  }
+    .servicesHeading h3::after,
+    .premisesHeading h3::after,
+    .complexEntertaimentHeading h3::after,
+    .investitorHeading h3::after {
+        position: absolute;
+        content: "";
+        width: 30%;
+        height: 2px;
+        background-color: #b8a87f;
+        bottom: -10px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .servicesHeading h3::before,
+    .premisesHeading h3::before,
+    .complexEntertaimentHeading h3::before,
+    .investitorHeading h3::before {
+        display: none;
+    }
+
+    /* Sales HTML */
+    .sales-text {
+        margin: 0;
+    }
+
+    .sales-image {
+        width: 100%;
+        height: auto;
+    }
 }
 
-/* Laptop size */
-/* @media only screen and (min-width: 1250px) {
-  html,
-  body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1500px) and (-webkit-min-device-pixel-ratio: 1) {
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
-  .navLogo img {
-    width: auto;
-    height: 52px;
-  }
+    /* .navLogo img {
+        width: auto;
+        height: 52px;
+    } */
 
-  .aboutBuilding {
-    max-width: 100vw;
-  }
+    .aboutBuilding {
+        max-width: 100vw;
+    }
 
-  .buildingInfo {
-    margin: 0;
-  }
+    .buildingInfo {
+        margin: 0;
+    }
 
-  .footer-inner {
-    grid-template-columns: 380px 380px 380px;
-  }
+    .footer-inner {
+        grid-template-columns: 380px 380px 380px;
+    }
 
-  .services-inner1 {
-    padding: 0 10rem;
-    padding-bottom: 3rem;
-  }
+    .services-inner1 {
+        padding: 0 10rem;
+        padding-bottom: 3rem;
+    }
 
-  .premisesSize {
-    padding: 0;
-  }
+    .premisesSize {
+        padding: 0;
+    }
 
-  .complexEntertainment-inner {
-    grid-template-columns: 370px 800px;
-  }
-} */
+    .complexEntertainment-inner {
+        grid-template-columns: 370px 800px;
+    }
+
+    /* About the investitor */
+
+    /* Section SALES */
+    .sales-text {
+        margin: 0 12rem;
+    }
+
+    .sales-rowSetting {
+        margin: 0 5rem;
+    }
+}
