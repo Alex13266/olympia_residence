@@ -288,7 +288,7 @@
               <i class="fa-solid fa-phone"></i>
             </div>
             <div class="col">
-              <p class="footer-infoContent" style="width: 28%">089 991 0435</p>
+              <p class="footer-infoContent footer-brokerNumber" style="width: 28%">089 991 0435</p>
             </div>
           </div>
           <div class="row footer-agentEContacts d-grid mb-3">

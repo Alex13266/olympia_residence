@@ -179,6 +179,16 @@
         grid-template-columns: repeat(auto-fit, minmax(210px, 2fr));
         max-width: 100vw;
         margin: 0;
+        padding: 5rem 0 5rem 0;
+    }
+
+    .footer-copyrights p {
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .footer-brokerNumber {
+        width: 29% !important;
     }
 
     /* Heading settings */
@@ -219,6 +229,10 @@
     .sales-text {
         margin: 0;
         padding: 0 1rem;
+    }
+
+    .sales-text p:nth-child(1) {
+        margin-bottom: 3rem !important;
     }
 
     .sales-text-info {
@@ -275,6 +289,11 @@
         height: 52px;
     } */
 
+    /* Dropdown */
+    .dropdownInner-customize li {
+        padding: 0.5rem 0 !important;
+    }
+
     .aboutBuilding {
         max-width: 100vw;
     }
@@ -283,8 +302,13 @@
         margin: 0;
     }
 
+    /* Footer */
     .footer-inner {
         grid-template-columns: 380px 380px 380px;
+    }
+
+    .footer-brokerNumber {
+        width: 30% !important;
     }
 
     .services-inner1 {

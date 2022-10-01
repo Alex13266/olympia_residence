@@ -6,95 +6,95 @@
 /* font-family: 'Yeseva One', cursive; */
 
 h3 {
-  font-family: "Lora", serif;
+    font-family: "Lora", serif;
 }
 
 /* Navbar Settings */
 
 .nav-item a {
-  color: #eeeeee !important;
-  font-family: "Lora", serif;
-  font-weight: 500;
-  font-size: 19px;
+    color: #eeeeee !important;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    font-size: 19px;
 }
 
 .dropdownMenu li {
-  padding: 0.5rem 0;
+    padding: 0.5rem 0;
 }
 /* End */
 .buildingInfo-inner1 h4,
 .buildingInfo-inner2 h4,
 .buildingInfo-inner3 h4,
 .buildingInfo-inner4 h4 {
-  font-family: "Lora", serif;
+    font-family: "Lora", serif;
 }
 
 .buildingInfoContent p {
-  font-family: "Lora", serif;
-  font-weight: 500;
-  font-style: italic;
-  color: rgb(61, 61, 61);
+    font-family: "Lora", serif;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(61, 61, 61);
 }
 
 .aboutBuildingContent1 p,
 .aboutBuildingContent2 p {
-  /* text-align: justify; */
-  /* word-spacing: -2px; */
-  font-family: "Lora", serif;
-  font-style: italic;
-  font-size: 16px;
+    /* text-align: justify; */
+    /* word-spacing: -2px; */
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-size: 16px;
 }
 
 .aboutBuildingContent2 p {
-  color: #8d9096;
+    color: #5f6674;
 }
 
 /* Services */
 .servicesContent-box p {
-  font-family: "Lora", serif;
+    font-family: "Lora", serif;
 }
 
 .services-text p {
-  font-size: 20px;
-  padding: 0.5rem 0;
-  margin: 0;
+    font-size: 20px;
+    padding: 0.5rem 0;
+    margin: 0;
 }
 
 .servicesContent-box p {
-  font-size: 15px;
-  text-align: center;
+    font-size: 15px;
+    text-align: center;
 }
 
 .premisesTabs li {
-  font-family: "Lora", serif;
+    font-family: "Lora", serif;
 }
 
 .premisesBox1 p {
-  font-family: "Lora", serif;
+    font-family: "Lora", serif;
 }
 
 .premisesParkingLink {
-  text-decoration: none;
-  color: black;
-  font-family: "Lora", serif;
-  position: relative;
+    text-decoration: none;
+    color: black;
+    font-family: "Lora", serif;
+    position: relative;
 }
 
 .premisesParkingLink:hover {
-  color: #cabe9f;
+    color: #cabe9f;
 }
 
 .premisesParkingLink:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
 .complexEntertaimentHeading h3 {
-  color: #f5f5f5;
+    color: #f5f5f5;
 }
 
 .accordionHeading h5 {
-  font-size: 15px;
-  font-family: "Lora", serif;
+    font-size: 15px;
+    font-family: "Lora", serif;
 }
 
 /* .complexEntertainmentInfo ul {
@@ -112,178 +112,178 @@ h3 {
 /* Investitor info */
 
 .footer-headers {
-  color: #cabe9f;
-  font-family: "Lora", serif;
-  letter-spacing: 0.2px;
-  font-weight: 500;
-  font-size: 17px;
+    color: #cabe9f;
+    font-family: "Lora", serif;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    font-size: 17px;
 }
 
 .footer-content {
-  font-family: "Lora", serif;
-  font-size: 15px;
+    font-family: "Lora", serif;
+    font-size: 15px;
 }
 
 .footer-infoHeader {
-  font-family: "Merriweather", serif;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.5px;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.5px;
 }
 
 .footer-infoContent {
-  font-family: "Lora", serif;
-  font-size: 15px;
+    font-family: "Lora", serif;
+    font-size: 15px;
 }
 
 .footer-infoContent {
-  position: relative;
-  padding: 0.2rem 0;
+    position: relative;
+    padding: 0.2rem 0;
 }
 
 .footer-infoContent::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #cabe9f;
-  width: 0%;
-  height: 2px;
-  transition: 0.35s ease-in;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #cabe9f;
+    width: 0%;
+    height: 2px;
+    transition: 0.35s ease-in;
 }
 
 .footer-infoContent:hover:before {
-  width: 100%;
-  right: 0;
-  left: auto;
+    width: 100%;
+    right: 0;
+    left: auto;
 }
 
 .footer-infoContent::after {
-  content: "";
-  position: absolute;
-  bottom: 0%;
-  right: 0%;
-  background-color: #cabe9f;
-  width: 0;
-  height: 2px;
-  transition: 0.35s ease-in;
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background-color: #cabe9f;
+    width: 0;
+    height: 2px;
+    transition: 0.35s ease-in;
 }
 
 .footer-infoContent:hover:after {
-  width: 100%;
-  left: 0;
-  right: auto;
+    width: 100%;
+    left: 0;
+    right: auto;
 }
 
 .footer-agentName h5,
 .footer-agentName p {
-  font-family: "Lora", serif;
+    font-family: "Lora", serif;
 }
 
 /* Contact form */
 .contacts-heading {
-  text-align: center;
-  color: #b8a87f;
-  padding-bottom: 3rem;
-  font-family: "Lora", serif;
+    text-align: center;
+    color: #b8a87f;
+    padding-bottom: 3rem;
+    font-family: "Lora", serif;
 }
 
 .contact-submit {
-  font-family: "Lora", serif;
-  font-size: 23px;
-  letter-spacing: 0.3px;
+    font-family: "Lora", serif;
+    font-size: 23px;
+    letter-spacing: 0.3px;
 }
 
 #success_message h3,
 #error_message h3 {
-  width: 100%;
-  height: auto;
-  color: #948768d5;
-  text-align: center;
-  padding: 1.5rem 0;
-  font-family: "Lily", serif;
-  font-size: 23px;
-  font-style: italic;
+    width: 100%;
+    height: auto;
+    color: #948768d5;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-family: "Lily", serif;
+    font-size: 23px;
+    font-style: italic;
 }
 
 .socialMedia-icons a {
-  font-family: "Lora", serif;
-  font-size: 15px;
+    font-family: "Lora", serif;
+    font-size: 15px;
 }
 
 /* Heading edits */
 .aboutbuilding-heading {
-  position: relative;
+    position: relative;
 }
 
 .aboutbuilding-heading:before {
-  position: absolute;
-  content: "\f141";
-  font: var(--fa-font-solid);
-  font-size: 23px;
-  top: 50%;
-  left: -1%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    content: "\f141";
+    font: var(--fa-font-solid);
+    font-size: 23px;
+    top: 50%;
+    left: -1%;
+    transform: translate(-50%, -50%);
 }
 
 .servicesHeading h3,
 .premisesHeading h3,
 .complexEntertaimentHeading h3,
 .investitorHeading h3 {
-  position: relative;
+    position: relative;
 }
 
 .servicesHeading h3:before,
 .premisesHeading h3:before,
 .complexEntertaimentHeading h3:before,
 .investitorHeading h3:before {
-  position: absolute;
-  content: "\f141";
-  font: var(--fa-font-solid);
-  top: 50%;
-  left: -4%;
-  transform: translate(-50%, -50%);
-  font-size: 23px;
+    position: absolute;
+    content: "\f141";
+    font: var(--fa-font-solid);
+    top: 50%;
+    left: -4%;
+    transform: translate(-50%, -50%);
+    font-size: 23px;
 }
 
 /* SALES */
 .sales-heading-underline {
-  display: block;
-  width: 6%;
-  margin: auto;
-  border-bottom: 1px solid #cabe9f;
+    display: block;
+    width: 6%;
+    margin: auto;
+    border-bottom: 1px solid #cabe9f;
 }
 
 .sales-text-info {
-  font-size: 18px;
-  font-family: "Merriweather", serif;
+    font-size: 18px;
+    font-family: "Merriweather", serif;
 }
 
 .sales-info-headings h5 {
-  font-size: 23px;
-  font-family: "Lora", serif;
-  color: #b8a87f;
-  letter-spacing: 0.2px;
+    font-size: 23px;
+    font-family: "Lora", serif;
+    color: #b8a87f;
+    letter-spacing: 0.2px;
 }
 
 .sales-info-text p {
-  font-family: "Lora", serif;
-  letter-spacing: 0.3px;
-  font-size: 16px;
+    font-family: "Lora", serif;
+    letter-spacing: 0.3px;
+    font-size: 16px;
 }
 
 .sales-text p:nth-child(1) {
-  font-family: "Lora", serif;
-  font-size: 16px;
+    font-family: "Lora", serif;
+    font-size: 16px;
 }
 
 /* Investitor info */
 .investitor-text p {
-  font-family: "Lora", serif;
-  font-size: 15px;
+    font-family: "Lora", serif;
+    font-size: 15px;
 }
 
 .investitor-box-images p {
-  font-family: "Lora", serif;
-  font-weight: 500;
+    font-family: "Lora", serif;
+    font-weight: 500;
 }

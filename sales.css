@@ -100,25 +100,7 @@ body {
     height: 60px;
 }
 /* End */
-/* Navbar Dropdown */
-.dropdown-menu {
-    border: none;
-    border-radius: 0%;
-    background-color: rgba(63, 68, 72, 0.8);
-    border: 16px solid transparent;
-    transition: 0.3s ease-in-out;
-}
-
-.dropdownMenu-colorchange {
-    background-color: #2a2d30 !important;
-    color: #eeeeee;
-    transition: 0.4s ease-in-out;
-}
-
-.dropdown-customize li {
-    margin: 0 1rem;
-}
-
+/* Navbar dropdown */
 .navbar-collapse ul ul {
     display: none;
 }
@@ -152,6 +134,67 @@ body {
     right: -18px;
     bottom: 25%;
     transform: translate(-10px, -25%);
+}
+
+.dropdownMenu li {
+    margin: 0;
+    text-align: center;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 0%;
+    background-color: rgba(63, 68, 72, 0.8);
+    border: 16px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.dropdownMenu-colorchange {
+    background-color: #2a2d30 !important;
+    color: #eeeeee;
+    transition: 0.4s ease-in-out;
+}
+
+.dropdown-customize li {
+    margin: 0 1rem;
+}
+
+/* Apartments dropdown */
+.dropdownInner-sales .dropdownInner-sales,
+.dropdownInner-sales2 .dropdownInner-sales2 {
+    position: relative;
+}
+
+.navbar-collapse ul .dropdownInner-sales:hover > ul {
+    display: block;
+    position: absolute;
+    padding: 0.5rem 0 0 0;
+    left: 100%;
+    top: 31%;
+    border: 5px solid transparent;
+    background-color: rgba(63, 68, 72, 0.8);
+}
+
+.dropdownInner-sales ul a,
+.dropdownInner-sales2 ul a {
+    font-size: 15px;
+}
+
+.dropdownInner-customize li {
+    padding: 1rem 0 !important;
+    display: block;
+    width: 110px;
+}
+
+/* Apartments dropdown 2 */
+.navbar-collapse ul .dropdownInner-sales2:hover > ul {
+    display: block;
+    position: absolute;
+    padding: 0.5rem 0 0 0;
+    left: 100%;
+    top: 54%;
+    border: 5px solid transparent;
+    background-color: rgba(63, 68, 72, 0.8);
 }
 
 /* Navbar Language Button */

@@ -66,6 +66,7 @@ header {
     font-size: 25px;
     text-decoration: none;
     transition: 0.3s ease-in;
+    z-index: 1000;
 }
 
 /* .landingBtn::before {
@@ -233,7 +234,8 @@ header {
 
 /* Apartments dropdown */
 .dropdownInner-sales .dropdownInner-sales,
-.dropdownInner-sales2 .dropdownInner-sales2 {
+.dropdownInner-sales2 .dropdownInner-sales2,
+.dropdownInner-sales3 .dropdownInner-sales3 {
     position: relative;
 }
 
@@ -248,12 +250,13 @@ header {
 }
 
 .dropdownInner-sales ul a,
-.dropdownInner-sales2 ul a {
+.dropdownInner-sales2 ul a,
+.dropdownInner-sales3 ul a {
     font-size: 15px;
 }
 
 .dropdownInner-customize li {
-    padding: 1rem 0 !important;
+    padding: 0.8rem 0 !important;
     display: block;
     width: 110px;
 }
@@ -269,6 +272,16 @@ header {
     background-color: rgba(63, 68, 72, 0.5);
 }
 
+/* Apartments dropdown 3 */
+.navbar-collapse ul .dropdownInner-sales3:hover > ul {
+    display: block;
+    position: absolute;
+    padding: 0.5rem 0 0 0;
+    left: 100%;
+    top: 77%;
+    border: 5px solid transparent;
+    background-color: rgba(63, 68, 72, 0.5);
+}
 /* About The Builiding */
 .aboutBuildingBox1 {
     display: grid;
@@ -885,6 +898,9 @@ header {
 .socialMedia-icons a:hover {
     transition: 0.2s ease-out;
     color: #cabe9f;
+}
+
+.footer-copyrights p {
 }
 
 /* Footer End */
