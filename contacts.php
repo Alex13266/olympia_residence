@@ -65,35 +65,110 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarNavDropdown"
-          >
-            <ul class="navbar-nav">
-            <li class="nav-item dropdownMenu-sales">
-                <a class="nav-link dropdownMenu-salesLink" href="sales.html"
-                  >Продажби</a
-                >
-                <ul
-                  class="dropdownMenu dropdown-menu slide-top-sales"
-                  id="dropdown-Color"
-                >
-                  <li><a href="#">Сутерен</a></li>
-                  <li><a href="#">Блок1</a></li>
-                  <li><a href="#">Блок2</a></li>
-                  <li><a href="#">Блок3</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">За проекта</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Галерия</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacts.php">Контакти</a>
-              </li>
-            </ul>
-          </div>
+                        class="collapse navbar-collapse justify-content-center"
+                        id="navbarNavDropdown"
+                    >
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdownMenu-sales">
+                                <a
+                                    class="nav-link dropdownMenu-salesLink"
+                                    href="sales.html"
+                                    >Продажби</a
+                                >
+                                <ul
+                                    class="dropdownMenu dropdown-menu slide-top"
+                                    id="dropdown-Color"
+                                >
+                                    <li><a href="#">Сутерен</a></li>
+                                    <li class="dropdownInner-sales">
+                                        <a
+                                            class="dropdownInner-salesLink"
+                                            href="#"
+                                            >Блок1</a
+                                        >
+                                        <ul
+                                            class="innerDropdown-Color dropdownInner-customize slide-right newDropdown-Color"
+                                        >
+                                            <li>
+                                                <a href="#">Етаж 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Етаж 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Етаж 3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Етаж 4</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Етаж 5</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdownInner-sales2">
+                                        <a
+                                            class="dropdownInner-salesLink2"
+                                            href="#"
+                                            >Блок2</a
+                                        >
+                                        <ul
+                                            class="dropdownInner-customize slide-right newDropdown-Color"
+                                        >
+                                            <li>
+                                                <a href="#">Етаж 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Етаж 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Етаж 3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Етаж 4</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Етаж 5</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdownInner-sales3">
+                                        <a href="#">Блок3</a>
+                                        <ul
+                                            class="dropdownInner-customize slide-right newDropdown-Color"
+                                        >
+                                            <li>
+                                                <a href="#">Етаж 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Етаж 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Етаж 3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Етаж 4</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Етаж 5</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">За проекта</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Галерия</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacts.php"
+                                    >Контакти</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
           <div class="MultilanguageMenu">
             <select
               class="MultilanguageBtn"
@@ -157,8 +232,7 @@
                         placeholder="Вашето име *"
                       />
                     </div>
-                    <!-- <div class="contact-phone">
-                      <label>Вашия телефон *</label>
+                    <div class="contact-phone">
                       <input
                         type="text"
                         name="number"
@@ -166,9 +240,10 @@
                         class="form-control"
                         placeholder="Вашия телефон *"
                       />
-                    </div> -->
+                    </div>
+                  </div>
+                  <div class="form-group email-request">
                     <div class="form-group contact-email">
-                      <!-- <label>Вашия Email *</label> -->
                       <input
                         type="email"
                         name="email"

@@ -287,3 +287,55 @@ h3 {
     font-family: "Lora", serif;
     font-weight: 500;
 }
+
+/* SALES BLOK1 */
+.salesBlok1-Heading h4 {
+    font-size: 21px;
+    font-weight: 100;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    margin: 0;
+}
+
+.salesBlok1-page a,
+.salesBlok1-page {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.salesBlok1Tab {
+    font-size: 15px;
+    padding: 0.2rem 0;
+}
+
+.salesBlok1-heading {
+    font-size: 17px;
+}
+
+.salesBlok1-Heading,
+.salesBlok1Tab,
+.salesBlok1-heading,
+.salesBlok1-page a,
+.salesBlok1-page {
+    font-family: "Lora", serif;
+}
+
+.salesBlok1-Box2Odd,
+.salesBlok1-Box2Even {
+    height: 100%;
+    align-items: center;
+}
+
+.salesBlok1-Box2Odd {
+    background: rgb(232 227 221 / 40%);
+}
+
+/* Free and Sold */
+.salesStatus-Free {
+    color: green;
+    font-weight: 500;
+}
+
+.salesStatus-Sold {
+    color: darkred;
+    font-weight: 500;
+}
