@@ -124,6 +124,12 @@ header {
     text-decoration: none;
 }
 
+.page-settings {
+    display: grid;
+    height: 100%;
+    align-items: center;
+}
+
 .salesBlok1-heading {
     cursor: pointer;
 }
