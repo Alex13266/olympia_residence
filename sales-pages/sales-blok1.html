@@ -1,706 +1,657 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-            crossorigin="anonymous"
-        />
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://kit.fontawesome.com/f3465016f9.js"
-            crossorigin="anonymous"
-        ></script>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
-            integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
-        <script type="module" src="../loadTranslations.js"></script>
-        <link
-            rel="stylesheet"
-            href="../navigation&footer-css/navigation&footer-css.css"
-        />
-        <link rel="stylesheet" href="sales-pages.css" />
-        <link rel="stylesheet" href="../mediaquery.css" />
-        <link rel="stylesheet" href="../typography.css" />
-        <link rel="stylesheet" href="../custom-css/animista.css" />
-        <title>Olympia Residence | Блок1 |</title>
-    </head>
-    <body onload="init()">
-        <a href="#" class="to-top">
-            <i class="fa-solid fa-angle-up"></i>
-        </a>
-        <header style="width: 100%; height: 100%">
-            <nav id="navbarBg" class="navbar navbar-expand-lg fixed-top">
-                <div class="container-fluid">
-                    <div class="navLogo ps-4">
-                        <a href="../index.html"
-                            ><img src="../images/siteLogo-white.png" alt=""
-                        /></a>
-                    </div>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f3465016f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+      integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="module" src="../loadTranslations.js"></script>
+    <link
+      rel="stylesheet"
+      href="../navigation&footer-css/navigation&footer-css.css"
+    />
+    <link rel="stylesheet" href="sales-pages.css" />
+    <link rel="stylesheet" href="../mediaquery.css" />
+    <link rel="stylesheet" href="../typography.css" />
+    <link rel="stylesheet" href="../custom-css/animista.css" />
+    <title>Olympia Residence | Блок1 |</title>
+  </head>
+  <body onload="init()">
+    <a href="#" class="to-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <header class="salesBlok-HEADER">
+      <nav id="navbarBg" class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <div class="navLogo ps-4">
+            <a href="../index.html"
+              ><img src="../images/siteLogo-white.png" alt=""
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item dropdownMenu-sales">
+                <a class="nav-link dropdownMenu-salesLink" href="../sales.html"
+                  >Продажби</a
+                >
+                <ul
+                  class="dropdownMenu dropdown-menu slide-top"
+                  id="dropdown-Color"
+                >
+                  <li><a href="#">Сутерен</a></li>
+                  <li class="dropdownInner-sales">
+                    <a class="dropdownInner-salesLink" href="#">Блок1</a>
+                    <ul
+                      class="innerDropdown-Color dropdownInner-customize slide-right newDropdown-Color"
                     >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div
-                        class="collapse navbar-collapse justify-content-center"
-                        id="navbarNavDropdown"
+                      <li class="active">
+                        <a href="#">Етаж 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Етаж 2</a>
+                      </li>
+                      <li>
+                        <a href="#">Етаж 3</a>
+                      </li>
+                      <li>
+                        <a href="#">Етаж 4</a>
+                      </li>
+                      <li>
+                        <a href="#">Етаж 5</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdownInner-sales2">
+                    <a class="dropdownInner-salesLink2" href="#">Блок2</a>
+                    <ul
+                      class="dropdownInner-customize slide-right newDropdown-Color"
                     >
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdownMenu-sales">
-                                <a
-                                    class="nav-link dropdownMenu-salesLink"
-                                    href="../sales.html"
-                                    >Продажби</a
-                                >
-                                <ul
-                                    class="dropdownMenu dropdown-menu slide-top"
-                                    id="dropdown-Color"
-                                >
-                                    <li><a href="#">Сутерен</a></li>
-                                    <li class="dropdownInner-sales">
-                                        <a
-                                            class="dropdownInner-salesLink"
-                                            href="#"
-                                            >Блок1</a
-                                        >
-                                        <ul
-                                            class="innerDropdown-Color dropdownInner-customize slide-right newDropdown-Color"
-                                        >
-                                            <li class="active">
-                                                <a href="#">Етаж 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Етаж 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Етаж 3</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Етаж 4</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Етаж 5</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdownInner-sales2">
-                                        <a
-                                            class="dropdownInner-salesLink2"
-                                            href="#"
-                                            >Блок2</a
-                                        >
-                                        <ul
-                                            class="dropdownInner-customize slide-right newDropdown-Color"
-                                        >
-                                            <li>
-                                                <a href="#">Етаж 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Етаж 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Етаж 3</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Етаж 4</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Етаж 5</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdownInner-sales3">
-                                        <a href="#">Блок3</a>
-                                        <ul
-                                            class="dropdownInner-customize slide-right newDropdown-Color"
-                                        >
-                                            <li>
-                                                <a href="#">Етаж 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Етаж 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Етаж 3</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Етаж 4</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Етаж 5</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">За проекта</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Галерия</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../contacts.php"
-                                    >Контакти</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="MultilanguageMenu">
-                        <select
-                            class="MultilanguageBtn"
-                            name="language"
-                            id="languageSwitcher"
-                            style="appearance: none"
-                        ></select>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div
-                class="container-fluid sales-blok1"
-                style="padding: 0 0 5rem 0"
-            >
-                <div class="row salesBlok1-settings1">
-                    <div class="col" style="padding: 0 2rem 0 0">
-                        <div class="salesBlok1-tabsOuter">
-                            <div class="salesBlok1-Heading">
-                                <h4>Разпределение</h4>
-                                <span class="salesBlok1-HeadingLine"></span>
-                            </div>
-                            <ul class="salesBlok1-Tabs">
-                                <li
-                                    class="salesBlok1-page page-settings"
-                                    style="border-bottom: 1px solid #cabe9f"
-                                >
-                                    <a href="#">Сутерен</a>
-                                </li>
-                                <li class="salesBlok1-page accordion-settings">
-                                    Блок1
-                                    <ul>
-                                        <li class="salesBlok1-content">
-                                            <h6 class="salesBlok1-heading">
-                                                Етаж 2
-                                            </h6>
-                                            <ul class="salesBlok1-buttons">
-                                                <li
-                                                    data-tab-target="#B1Apartment1"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 1
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment2"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 2
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment3"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 3
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment4"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 4
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment5"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 5
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment6"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 6
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="salesBlok1-content">
-                                            <h6 class="salesBlok1-heading">
-                                                Етаж 3
-                                            </h6>
-                                            <ul class="salesBlok1-buttons">
-                                                <li
-                                                    data-tab-target="#B1Apartment7"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 7
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment8"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 8
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment9"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 9
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment10"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 10
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment11"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 11
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment12"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 12
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="salesBlok1-content">
-                                            <h6 class="salesBlok1-heading">
-                                                Етаж 4
-                                            </h6>
-                                            <ul class="salesBlok1-buttons">
-                                                <li
-                                                    data-tab-target="#B1Apartment13"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 13
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment14"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 14
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment15"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 15
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment16"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 16
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment17"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 17
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment18"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 18
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="salesBlok1-content">
-                                            <h6 class="salesBlok1-heading">
-                                                Етаж 5
-                                            </h6>
-                                            <ul class="salesBlok1-buttons">
-                                                <li
-                                                    data-tab-target="#B1Apartment19"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 19
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment20"
-                                                    class="salesBlok1Tab"
-                                                >
-                                                    Апартамент 20
-                                                </li>
-                                                <li
-                                                    data-tab-target="#B1Apartment20"
-                                                    class="salesBlok1Tab"
-                                                ></li>
-                                                <li
-                                                    data-tab-target="#B1Apartment20"
-                                                    class="salesBlok1Tab"
-                                                ></li>
-                                                <li
-                                                    data-tab-target="#B1Apartment20"
-                                                    class="salesBlok1Tab"
-                                                ></li>
-                                                <li
-                                                    data-tab-target="#B1Apartment20"
-                                                    class="salesBlok1Tab"
-                                                ></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li
-                                    class="salesBlok1-page page-settings"
-                                    style="
-                                        border-top: 1px solid #cabe9f;
-                                        border-bottom: 1px solid #cabe9f;
-                                    "
-                                >
-                                    <a href="#">Блок2</a>
-                                </li>
-                                <li class="salesBlok1-page page-settings">
-                                    <a href="#">Блок3</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="salesBlok1-settings2">
-                        <div id="B1Apartment1" data-tab-content class="active">
-                            <div class="salesBlok-inner d-grid">
-                                <div class="salesBlok1-Box1">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1664914497213-7aafb1bf9cdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1902&q=80"
-                                        alt=""
-                                    />
-                                </div>
-                                <div
-                                    class="salesBlok1-Box2 d-grid align-items-center"
-                                >
-                                    <div
-                                        class="salesBlok1-floorNum d-flex justify-content-around salesBlok1-Box2Odd"
-                                    >
-                                        <p class="leftBox2">етаж</p>
-                                        <p class="middleBox2">№</p>
-                                        <p class="rightBox2">първи</p>
-                                    </div>
-                                    <div
-                                        class="salesBlok1-area d-flex justify-content-around salesBlok1-Box2Even"
-                                    >
-                                        <p class="leftBox2">Квадратура</p>
-                                        <p class="middleBox2">/м2/</p>
-                                        <p class="rightBox2">60.20</p>
-                                    </div>
-                                    <div
-                                        class="salesBlok1-status d-flex justify-content-around salesBlok1-Box2Odd"
-                                    >
-                                        <p class="leftBox2">статус</p>
-                                        <p class="middleBox2">-</p>
-                                        <p class="rightBox2 salesStatus-Free">
-                                            СВОБОДЕН
-                                        </p>
-                                    </div>
-                                    <div
-                                        class="salesBlok1-zastroeniPl d-flex justify-content-around salesBlok1-Box2Even"
-                                    >
-                                        <p class="leftBox2">общи части F2</p>
-                                        <p class="middleBox2">/м2/</p>
-                                        <p class="rightBox2">10.45</p>
-                                    </div>
-                                    <div
-                                        class="salesBlok1-totalArea d-flex justify-content-around salesBlok1-Box2Odd"
-                                    >
-                                        <p class="leftBox2">
-                                            обща площ на обекта F3
-                                        </p>
-                                        <p class="middleBox2">/м2/</p>
-                                        <p class="rightBox2">70.56</p>
-                                    </div>
-                                    <div
-                                        class="salesBlok1-price d-flex justify-content-around salesBlok1-Box2Even"
-                                    >
-                                        <p class="leftBox2">ЦЕНА</p>
-                                        <p class="middleBox2">евро</p>
-                                        <p class="rightBox2">75,000</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="B1Apartment2" data-tab-content>
-                            <div class="salesBlok-inner d-grid">
-                                <div class="salesBlok1-Box1">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1548214907-443d9658aa62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
-                                        alt=""
-                                    />
-                                </div>
-                                <div
-                                    class="salesBlok1-Box2 d-grid align-items-center"
-                                >
-                                    <div
-                                        class="salesBlok1-floorNum d-flex justify-content-around salesBlok1-Box2Odd"
-                                    >
-                                        <p class="leftBox2">етаж</p>
-                                        <p class="middleBox2">№</p>
-                                        <p class="rightBox2">първи</p>
-                                    </div>
-                                    <div
-                                        class="salesBlok1-area d-flex justify-content-around salesBlok1-Box2Even"
-                                    >
-                                        <p class="leftBox2">Квадратура</p>
-                                        <p class="middleBox2">/м2/</p>
-                                        <p class="rightBox2">80.20</p>
-                                    </div>
-                                    <div
-                                        class="salesBlok1-status d-flex justify-content-around salesBlok1-Box2Odd"
-                                    >
-                                        <p class="leftBox2">статус</p>
-                                        <p class="middleBox2">-</p>
-                                        <p class="rightBox2 salesStatus-Sold">
-                                            ПРОДАДЕНО
-                                        </p>
-                                    </div>
-                                    <div
-                                        class="salesBlok1-zastroeniPl d-flex justify-content-around salesBlok1-Box2Even"
-                                    >
-                                        <p class="leftBox2">общи части F2</p>
-                                        <p class="middleBox2">/м2/</p>
-                                        <p class="rightBox2">10.45</p>
-                                    </div>
-                                    <div
-                                        class="salesBlok1-totalArea d-flex justify-content-around salesBlok1-Box2Odd"
-                                    >
-                                        <p class="leftBox2">
-                                            обща площ на обекта F3
-                                        </p>
-                                        <p class="middleBox2">/м2/</p>
-                                        <p class="rightBox2">95.56</p>
-                                    </div>
-                                    <div
-                                        class="salesBlok1-price d-flex justify-content-around salesBlok1-Box2Even"
-                                    >
-                                        <p class="leftBox2">ЦЕНА</p>
-                                        <p class="middleBox2">евро</p>
-                                        <p class="rightBox2">97,000</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="B1Apartment3" data-tab-content>
-                            <div class="salesBlok-inner d-grid">
-                                <div class="salesBlok1-Box1">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1575429945809-c900870d6499?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
-                                        alt=""
-                                    />
-                                </div>
-                                <div
-                                    class="salesBlok1-Box2 d-grid align-items-center"
-                                >
-                                    <div
-                                        class="salesBlok1-floorNum d-flex justify-content-around salesBlok1-Box2Odd"
-                                    >
-                                        <p class="leftBox2">етаж</p>
-                                        <p class="middleBox2">№</p>
-                                        <p class="rightBox2">първи</p>
-                                    </div>
-                                    <div
-                                        class="salesBlok1-area d-flex justify-content-around salesBlok1-Box2Even"
-                                    >
-                                        <p class="leftBox2">Квадратура</p>
-                                        <p class="middleBox2">/м2/</p>
-                                        <p class="rightBox2">88.25</p>
-                                    </div>
-                                    <div
-                                        class="salesBlok1-status d-flex justify-content-around salesBlok1-Box2Odd"
-                                    >
-                                        <p class="leftBox2">статус</p>
-                                        <p class="middleBox2">-</p>
-                                        <p class="rightBox2 salesStatus-Sold">
-                                            ПРОДАДЕНО
-                                        </p>
-                                    </div>
-                                    <div
-                                        class="salesBlok1-zastroeniPl d-flex justify-content-around salesBlok1-Box2Even"
-                                    >
-                                        <p class="leftBox2">общи части F2</p>
-                                        <p class="middleBox2">/м2/</p>
-                                        <p class="rightBox2">15.45</p>
-                                    </div>
-                                    <div
-                                        class="salesBlok1-totalArea d-flex justify-content-around salesBlok1-Box2Odd"
-                                    >
-                                        <p class="leftBox2">
-                                            обща площ на обекта F3
-                                        </p>
-                                        <p class="middleBox2">/м2/</p>
-                                        <p class="rightBox2">103.70</p>
-                                    </div>
-                                    <div
-                                        class="salesBlok1-price d-flex justify-content-around salesBlok1-Box2Even"
-                                    >
-                                        <p class="leftBox2">ЦЕНА</p>
-                                        <p class="middleBox2">евро</p>
-                                        <p class="rightBox2">108,400</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="row footer-inner d-grid">
-                <div class="col footerBox">
-                    <h6 class="mb-4 footer-headers">Нашата локация</h6>
-                    <p class="footer-content">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Quidem architecto accusamus facere, delectus,
-                        veritatis voluptates quia expedita, numquam unde
-                        aspernatur rerum officia ullam sit?
-                    </p>
-                    <div class="row footer-address d-grid pt-3 pb-1">
-                        <div class="col">
-                            <p class="footer-infoHeader">Адрес:</p>
-                        </div>
-                        <div class="col">
-                            <p class="footer-infoContent" style="width: 90%">
-                                ул. „Морски Звуци“ 20, 8238 Равда
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row footer-phone d-grid py-1">
-                        <div class="col">
-                            <p class="footer-infoHeader">Телефон:</p>
-                        </div>
-                        <div class="col d-flex">
-                            <p class="footer-infoContent">089 991 0435</p>
-                            <span>&nbsp;/&nbsp;</span>
-                            <p class="footer-infoContent">089 796 3030</p>
-                        </div>
-                    </div>
-                    <div class="row footer-email d-grid py-1">
-                        <div class="col">
-                            <p class="footer-infoHeader">Имейл:</p>
-                        </div>
-                        <div class="col">
-                            <p class="footer-infoContent" style="width: 70%">
-                                olympia_residence@abv.bg
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col footerBox">
-                    <h6 class="mb-4 footer-headers">Контакти на брокера</h6>
-                    <div class="row footer-agentInfo d-grid">
-                        <div class="col footer-imageBox">
-                            <img
-                                src="../images/istockphoto-1186979596-612x612.jpg"
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            class="col d-grid align-items-center footer-agentName"
+                      <li>
+                        <a href="#">Етаж 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Етаж 2</a>
+                      </li>
+                      <li>
+                        <a href="#">Етаж 3</a>
+                      </li>
+                      <li>
+                        <a href="#">Етаж 4</a>
+                      </li>
+                      <li>
+                        <a href="#">Етаж 5</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdownInner-sales3">
+                    <a href="#">Блок3</a>
+                    <ul
+                      class="dropdownInner-customize slide-right newDropdown-Color"
+                    >
+                      <li>
+                        <a href="#">Етаж 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Етаж 2</a>
+                      </li>
+                      <li>
+                        <a href="#">Етаж 3</a>
+                      </li>
+                      <li>
+                        <a href="#">Етаж 4</a>
+                      </li>
+                      <li>
+                        <a href="#">Етаж 5</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">За проекта</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Галерия</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contacts.php">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="MultilanguageMenu">
+            <select
+              class="MultilanguageBtn"
+              name="language"
+              id="languageSwitcher"
+              style="appearance: none"
+            ></select>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-fluid sales-blok1" style="padding: 0 0 5rem 0">
+        <div class="row salesBlok1-settings1">
+          <div class="col">
+            <div class="salesBlok1-tabsOuter">
+              <div class="salesBlok1-Heading">
+                <h4>Разпределение</h4>
+                <span class="salesBlok1-HeadingLine"></span>
+              </div>
+              <ul class="salesBlok1-Tabs">
+                <li
+                  class="salesBlok1-page page-settings"
+                  style="border-bottom: 1px solid #cabe9f"
+                >
+                  <a href="#">Сутерен</a>
+                </li>
+                <li class="salesBlok1-page accordion-settings">
+                  Блок1
+                  <ul>
+                    <li class="salesBlok1-content">
+                      <h6 class="salesBlok1-heading">Етаж 2</h6>
+                      <ul class="salesBlok1-buttons">
+                        <li
+                          data-tab-target="#B1Apartment1"
+                          class="salesBlok1Tab"
                         >
-                            <h5>Камелия Цифундарева</h5>
-                            <p>Мениджър продажби</p>
-                        </div>
-                    </div>
-                    <span class="footer-line mb-3"></span>
-                    <div class="row footer-agentPContacts d-grid mb-2">
-                        <div class="col">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div class="col">
-                            <p
-                                class="footer-infoContent footer-brokerNumber"
-                                style="width: 28%"
-                            >
-                                089 991 0435
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row footer-agentEContacts d-grid mb-3">
-                        <div class="col">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div class="col">
-                            <p class="footer-infoContent" style="width: 51%">
-                                olympia_beach@abv.bg
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col footerBox">
-                    <h6 class="mb-5 footer-headers">Социални мрежи</h6>
-                    <div class="row footer-socialMediaFB d-grid pb-3">
-                        <div class="col">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                        <div class="col socialMedia-icons">
-                            <a href="#">facebook.com</a>
-                        </div>
-                    </div>
-                    <div class="row footer-socialMediaIG d-grid pb-3">
-                        <div class="col">
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                        <div class="col socialMedia-icons">
-                            <a href="#">instagram.com</a>
-                        </div>
-                    </div>
-                    <div class="row footer-socialMediaOB d-grid pb-3">
-                        <div class="col">
-                            <i class="fa-solid fa-earth-europe"></i>
-                        </div>
-                        <div class="col socialMedia-icons">
-                            <a href="https://olympia-beach.com/"
-                                >olympia_beach.com</a
-                            >
-                        </div>
-                    </div>
-                </div>
+                          Апартамент 1
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment2"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 2
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment3"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 3
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment4"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 4
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment5"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 5
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment6"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 6
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="salesBlok1-content">
+                      <h6 class="salesBlok1-heading">Етаж 3</h6>
+                      <ul class="salesBlok1-buttons">
+                        <li
+                          data-tab-target="#B1Apartment7"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 7
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment8"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 8
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment9"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 9
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment10"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 10
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment11"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 11
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment12"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 12
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="salesBlok1-content">
+                      <h6 class="salesBlok1-heading">Етаж 4</h6>
+                      <ul class="salesBlok1-buttons">
+                        <li
+                          data-tab-target="#B1Apartment13"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 13
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment14"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 14
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment15"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 15
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment16"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 16
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment17"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 17
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment18"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 18
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="salesBlok1-content">
+                      <h6 class="salesBlok1-heading">Етаж 5</h6>
+                      <ul class="salesBlok1-buttons">
+                        <li
+                          data-tab-target="#B1Apartment19"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 19
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment20"
+                          class="salesBlok1Tab"
+                        >
+                          Апартамент 20
+                        </li>
+                        <li
+                          data-tab-target="#B1Apartment20"
+                          class="salesBlok1Tab"
+                        ></li>
+                        <li
+                          data-tab-target="#B1Apartment20"
+                          class="salesBlok1Tab"
+                        ></li>
+                        <li
+                          data-tab-target="#B1Apartment20"
+                          class="salesBlok1Tab"
+                        ></li>
+                        <li
+                          data-tab-target="#B1Apartment20"
+                          class="salesBlok1Tab"
+                        ></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  class="salesBlok1-page page-settings"
+                  style="
+                    border-top: 1px solid #cabe9f;
+                    border-bottom: 1px solid #cabe9f;
+                  "
+                >
+                  <a href="#">Блок2</a>
+                </li>
+                <li class="salesBlok1-page page-settings">
+                  <a href="#">Блок3</a>
+                </li>
+              </ul>
             </div>
-            <div class="footer-copyrights d-grid justify-content-center">
-                <p>
-                    © 2022 OLYMPIA RESIDENCE. Всички права запазени | Общи
-                    правила
-                </p>
+          </div>
+          <div class="salesBlok1-settings2">
+            <div id="B1Apartment1" data-tab-content class="active">
+              <div class="salesAp-heading">
+                <h2>Апартамент 1</h2>
+                <span class="salesAp-Line"></span>
+              </div>
+              <div class="salesBlok-inner d-grid">
+                <div class="salesBlok1-Box1">
+                  <img src="../images/apartmentPlans/03-tristaen.png" alt="" />
+                </div>
+                <div class="salesBlok1-Box2 d-grid align-items-center">
+                  <div
+                    class="salesBlok1-floorNum d-flex justify-content-around salesBlok1-Box2Odd"
+                  >
+                    <p class="leftBox2">етаж</p>
+                    <p class="middleBox2">№</p>
+                    <p class="rightBox2">първи</p>
+                  </div>
+                  <div
+                    class="salesBlok1-area d-flex justify-content-around salesBlok1-Box2Even"
+                  >
+                    <p class="leftBox2">Квадратура</p>
+                    <p class="middleBox2">/м2/</p>
+                    <p class="rightBox2">60.20</p>
+                  </div>
+                  <div
+                    class="salesBlok1-status d-flex justify-content-around salesBlok1-Box2Odd"
+                  >
+                    <p class="leftBox2">статус</p>
+                    <p class="middleBox2">-</p>
+                    <p class="rightBox2 salesStatus-Free">СВОБОДЕН</p>
+                  </div>
+                  <div
+                    class="salesBlok1-zastroeniPl d-flex justify-content-around salesBlok1-Box2Even"
+                  >
+                    <p class="leftBox2">общи части F2</p>
+                    <p class="middleBox2">/м2/</p>
+                    <p class="rightBox2">10.45</p>
+                  </div>
+                  <div
+                    class="salesBlok1-totalArea d-flex justify-content-around salesBlok1-Box2Odd"
+                  >
+                    <p class="leftBox2">обща площ на обекта F3</p>
+                    <p class="middleBox2">/м2/</p>
+                    <p class="rightBox2">70.56</p>
+                  </div>
+                  <div
+                    class="salesBlok1-price d-flex justify-content-around salesBlok1-Box2Even"
+                  >
+                    <p class="leftBox2">ЦЕНА</p>
+                    <p class="middleBox2">евро</p>
+                    <p class="rightBox2">75,000</p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </footer>
-        <script src="../navi.js"></script>
-        <script src="../toTopPointer.js"></script>
-        <script src="../dropdownColor.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script src="sales-Tabs.js"></script>
-        <script src="sales-accordion.js"></script>
-        <script>
-            AOS.init();
-        </script>
-    </body>
+            <div id="B1Apartment2" data-tab-content>
+              <div class="salesAp-heading">
+                <h2>Апартамент 2</h2>
+                <span class="salesAp-Line"></span>
+              </div>
+              <div class="salesBlok-inner d-grid">
+                <div class="salesBlok1-Box1">
+                  <img src="../images/apartmentPlans/04-penthouse.PNG" alt="" />
+                </div>
+                <div class="salesBlok1-Box2 d-grid align-items-center">
+                  <div
+                    class="salesBlok1-floorNum d-flex justify-content-around salesBlok1-Box2Odd"
+                  >
+                    <p class="leftBox2">етаж</p>
+                    <p class="middleBox2">№</p>
+                    <p class="rightBox2">първи</p>
+                  </div>
+                  <div
+                    class="salesBlok1-area d-flex justify-content-around salesBlok1-Box2Even"
+                  >
+                    <p class="leftBox2">Квадратура</p>
+                    <p class="middleBox2">/м2/</p>
+                    <p class="rightBox2">80.20</p>
+                  </div>
+                  <div
+                    class="salesBlok1-status d-flex justify-content-around salesBlok1-Box2Odd"
+                  >
+                    <p class="leftBox2">статус</p>
+                    <p class="middleBox2">-</p>
+                    <p class="rightBox2 salesStatus-Sold">ПРОДАДЕНО</p>
+                  </div>
+                  <div
+                    class="salesBlok1-zastroeniPl d-flex justify-content-around salesBlok1-Box2Even"
+                  >
+                    <p class="leftBox2">общи части F2</p>
+                    <p class="middleBox2">/м2/</p>
+                    <p class="rightBox2">10.45</p>
+                  </div>
+                  <div
+                    class="salesBlok1-totalArea d-flex justify-content-around salesBlok1-Box2Odd"
+                  >
+                    <p class="leftBox2">обща площ на обекта F3</p>
+                    <p class="middleBox2">/м2/</p>
+                    <p class="rightBox2">95.56</p>
+                  </div>
+                  <div
+                    class="salesBlok1-price d-flex justify-content-around salesBlok1-Box2Even"
+                  >
+                    <p class="leftBox2">ЦЕНА</p>
+                    <p class="middleBox2">евро</p>
+                    <p class="rightBox2">97,000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="B1Apartment3" data-tab-content>
+              <div class="salesAp-heading">
+                <h2>Апартамент 3</h2>
+                <span class="salesAp-Line"></span>
+              </div>
+              <div class="salesBlok-inner d-grid">
+                <div class="salesBlok1-Box1">
+                  <img src="../images/apartmentPlans/02-dvustaen.png" alt="" />
+                </div>
+                <div class="salesBlok1-Box2 d-grid align-items-center">
+                  <div
+                    class="salesBlok1-floorNum d-flex justify-content-around salesBlok1-Box2Odd"
+                  >
+                    <p class="leftBox2">етаж</p>
+                    <p class="middleBox2">№</p>
+                    <p class="rightBox2">първи</p>
+                  </div>
+                  <div
+                    class="salesBlok1-area d-flex justify-content-around salesBlok1-Box2Even"
+                  >
+                    <p class="leftBox2">Квадратура</p>
+                    <p class="middleBox2">/м2/</p>
+                    <p class="rightBox2">88.25</p>
+                  </div>
+                  <div
+                    class="salesBlok1-status d-flex justify-content-around salesBlok1-Box2Odd"
+                  >
+                    <p class="leftBox2">статус</p>
+                    <p class="middleBox2">-</p>
+                    <p class="rightBox2 salesStatus-Sold">ПРОДАДЕНО</p>
+                  </div>
+                  <div
+                    class="salesBlok1-zastroeniPl d-flex justify-content-around salesBlok1-Box2Even"
+                  >
+                    <p class="leftBox2">общи части F2</p>
+                    <p class="middleBox2">/м2/</p>
+                    <p class="rightBox2">15.45</p>
+                  </div>
+                  <div
+                    class="salesBlok1-totalArea d-flex justify-content-around salesBlok1-Box2Odd"
+                  >
+                    <p class="leftBox2">обща площ на обекта F3</p>
+                    <p class="middleBox2">/м2/</p>
+                    <p class="rightBox2">103.70</p>
+                  </div>
+                  <div
+                    class="salesBlok1-price d-flex justify-content-around salesBlok1-Box2Even"
+                  >
+                    <p class="leftBox2">ЦЕНА</p>
+                    <p class="middleBox2">евро</p>
+                    <p class="rightBox2">108,400</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="row footer-inner d-grid">
+        <div class="col footerBox">
+          <h6 class="mb-4 footer-headers">Нашата локация</h6>
+          <p class="footer-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+            architecto accusamus facere, delectus, veritatis voluptates quia
+            expedita, numquam unde aspernatur rerum officia ullam sit?
+          </p>
+          <div class="row footer-address d-grid pt-3 pb-1">
+            <div class="col">
+              <p class="footer-infoHeader">Адрес:</p>
+            </div>
+            <div class="col">
+              <p class="footer-infoContent" style="width: 90%">
+                ул. „Морски Звуци“ 20, 8238 Равда
+              </p>
+            </div>
+          </div>
+          <div class="row footer-phone d-grid py-1">
+            <div class="col">
+              <p class="footer-infoHeader">Телефон:</p>
+            </div>
+            <div class="col d-flex">
+              <p class="footer-infoContent">089 991 0435</p>
+              <span>&nbsp;/&nbsp;</span>
+              <p class="footer-infoContent">089 796 3030</p>
+            </div>
+          </div>
+          <div class="row footer-email d-grid py-1">
+            <div class="col">
+              <p class="footer-infoHeader">Имейл:</p>
+            </div>
+            <div class="col">
+              <p class="footer-infoContent" style="width: 70%">
+                olympia_residence@abv.bg
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col footerBox">
+          <h6 class="mb-4 footer-headers">Контакти на брокера</h6>
+          <div class="row footer-agentInfo d-grid">
+            <div class="col footer-imageBox">
+              <img src="../images/istockphoto-1186979596-612x612.jpg" alt="" />
+            </div>
+            <div class="col d-grid align-items-center footer-agentName">
+              <h5>Камелия Цифундарева</h5>
+              <p>Мениджър продажби</p>
+            </div>
+          </div>
+          <span class="footer-line mb-3"></span>
+          <div class="row footer-agentPContacts d-grid mb-2">
+            <div class="col">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="col">
+              <p
+                class="footer-infoContent footer-brokerNumber"
+                style="width: 28%"
+              >
+                089 991 0435
+              </p>
+            </div>
+          </div>
+          <div class="row footer-agentEContacts d-grid mb-3">
+            <div class="col">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="col">
+              <p class="footer-infoContent" style="width: 51%">
+                olympia_beach@abv.bg
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col footerBox">
+          <h6 class="mb-5 footer-headers">Социални мрежи</h6>
+          <div class="row footer-socialMediaFB d-grid pb-3">
+            <div class="col">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="col socialMedia-icons">
+              <a href="#">facebook.com</a>
+            </div>
+          </div>
+          <div class="row footer-socialMediaIG d-grid pb-3">
+            <div class="col">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="col socialMedia-icons">
+              <a href="#">instagram.com</a>
+            </div>
+          </div>
+          <div class="row footer-socialMediaOB d-grid pb-3">
+            <div class="col">
+              <i class="fa-solid fa-earth-europe"></i>
+            </div>
+            <div class="col socialMedia-icons">
+              <a href="https://olympia-beach.com/">olympia_beach.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyrights d-grid justify-content-center">
+        <p>© 2022 OLYMPIA RESIDENCE. Всички права запазени | Общи правила</p>
+      </div>
+    </footer>
+    <script src="../navi.js"></script>
+    <script src="../toTopPointer.js"></script>
+    <script src="../dropdownColor.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="sales-Tabs.js"></script>
+    <script src="sales-accordion.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
